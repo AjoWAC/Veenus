@@ -2,6 +2,9 @@
 .wp-block-template-part {
   position: static;
   width: 100%;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
   z-index: auto;
   pointer-events: auto;
 }
@@ -68,8 +71,10 @@
   align-items: center;
   justify-content: space-between;
   max-width: 1760px;
-  margin-inline: auto;
+  margin-inline: auto; 
   padding-inline: 0.9375rem;
+  padding-top: 10px;
+  padding-bottom: 10px
 }
 
 /* ── Logo ──────────────────────────────────────────────── */
@@ -101,7 +106,7 @@
   font-weight: 400;
   letter-spacing: 0.015em;
   white-space: nowrap;
-  padding: 14px 32px;
+  padding: 23px 32px;
   transition: color 0.18s, background-color 0.18s;
 }
 .nav__links > li > a:hover,
@@ -312,7 +317,7 @@
 
 /* Mobile: tighter bar padding */
 @media (max-width: 480px) {
-  .nav__bar { padding-inline: 1.25rem; }
+  .nav__bar { height: 56px; padding-inline: 1.25rem; }
   .nav__logo img { height: 36px; }
 }
 
