@@ -24,7 +24,9 @@
       "Bash(ls icon-*.svg)",
       "Bash(yarn build:css)",
       "Bash(echo \"EXIT: $?\")",
-      "Bash(npx postcss:*)"
+      "Bash(npx postcss:*)",
+      "Bash(node build.js)",
+      "mcp__plugin_figma_figma__get_screenshot"
     ]
   }
 }

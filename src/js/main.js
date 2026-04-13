@@ -269,6 +269,27 @@ if (productsSlider && typeof EmblaCarousel !== 'undefined') {
   if (nextBtn) nextBtn.addEventListener('click', () => embla.scrollNext());
 }
 
+// Testimonials slider (Embla)
+const testimonialsSlider = document.getElementById('testimonials-slider');
+
+if (testimonialsSlider && typeof EmblaCarousel !== 'undefined') {
+  const testimonialsEmbla = EmblaCarousel(testimonialsSlider, {
+    loop: true,
+    align: 'start',
+    dragFree: false,
+  });
+
+  const tPrev = document.getElementById('testimonials-prev');
+  const tNext = document.getElementById('testimonials-next');
+  const tPrevMob = document.getElementById('testimonials-prev-mob');
+  const tNextMob = document.getElementById('testimonials-next-mob');
+
+  if (tPrev) tPrev.addEventListener('click', () => testimonialsEmbla.scrollPrev());
+  if (tNext) tNext.addEventListener('click', () => testimonialsEmbla.scrollNext());
+  if (tPrevMob) tPrevMob.addEventListener('click', () => testimonialsEmbla.scrollPrev());
+  if (tNextMob) tNextMob.addEventListener('click', () => testimonialsEmbla.scrollNext());
+}
+
 // Projects slider (Embla)
 const projectsSlider = document.getElementById('projects-slider');
 
