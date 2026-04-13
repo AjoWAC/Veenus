@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_figma_figma__get_design_context",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/transfonter.org-20260401-090026/Inter-Regular.woff2\" c:/Ajo/Veenus/HTML/src/font/)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/transfonter.org-20260401-090026/Inter-Regular.woff\" c:/Ajo/Veenus/HTML/src/font/)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/transfonter.org-20260401-091307/PlayfairDisplay-Italic.woff2\" c:/Ajo/Veenus/HTML/src/font/)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/transfonter.org-20260401-091307/PlayfairDisplay-Italic.woff\" c:/Ajo/Veenus/HTML/src/font/)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/transfonter.org-20260401-091307/PlayfairDisplay-Regular.woff2\" c:/Ajo/Veenus/HTML/src/font/)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/Wall Panels.jpg\" c:/Ajo/Veenus/HTML/src/images/wall-panels.jpg)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/Louvers.jpg\" c:/Ajo/Veenus/HTML/src/images/louvers.jpg)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/PVC Doors.jpg\" c:/Ajo/Veenus/HTML/src/images/pvc-doors.jpg)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/ceiling-panels.jpg\" c:/Ajo/Veenus/HTML/src/images/ceiling-panels.jpg)",
+      "Bash(cp \"c:/Users/wac.DESKTOP-JF9876F/Downloads/laminated-sheets.jpg\" c:/Ajo/Veenus/HTML/src/images/laminated-sheets.jpg)",
+      "Bash(yarn build:js)",
+      "Bash(curl -L \"https://www.figma.com/api/mcp/asset/0adba821-e406-47f4-9731-35d2b24bf41a\" -o \"src/images/icon-waterproof.png\" -w \"%{http_code} %{content_type}\\\\n\")",
+      "Bash(curl -L \"https://www.figma.com/api/mcp/asset/0edb5626-741f-481b-a5af-fe3ea73bc193\" -o \"src/images/icon-termite-resistant.png\" -w \"%{http_code} %{content_type}\\\\n\")",
+      "Bash(curl -L \"https://www.figma.com/api/mcp/asset/5f1c262e-5c8e-44f5-bafa-9aa78257d982\" -o \"src/images/icon-fire-retardant.png\" -w \"%{http_code} %{content_type}\\\\n\")",
+      "Bash(curl -L \"https://www.figma.com/api/mcp/asset/40f049f0-45da-428f-bd72-5b5a0cf3cdbe\" -o \"src/images/icon-long-lasting.png\" -w \"%{http_code} %{content_type}\\\\n\")",
+      "Bash(mv icon-waterproof.png icon-waterproof.svg)",
+      "Bash(mv icon-termite-resistant.png icon-termite-resistant.svg)",
+      "Bash(mv icon-fire-retardant.png icon-fire-retardant.svg)",
+      "Bash(mv icon-long-lasting.png icon-long-lasting.svg)",
+      "Bash(ls icon-*.svg)",
+      "Bash(yarn build:css)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(npx postcss:*)"
+    ]
+  }
+}
