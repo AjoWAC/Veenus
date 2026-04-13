@@ -1,48 +1,125 @@
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner">
 
-    <div class="site-footer__brand">
-      <a href="/" class="site-footer__logo" aria-label="Veenus home">
-        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <rect width="28" height="28" rx="8" fill="#0f0f0f"/>
-          <path d="M8 8h5l3 8 3-8h5l-6 13h-4L8 8z" fill="#fff"/>
-        </svg>
-        <span>Veenus</span>
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="#" class="site-footer__link">PVC Wall Panels</a></li>
+            <li><a href="#" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="#" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="#" class="site-footer__link">Laminate Sheets</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich Laminates</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="#" class="site-footer__link">About Us</a></li>
+            <li><a href="#" class="site-footer__link">Our Products</a></li>
+            <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
+            <li><a href="#" class="site-footer__link">Events</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich</a></li>
+            <li><a href="#" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
       </a>
-      <p class="site-footer__tagline">Build products people actually love.</p>
+
     </div>
 
-    <nav class="site-footer__nav" aria-label="Footer navigation">
-      <div class="site-footer__col">
-        <h4 class="site-footer__col-title">Product</h4>
-        <a href="#" class="site-footer__link">Features</a>
-        <a href="#" class="site-footer__link">Pricing</a>
-        <a href="#" class="site-footer__link">Changelog</a>
-        <a href="#" class="site-footer__link">Roadmap</a>
-      </div>
-      <div class="site-footer__col">
-        <h4 class="site-footer__col-title">Developers</h4>
-        <a href="#" class="site-footer__link">Documentation</a>
-        <a href="#" class="site-footer__link">API Reference</a>
-        <a href="#" class="site-footer__link">Status</a>
-      </div>
-      <div class="site-footer__col">
-        <h4 class="site-footer__col-title">Company</h4>
-        <a href="#" class="site-footer__link">About</a>
-        <a href="#" class="site-footer__link">Blog</a>
-        <a href="#" class="site-footer__link">Careers</a>
-      </div>
-      <div class="site-footer__col">
-        <h4 class="site-footer__col-title">Legal</h4>
-        <a href="#" class="site-footer__link">Privacy</a>
-        <a href="#" class="site-footer__link">Terms</a>
-        <a href="#" class="site-footer__link">Cookies</a>
-      </div>
-    </nav>
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
 
-  </div>
+      <a href="#" class="site-footer__catalogue">
+        Get Catalogue
+      </a>
+    </div>
 
-  <div class="site-footer__bottom">
-    <p>&copy; 2026 Veenus. All rights reserved.</p>
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
   </div>
 </footer>

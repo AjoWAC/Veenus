@@ -24,6 +24,15 @@ if (productsToggle && productsSub) {
   });
 }
 
+// Footer column accordions (mobile only — CSS handles visibility)
+document.querySelectorAll('.site-footer__col[data-accordion] > button.site-footer__col-title')
+  .forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+    });
+  });
+
 
 // Home Banner Slider (Embla)
  

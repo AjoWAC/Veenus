@@ -26,7 +26,13 @@
       "Bash(echo \"EXIT: $?\")",
       "Bash(npx postcss:*)",
       "Bash(node build.js)",
-      "mcp__plugin_figma_figma__get_screenshot"
+      "mcp__plugin_figma_figma__get_screenshot",
+      "Bash(yarn postcss:*)",
+      "Bash(curl -sL -o src/images/insight-trends-2026.jpg \"https://www.figma.com/api/mcp/asset/9f5de2a9-ca16-4e97-bd50-0bf319b4b76a\")",
+      "Bash(curl -sL -o src/images/insight-pvc-vs-wood.jpg \"https://www.figma.com/api/mcp/asset/4d6d7ca6-136c-4ccb-9243-2f69f71c1fe5\")",
+      "Bash(curl -sL -o src/images/insight-wall-panel-1.jpg \"https://www.figma.com/api/mcp/asset/5d11847c-cb88-42e0-bc62-3a94cc389088\")",
+      "Bash(curl -sL -o src/images/insight-wall-panel-2.jpg \"https://www.figma.com/api/mcp/asset/9b9c2246-43e6-44e8-bf9a-f9e62054e71d\")",
+      "Bash(ls -la src/images/insight-*)"
     ]
   }
 }
