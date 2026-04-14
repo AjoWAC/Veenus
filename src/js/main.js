@@ -79,6 +79,7 @@ document.querySelectorAll('.site-footer__col[data-accordion] > button.site-foote
   'use strict';
 
   const root     = document.getElementById('heroSlider');
+  if (!root) return;
   const slides   = Array.from(root.querySelectorAll('.embla__slide'));
   const pagItems = Array.from(root.querySelectorAll('.pagination__item'));
   const fills    = pagItems.map(p => p.querySelector('.pagination__fill'));
@@ -446,4 +447,21 @@ if (projectsSlider && typeof EmblaCarousel !== 'undefined') {
 
   if (projectsPrev) projectsPrev.addEventListener('click', () => projectsEmbla.scrollPrev());
   if (projectsNext) projectsNext.addEventListener('click', () => projectsEmbla.scrollNext());
+}
+
+// Spaces slider (Embla) — About page mobile
+const spacesSlider = document.getElementById('spaces-slider');
+
+if (spacesSlider && typeof EmblaCarousel !== 'undefined') {
+  const spacesEmbla = EmblaCarousel(spacesSlider, {
+    loop: false,
+    align: 'start',
+    dragFree: false,
+  });
+
+  const spacesPrev = document.getElementById('spaces-prev');
+  const spacesNext = document.getElementById('spaces-next');
+
+  if (spacesPrev) spacesPrev.addEventListener('click', () => spacesEmbla.scrollPrev());
+  if (spacesNext) spacesNext.addEventListener('click', () => spacesEmbla.scrollNext());
 }

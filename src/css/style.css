@@ -144,7 +144,7 @@ body {
 .btn--outline {
   @apply bg-transparent text-black rounded-none;
   border: 1px solid #000;
-  padding: 1rem 1.75rem 1rem 2.125rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.015em;
@@ -157,6 +157,16 @@ body {
   @apply bg-transparent text-neutral-700 border-transparent;
   &:hover {
     @apply bg-neutral-100;
+  }
+}
+
+/* White outline variant — use alongside btn--outline on dark backgrounds */
+.btn--cta-ghost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+  &:hover {
+    background: #fff;
+    color: #000;
   }
 }
 
@@ -213,6 +223,21 @@ body {
 
 .projects-embla__slide {
   flex: 0 0 calc(100% / 1.15);
+  min-width: 0;
+}
+
+/* Spaces Embla slider — About page */
+.spaces-embla {
+  
+}
+
+.spaces-embla__container {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.spaces-embla__slide {
+  flex: 0 0 82%;
   min-width: 0;
 }
 
