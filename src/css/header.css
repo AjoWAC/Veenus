@@ -30,40 +30,54 @@
   pointer-events: auto;
 }
 
-.nav.visible-header {
+.nav.visible-header,
+body.page-solid-header .nav {
   background: #fff;
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid #E6E6E6;
 }
 
-.nav.visible-header .nav__links > li > a {
+.nav.visible-header .nav__links > li > a,
+body.page-solid-header .nav .nav__links > li > a {
   color: #000;
 }
 .nav.visible-header .nav__links > li > a:hover,
-.nav.visible-header .has-dropdown:hover > a {
+.nav.visible-header .has-dropdown:hover > a,
+body.page-solid-header .nav .nav__links > li > a:hover,
+body.page-solid-header .nav .has-dropdown:hover > a {
   color: #000;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.nav.visible-header .chevron svg {
+.nav.visible-header .chevron svg,
+body.page-solid-header .nav .chevron svg {
   stroke: rgba(0, 0, 0, 0.5);
 }
 
-.nav.visible-header .btn-contact {
+.nav.visible-header .btn-contact,
+body.page-solid-header .nav .btn-contact {
   color: #000;
   border-color: rgba(0, 0, 0, 0.75);
 }
-.nav.visible-header .btn-contact::before {
+.nav.visible-header .btn-contact::before,
+body.page-solid-header .nav .btn-contact::before {
   background: #000;
 }
-.nav.visible-header .btn-contact:hover {
+.nav.visible-header .btn-contact:hover,
+body.page-solid-header .nav .btn-contact:hover {
   color: #fff;
   border-color: #000;
 }
 
-.nav.visible-header .hamburger span {
+.nav.visible-header .hamburger span,
+body.page-solid-header .nav .hamburger span {
   background: #000;
+}
+
+/* Reserve space below the fixed nav so page content doesn't sit under it */
+body.page-solid-header main {
+  padding-top: 57px;
 }
 
 .nav__bar {

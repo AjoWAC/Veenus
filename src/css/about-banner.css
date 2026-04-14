@@ -1,0 +1,138 @@
+/* =====================================================
+   ABOUT BANNER — hero section for About Us page
+   No Tailwind — standalone custom CSS
+===================================================== */
+
+.about-banner {
+  position: relative;
+  width: 100%;
+  min-height: clamp(640px, 85vh, 780px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+}
+
+/* Background image (responsive via <picture>) */
+.about-banner__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+}
+
+.about-banner__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark scrim for text legibility */
+.about-banner__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); */
+}
+
+/* Content container — matches site container width */
+.about-banner__inner {
+  width: 100%;
+  max-width: 1660px;
+  margin-inline: auto;
+  padding: 0 1.25rem 3.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.about-banner__title {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight:300;
+  font-size: clamp(2.1875rem, 5.5vw, 4.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0;
+  max-width: 48rem;
+}
+
+.about-banner__title em {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: -0.01em;
+}
+
+.about-banner__text {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+  max-width: 36rem;
+}
+
+.about-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.75rem;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  transition: background 0.25s ease, color 0.25s ease;
+  margin-top: 0.5rem;
+}
+
+.about-banner__cta svg {
+  flex-shrink: 0;
+}
+
+@media (hover: hover) {
+  .about-banner__cta:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+/* ----- Desktop (≥1024px) ----- */
+@media (min-width: 1024px) {
+  .about-banner {
+    min-height: clamp(560px, 70vh, 602px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-banner__inner {
+    padding: 3.75rem 0.9375rem;
+    align-items: center;
+    text-align: center;
+    gap: 1.75rem;
+  }
+
+  .about-banner__title {
+    font-size: 4rem;  /* 64px */
+    max-width: 63rem;
+  }
+
+  .about-banner__text {
+    font-size: 1.125rem;
+    max-width: 44rem;
+  }
+}

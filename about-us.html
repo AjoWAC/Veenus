@@ -6,6 +6,7 @@
   <meta name="description" content="About Veenus — a leader in PVC interior solutions in India." />
   <title>About Us — Veenus</title>
   <link href="src/css/header.css" rel="stylesheet" />
+  <link href="src/css/about-banner.css" rel="stylesheet" />
   <link rel="stylesheet" href="src/css/main.css" />
 </head>
 <body class="bg-white text-neutral-900 antialiased page-solid-header">
@@ -112,13 +113,29 @@
 </header>
 
   <main>
-    <section class="about-hero py-[6.25rem] lg:py-[10rem]">
-      <div class="container">
-        <h1 class="text-[clamp(2.1875rem,4vw,3.75rem)] leading-[1.2] tracking-[-0.02em] text-black">
-          About <em class="font-serif-display italic capitalize">Veenus</em>
-        </h1>
-      </div>
-    </section>
+    <section class="about-banner" aria-label="About Veenus hero">
+  <picture class="about-banner__bg">
+    <source media="(min-width: 1024px)" srcset="src/images/about-banner-desk.jpg">
+    <img src="src/images/about-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
+  </picture>
+
+  <div class="about-banner__overlay" aria-hidden="true"></div>
+
+  <div class="about-banner__inner">
+    <h1 class="about-banner__title">
+      Shaping Interiors with <em>Purpose</em>
+    </h1>
+    <p class="about-banner__text">
+      A Trusted Manufacturer Delivering High-Quality PVC Interior Solutions For Residential And Commercial Spaces Across India.
+    </p>
+    <a href="#" class="about-banner__cta">
+      Explore Products
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M5.25 2.625 9.625 7 5.25 11.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
