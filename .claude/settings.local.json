@@ -35,7 +35,11 @@
       "Bash(ls -la src/images/insight-*)",
       "Bash(ls src/*.html)",
       "mcp__claude_ai_Figma__get_design_context",
-      "Bash(curl -sL -o src/images/about-vision.jpg \"https://www.figma.com/api/mcp/asset/d9d5496a-ee7d-424b-9fce-4b2a0f6a8753\")"
+      "Bash(curl -sL -o src/images/about-vision.jpg \"https://www.figma.com/api/mcp/asset/d9d5496a-ee7d-424b-9fce-4b2a0f6a8753\")",
+      "Bash(python3)",
+      "Bash(grep -E '^[A-Z][a-zA-Z\\\\s\\\\+]+$')",
+      "Bash(grep -v '^[0-9 ]*$')",
+      "Bash(echo \"EXIT:$?\")"
     ]
   }
 }
