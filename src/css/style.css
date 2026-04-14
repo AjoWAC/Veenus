@@ -56,6 +56,15 @@
   font-family: 'Playfair Display', Georgia, serif;
 }
 
+/* Title convention — any heading with class="title" automatically
+   styles its <em> as Playfair Display italic. Inner <em> stays markup-only. */
+.title em {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
 /* =====================================================
    LAYOUT
 ===================================================== */
