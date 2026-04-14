@@ -1,0 +1,73 @@
+<section class="gr-about-section overflow-hidden">
+  <div class="flex flex-col gap-[2.5rem] px-5 py-[3.75rem] lg:flex-row lg:gap-0 lg:p-0 lg:items-stretch">
+
+    <!-- Image: padded on mobile, bleeds left on desktop -->
+    <div class="w-full aspect-[352/376] lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
+      <!-- Mobile image -->
+      <img
+        src="src/images/greenrich-about-mob.png"
+        width="352"
+        height="376"
+        class="w-full h-full object-cover lg:hidden"
+        loading="lazy"
+        alt="Greenrich Laminates interior showcase"
+      />
+      <!-- Desktop image -->
+      <img
+        src="src/images/greenrich-about-img.jpg"
+        width="950"
+        height="974"
+        class="hidden w-full h-full object-cover lg:block"
+        loading="lazy"
+        alt="Greenrich Laminates interior showcase"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="flex flex-col justify-center gap-[clamp(2.5rem,5vw,4.5rem)] pb-15 lg:w-1/2 lg:px-[clamp(3rem,5vw,5rem)] lg:pr-[clamp(4rem,7vw,8.125rem)] lg:py-[2.6875rem]">
+
+      <!-- Heading -->
+      <h2 class="title font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+        About Greenrich<br>
+        <em>Laminates</em>
+      </h2>
+
+      <div class="flex flex-col gap-[2.5rem]">
+
+        <!-- Stats -->
+        <div class="flex items-start gap-[clamp(1.8125rem,8vw,8.6875rem)]" id="grAboutStats">
+          <div class="flex flex-col gap-1">
+            <span class="crafting-counter font-light text-[clamp(2.1875rem,3.1vw,2.75rem)] leading-[1.3] text-black tracking-[-0.02em]" data-target="200" data-suffix="+">200+</span>
+            <span class="font-serif-display text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.2] tracking-[-0.02em] text-[#6e6e6e]">Cities Served</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="font-light text-[clamp(2.1875rem,3.1vw,2.75rem)] leading-[1.3] text-black tracking-[-0.02em]">10M+</span>
+            <span class="font-serif-display text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.2] tracking-[-0.02em] text-[#6e6e6e]">Sq Ft Installed</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="crafting-counter font-light text-[clamp(2.1875rem,3.1vw,2.75rem)] leading-[1.3] text-black tracking-[-0.02em]" data-target="500" data-suffix="+">500+</span>
+            <span class="font-serif-display text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.2] tracking-[-0.02em] text-[#6e6e6e]">Units Produced</span>
+          </div>
+        </div>
+
+        <!-- Description + CTA -->
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-4 text-base text-[#6e6e6e] leading-[1.6] lg:max-w-[750px]">
+            <p>Born from the legacy of KG Industries, Greenrich Laminates represents over 25 years of manufacturing excellence in India's surface solutions industry.</p>
+            <p>As a premium brand under the Veenus umbrella, Greenrich is engineered for durability, aesthetics and performance delivering decorative laminate surfaces that transform contemporary interior applications across residential and commercial spaces.</p>
+            <p>From concept to completion, our commitment to quality craftsmanship and innovation ensures every surface tells a story of precision and elegance.</p>
+          </div>
+
+          <a href="#" class="btn btn--dark w-full lg:w-auto lg:self-start">
+            Explore Products
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

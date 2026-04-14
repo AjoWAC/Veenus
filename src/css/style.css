@@ -141,18 +141,6 @@ body {
   }
 }
 
-.btn--outline {
-  @apply bg-transparent text-black rounded-none;
-  border: 1px solid #000;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: -0.015em;
-  &:hover {
-    @apply bg-black text-white;
-  }
-}
-
 .btn--ghost {
   @apply bg-transparent text-neutral-700 border-transparent;
   &:hover {
@@ -160,13 +148,49 @@ body {
   }
 }
 
-/* White outline variant — use alongside btn--outline on dark backgrounds */
-.btn--cta-ghost {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.7);
+/* ---- Border Square — square CTA with sliding fill ---- */
+/* Use: btn btn--border-square (light bg, dark border)    */
+/*      + btn--border-square--ghost (dark bg, white border) */
+.btn--border-square {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  padding: 1rem 1.75rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease, border-color 0.4s ease;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #000;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
   &:hover {
-    background: #fff;
+    color: #fff;
+    border-color: #000;
+    &::before { transform: scaleX(1); }
+  }
+  svg { transition: transform 0.2s ease; }
+  &:hover svg { transform: translateX(3px); }
+}
+
+/* Ghost modifier — white border on dark backgrounds */
+.btn--border-square--ghost {
+  border-color: rgba(255, 255, 255, 0.75);
+  color: #fff;
+  &::before { background: #fff; }
+  &:hover {
     color: #000;
+    border-color: #fff;
   }
 }
 
@@ -228,7 +252,7 @@ body {
 
 /* Spaces Embla slider — About page */
 .spaces-embla {
-  
+  overflow: hidden;
 }
 
 .spaces-embla__container {
@@ -769,26 +793,6 @@ button.site-footer__col-title {
   }
 }
 
-.site-footer__catalogue {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2.125rem;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.3;
-  letter-spacing: -0.015em;
-  transition: color 0.2s, background 0.2s;
-}
-
-@media (hover: hover) {
-  .site-footer a.site-footer__catalogue:hover {
-    background: #fff;
-    color: #000;
-  }
-}
 
 /* ---- Bottom row ---- */
 .site-footer__bottom {

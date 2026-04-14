@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Greenrich — Veenus PVC interior solutions." />
+  <title>Greenrich — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/greenrich-hero.css" />
+</head>
+<body class="bg-white text-neutral-900 antialiased">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="#" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="#" role="menuitem">Tiles</a></li>
+                            <li><a href="#" role="menuitem">Sanitaryware</a></li>
+                            <li><a href="#" role="menuitem">Faucets</a></li>
+                            <li><a href="#" role="menuitem">Accessories</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="#">Tiles</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="#">Portfolio</a></li>
+                    <li class="drawer__item"><a href="#">Events</a></li>
+                    <li class="drawer__item"><a href="#">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+    <section class="gr-hero">
+  <div class="gr-hero__bg">
+    <img
+      src="src/images/greenrich-hero-bg.jpg"
+      width="1920"
+      height="1080"
+      class="gr-hero__bg-img"
+      loading="eager"
+      alt="Modern dining interior with PVC wall panels"
+    />
+    <div class="gr-hero__overlay" aria-hidden="true"></div>
+  </div>
+
+  <div class="gr-hero__content">
+    <div class="gr-hero__upper">
+      <a href="/" class="gr-hero__logo" aria-label="Greenrich Laminates home">
+        <img
+          src="src/images/greenrich-logo.png"
+          width="180"
+          height="97"
+          alt="Greenrich Laminates"
+        />
+      </a>
+
+      <h1 class="gr-hero__heading title">
+        India's First Double-Side <em>PVC HPL Sheet</em>
+      </h1>
+
+      <div class="gr-hero__lower">
+        <p class="gr-hero__desc">
+          Greenrich delivers high-performance decorative laminate surfaces designed for modern
+          interiors, engineered for those who demand excellence in every detail.
+        </p>
+
+        <a href="#products" class="btn btn--border-square btn--border-square--ghost gr-hero__cta-btn">
+          Explore Products
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <section class="gr-about-section overflow-hidden">
+  <div class="flex flex-col gap-[2.5rem] px-5 py-[3.75rem] lg:flex-row lg:gap-0 lg:p-0 lg:items-stretch">
+
+    <!-- Image: padded on mobile, bleeds left on desktop -->
+    <div class="w-full aspect-[352/376] lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
+      <!-- Mobile image -->
+      <img
+        src="src/images/greenrich-about-mob.png"
+        width="352"
+        height="376"
+        class="w-full h-full object-cover lg:hidden"
+        loading="lazy"
+        alt="Greenrich Laminates interior showcase"
+      />
+      <!-- Desktop image -->
+      <img
+        src="src/images/greenrich-about-img.jpg"
+        width="950"
+        height="974"
+        class="hidden w-full h-full object-cover lg:block"
+        loading="lazy"
+        alt="Greenrich Laminates interior showcase"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="flex flex-col justify-center gap-[clamp(2.5rem,5vw,4.5rem)] pb-15 lg:w-1/2 lg:px-[clamp(3rem,5vw,5rem)] lg:pr-[clamp(4rem,7vw,8.125rem)] lg:py-[2.6875rem]">
+
+      <!-- Heading -->
+      <h2 class="title font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+        About Greenrich<br>
+        <em>Laminates</em>
+      </h2>
+
+      <div class="flex flex-col gap-[2.5rem]">
+
+        <!-- Stats -->
+        <div class="flex items-start gap-[clamp(1.8125rem,8vw,8.6875rem)]" id="grAboutStats">
+          <div class="flex flex-col gap-1">
+            <span class="crafting-counter font-light text-[clamp(2.1875rem,3.1vw,2.75rem)] leading-[1.3] text-black tracking-[-0.02em]" data-target="200" data-suffix="+">200+</span>
+            <span class="font-serif-display text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.2] tracking-[-0.02em] text-[#6e6e6e]">Cities Served</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="font-light text-[clamp(2.1875rem,3.1vw,2.75rem)] leading-[1.3] text-black tracking-[-0.02em]">10M+</span>
+            <span class="font-serif-display text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.2] tracking-[-0.02em] text-[#6e6e6e]">Sq Ft Installed</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="crafting-counter font-light text-[clamp(2.1875rem,3.1vw,2.75rem)] leading-[1.3] text-black tracking-[-0.02em]" data-target="500" data-suffix="+">500+</span>
+            <span class="font-serif-display text-[clamp(1rem,1.4vw,1.25rem)] leading-[1.2] tracking-[-0.02em] text-[#6e6e6e]">Units Produced</span>
+          </div>
+        </div>
+
+        <!-- Description + CTA -->
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-4 text-base text-[#6e6e6e] leading-[1.6] lg:max-w-[750px]">
+            <p>Born from the legacy of KG Industries, Greenrich Laminates represents over 25 years of manufacturing excellence in India's surface solutions industry.</p>
+            <p>As a premium brand under the Veenus umbrella, Greenrich is engineered for durability, aesthetics and performance delivering decorative laminate surfaces that transform contemporary interior applications across residential and commercial spaces.</p>
+            <p>From concept to completion, our commitment to quality craftsmanship and innovation ensures every surface tells a story of precision and elegance.</p>
+          </div>
+
+          <a href="#" class="btn btn--dark w-full lg:w-auto lg:self-start">
+            Explore Products
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+    <section class="gr-why-section bg-[#f7f7f7] lg:bg-[#fafafa] py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+    <div class="flex flex-col gap-[2.5rem] lg:gap-[4.5rem]">
+
+      <!-- Heading + description: left on mobile, centered on desktop -->
+      <div class="flex flex-col gap-5 lg:items-center lg:text-center">
+        <h2 class="title font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          Why Choose <br class="lg:hidden"><em>Double-Side Lamination?</em>
+        </h2>
+        <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.5] lg:leading-[1.4] lg:max-w-[957px]">
+          Our revolutionary double-side PVC HPL sheets offer unparalleled advantages for architects and interior designers, streamlining workflows without compromising on quality.
+        </p>
+      </div>
+
+      <!-- Cards: single col mobile → 3-col desktop, max 1140px centered -->
+      <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-8 lg:max-w-[1140px] lg:w-full lg:mx-auto">
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-01.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Faster Installation</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Pre-laminated on both sides significantly reduces on-site labor and overall project timelines.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-02.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Stronger &amp; Stable</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Balanced construction effectively prevents warping and ensures long-term structural integrity.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-03.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Premium Finish</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Identical high-quality finish on both sides for a seamless, luxurious look in every application.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-04.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Lower Total Cost</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Eliminates the need for manual backing laminates, reducing overall material and labor expenses.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-05.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Reduced Waste</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Precision manufacturing consistently ensures minimal off-cuts and optimized material utilization.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-06.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Cleaner Execution</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Minimal on-site adhesive work leads to a cleaner, more dust-free installation environment.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="gr-crafting-section bg-black overflow-hidden">
+  <div class="container">
+    <div class="flex flex-col gap-[2.5rem] py-[3.75rem] lg:flex-row lg:items-stretch lg:gap-[5rem] lg:py-[8.125rem]">
+
+      <!-- Text content -->
+      <div class="flex flex-col gap-6 text-center lg:text-left lg:shrink-0">
+
+        <h2 class="title font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-white">
+          Crafting Environments That <em>Inspire</em>
+        </h2>
+
+        <div class="flex flex-col gap-[3rem] lg:gap-[4rem]">
+          <p class="text-base lg:text-[1.125rem] text-white/75 leading-[1.6] lg:max-w-[670px]">
+            Veenus, rooted in innovation and integrity, has evolved from a specialized manufacturer to a PVC interior solutions leader, driven by quality and architectural insight.
+          </p>
+
+          <!-- Features: single col mobile → 2×2 grid desktop -->
+          <div class="grid grid-cols-1 gap-[3rem] text-left lg:grid-cols-2 lg:gap-x-[3rem] lg:gap-y-[4rem] lg:max-w-[773px]">
+
+            <div class="flex flex-col gap-8">
+              <div class="bg-[#1a1a1a] w-fit">
+                <img class="w-10 h-10 lg:w-[62px] lg:h-[62px]" src="src/images/gr-crafting-01.svg" width="62" height="62" alt="" aria-hidden="true" />
+              </div>
+              <div class="flex flex-col gap-[0.875rem]">
+                <h3 class="font-serif-display text-[1.125rem] text-white tracking-[-0.02em] leading-[1.6]">Made in India</h3>
+                <p class="text-sm text-white/75 leading-[1.6]">Advanced manufacturing facilities with world-class standards and quality control.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+              <div class="bg-[#1a1a1a] w-fit">
+                <img class="w-10 h-10 lg:w-[62px] lg:h-[62px]" src="src/images/gr-crafting-02.svg" width="62" height="62" alt="" aria-hidden="true" />
+              </div>
+              <div class="flex flex-col gap-[0.875rem]">
+                <h3 class="font-serif-display text-[1.125rem] text-white tracking-[-0.02em] leading-[1.6]">ISO Certified</h3>
+                <p class="text-sm text-white/75 leading-[1.6]">International certification ensuring adherence to global quality and safety standards.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+              <div class="bg-[#1a1a1a] w-fit">
+                <img class="w-10 h-10 lg:w-[62px] lg:h-[62px]" src="src/images/gr-crafting-03.svg" width="62" height="62" alt="" aria-hidden="true" />
+              </div>
+              <div class="flex flex-col gap-[0.875rem]">
+                <h3 class="font-serif-display text-[1.125rem] text-white tracking-[-0.02em] leading-[1.6]">Eco-Conscious</h3>
+                <p class="text-sm text-white/75 leading-[1.6]">Sustainable practices and environmental responsibility integrated throughout production.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+              <div class="bg-[#1a1a1a] w-fit">
+                <img class="w-10 h-10 lg:w-[62px] lg:h-[62px]" src="src/images/gr-crafting-04.svg" width="62" height="62" alt="" aria-hidden="true" />
+              </div>
+              <div class="flex flex-col gap-[0.875rem]">
+                <h3 class="font-serif-display text-[1.125rem] text-white tracking-[-0.02em] leading-[1.6]">Global Standards</h3>
+                <p class="text-sm text-white/75 leading-[1.6]">Compliance with international specifications and environmental guidelines.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right image — desktop only, fills remaining space -->
+      <div class="hidden lg:block lg:flex-1 relative overflow-hidden">
+        <img
+          src="src/images/gr-crafting-img.jpg"
+          width="763"
+          height="1017"
+          class="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          alt="Interior space crafted with Greenrich laminates"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="#" class="site-footer__link">PVC Wall Panels</a></li>
+            <li><a href="#" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="#" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="#" class="site-footer__link">Laminate Sheets</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich Laminates</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="#" class="site-footer__link">Our Products</a></li>
+            <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
+            <li><a href="#" class="site-footer__link">Events</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich</a></li>
+            <li><a href="#" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>

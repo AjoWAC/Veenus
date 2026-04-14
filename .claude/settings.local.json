@@ -39,7 +39,8 @@
       "Bash(python3)",
       "Bash(grep -E '^[A-Z][a-zA-Z\\\\s\\\\+]+$')",
       "Bash(grep -v '^[0-9 ]*$')",
-      "Bash(echo \"EXIT:$?\")"
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(yarn build:*)"
     ]
   }
 }

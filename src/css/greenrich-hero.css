@@ -1,0 +1,153 @@
+/* =====================================================
+   GREENRICH — HERO SECTION
+   Standalone CSS, no Tailwind dependencies
+===================================================== */
+
+.gr-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ---- Background image + overlay ---- */
+.gr-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.gr-hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.gr-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.05);
+}
+
+/* ---- Content ---- */
+.gr-hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 1.25rem 3rem;
+  max-width: 1189px;
+  margin-inline: auto;
+}
+
+/* ---- Logo ---- */
+.gr-hero__logo {
+  display: inline-block;
+}
+
+.gr-hero__logo img {
+  height: 97px;
+  width: auto;
+  display: block;
+}
+
+/* ---- Upper group: logo + heading + lower ---- */
+.gr-hero__upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+  width: 100%;
+}
+
+/* ---- Heading ---- */
+.gr-hero__heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 2.8125rem; /* 45px mobile */
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin: 0;
+  width: 100%;
+}
+
+/* Italic serif accent via .title em convention */
+.gr-hero__heading em {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ---- Lower group: description + button ---- */
+.gr-hero__lower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem; /* 30px mobile */
+  width: 100%;
+}
+
+/* ---- Description ---- */
+.gr-hero__desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem; /* 14px mobile */
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  width: 100%;
+}
+
+/* ---- CTA button ---- */
+.gr-hero__cta-btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 1rem 1.75rem 1rem 2.125rem;
+}
+
+/* ---- Desktop ---- */
+@media (min-width: 768px) {
+  .gr-hero__content {
+    padding: 8rem 1.25rem 6rem;
+    gap: 1.25rem; /* 20px between logo / heading / lower on desktop */
+  }
+
+  .gr-hero__upper {
+    gap: 1.25rem;
+  }
+
+  .gr-hero__heading {
+    font-size: clamp(2.8125rem, 5.5vw, 5rem); /* 45px → 80px */
+    line-height: 1.3;
+    max-width: 990px;
+  }
+
+  .gr-hero__lower {
+    gap: 3.75rem; /* 60px desktop */
+    max-width: 841px;
+  }
+
+  .gr-hero__desc {
+    font-size: 1.125rem; /* 18px desktop */
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .gr-hero__cta-btn {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .gr-hero__indicator {
+    display: none;
+  }
+}

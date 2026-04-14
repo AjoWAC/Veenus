@@ -73,8 +73,18 @@ document.querySelectorAll('.site-footer__col[data-accordion] > button.site-foote
 })();
 
 
+// Header scroll visibility — runs on every page
+(function () {
+  const mainNav = document.getElementById('mainNav');
+  if (!mainNav) return;
+  const onScroll = () => mainNav.classList.toggle('visible-header', window.scrollY > 0);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // apply correct state on load (e.g. page refreshed mid-scroll)
+})();
+
+
 // Home Banner Slider (Embla)
- 
+
 (function () {
   'use strict';
 
@@ -285,14 +295,6 @@ document.querySelectorAll('.site-footer__col[data-accordion] > button.site-foote
       }
     }, { threshold: 0 });
     statsObserver.observe(statsEl);
-  }
-
-  // ── Header visibility ─────────────────────────────────────
-  const mainNav = document.getElementById('mainNav');
-  if (mainNav) {
-    window.addEventListener('scroll', () => {
-      mainNav.classList.toggle('visible-header', window.scrollY > 0);
-    }, { passive: true });
   }
 
   // ── Boot ──────────────────────────────────────────────────
