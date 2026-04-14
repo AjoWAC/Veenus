@@ -187,10 +187,14 @@ body {
 .btn--border-square--ghost {
   border-color: rgba(255, 255, 255, 0.75);
   color: #fff;
+  /* exit: delay color snap until fill has retreated (~0.35s) */
+  transition: color 0s 0.35s, border-color 0.4s ease;
   &::before { background: #fff; }
   &:hover {
     color: #000;
     border-color: #fff;
+    /* enter: snap text black instantly before fill arrives */
+    transition: color 0s, border-color 0.4s ease;
   }
 }
 
@@ -517,11 +521,7 @@ body {
   transition: color 0.15s;
 }
 
-@media (hover: hover) {
-  .site-footer a:hover {
-    color: #fff;
-  }
-}
+ 
 
 .site-footer__inner {
   max-width: 1660px;

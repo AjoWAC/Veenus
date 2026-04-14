@@ -359,9 +359,6 @@
     width: 26px;
     height: 26px;
   }
-  .h-7 {
-    height: calc(var(--spacing) * 7);
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -403,9 +400,6 @@
   }
   .min-h-\[160px\] {
     min-height: 160px;
-  }
-  .w-7 {
-    width: calc(var(--spacing) * 7);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -754,9 +748,6 @@
   .pb-\[1\.875rem\] {
     padding-bottom: 1.875rem;
   }
-  .pb-\[3\.75rem\] {
-    padding-bottom: 3.75rem;
-  }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
@@ -1098,11 +1089,6 @@
     }
   }
   @media (min-width: 64rem) {
-    .lg\:h-\[50px\] {
-      height: 50px;
-    }
-  }
-  @media (min-width: 64rem) {
     .lg\:h-\[62px\] {
       height: 62px;
     }
@@ -1165,11 +1151,6 @@
   @media (min-width: 64rem) {
     .lg\:w-\[45\%\] {
       width: 45%;
-    }
-  }
-  @media (min-width: 64rem) {
-    .lg\:w-\[50px\] {
-      width: 50px;
     }
   }
   @media (min-width: 64rem) {
@@ -1418,11 +1399,6 @@
     }
   }
   @media (min-width: 64rem) {
-    .lg\:gap-x-\[clamp\(1\.5rem\,4vw\,3rem\)\] {
-      column-gap: clamp(1.5rem, 4vw, 3rem);
-    }
-  }
-  @media (min-width: 64rem) {
     .lg\:gap-x-\[clamp\(1\.5rem\,8vw\,8\.6875rem\)\] {
       column-gap: clamp(1.5rem, 8vw, 8.6875rem);
     }
@@ -1518,11 +1494,6 @@
     }
   }
   @media (min-width: 64rem) {
-    .lg\:pr-\[clamp\(2rem\,5vw\,5rem\)\] {
-      padding-right: clamp(2rem, 5vw, 5rem);
-    }
-  }
-  @media (min-width: 64rem) {
     .lg\:pr-\[clamp\(4rem\,7vw\,8\.125rem\)\] {
       padding-right: clamp(4rem, 7vw, 8.125rem);
     }
@@ -1535,11 +1506,6 @@
   @media (min-width: 64rem) {
     .lg\:pb-\[6\.25rem\] {
       padding-bottom: 6.25rem;
-    }
-  }
-  @media (min-width: 64rem) {
-    .lg\:pl-\[clamp\(3rem\,8vw\,8\.125rem\)\] {
-      padding-left: clamp(3rem, 8vw, 8.125rem);
     }
   }
   @media (min-width: 64rem) {
@@ -1810,6 +1776,7 @@ body {
 .btn--border-square--ghost {
   border-color: rgba(255, 255, 255, 0.75);
   color: #fff;
+  transition: color 0s 0.35s, border-color 0.4s ease;
 }
 .btn--border-square--ghost::before {
   background: #fff;
@@ -1817,6 +1784,7 @@ body {
 .btn--border-square--ghost:hover {
   color: #000;
   border-color: #fff;
+  transition: color 0s, border-color 0.4s ease;
 }
 .products-section__inner {
   display: flex;
@@ -2075,11 +2043,6 @@ body {
   color: inherit;
   text-decoration: none;
   transition: color 0.15s;
-}
-@media (hover: hover) {
-  .site-footer a:hover {
-    color: #fff;
-  }
 }
 .site-footer__inner {
   max-width: 1660px;
