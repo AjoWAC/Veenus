@@ -22,13 +22,13 @@
                     <div class="nav__bar">
 
                     <!-- Logo -->
-                    <a href="/" class="nav__logo" aria-label="Veenus – My Home My Style">
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
                         <img src="src/images/logo.png" alt="Veenus" />
                     </a>
 
                     <!-- Desktop links (hidden ≤900px) -->
                     <ul class="nav__links">
-                        <li><a href="#">About</a></li>
+                        <li><a href="about-us.html">About</a></li>
                         <li class="has-dropdown">
                         <a href="#" aria-haspopup="true">
                             Products
@@ -75,7 +75,7 @@
                     <!-- Mobile drawer (injected open/closed via JS) -->
                     <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
 
-                    <li class="drawer__item"><a href="#">About</a></li>
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
 
                     <!-- Products accordion -->
                     <li class="drawer__item">
@@ -247,15 +247,15 @@
             <!-- Stats -->
             <div class="flex items-center gap-x-[1.8125rem] lg:gap-x-[clamp(1.5rem,8vw,8.6875rem)]">
               <div class="flex flex-col gap-1 min-w-0">
-                <p class="text-[clamp(2.1875rem,3.6vw,3.75rem)] font-light text-black leading-[1.3]">200+</p>
+                <p class="crafting-counter text-[clamp(2.1875rem,3.6vw,3.75rem)] font-light text-black leading-[1.3]" data-target="200" data-suffix="+">200+</p>
                 <p class="font-serif-display text-[clamp(0.875rem,1.2vw,1.25rem)] text-[#6e6e6e] tracking-[-0.02em] capitalize leading-[1.2]">Cities Served</p>
               </div>
               <div class="flex flex-col gap-1 min-w-0">
-                <p class="text-[clamp(2.1875rem,3.6vw,3.75rem)] font-light text-black leading-[1.3]">10M+</p>
+                <p class="crafting-counter text-[clamp(2.1875rem,3.6vw,3.75rem)] font-light text-black leading-[1.3]" data-target="10" data-suffix="M+">10M+</p>
                 <p class="font-serif-display text-[clamp(0.875rem,1.2vw,1.25rem)] text-[#6e6e6e] tracking-[-0.02em] capitalize leading-[1.2]">Sq Ft Installed</p>
               </div>
               <div class="flex flex-col gap-1 min-w-0">
-                <p class="text-[clamp(2.1875rem,3.6vw,3.75rem)] font-light text-black leading-[1.3]">500+</p>
+                <p class="crafting-counter text-[clamp(2.1875rem,3.6vw,3.75rem)] font-light text-black leading-[1.3]" data-target="500" data-suffix="+">500+</p>
                 <p class="font-serif-display text-[clamp(0.875rem,1.2vw,1.25rem)] text-[#6e6e6e] tracking-[-0.02em] capitalize leading-[1.2]">Units Produced</p>
               </div>
             </div>
@@ -1136,7 +1136,7 @@
             </svg>
           </button>
           <ul class="site-footer__list" id="footer-col-links">
-            <li><a href="#" class="site-footer__link">About Us</a></li>
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
             <li><a href="#" class="site-footer__link">Our Products</a></li>
             <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
             <li><a href="#" class="site-footer__link">Events</a></li>

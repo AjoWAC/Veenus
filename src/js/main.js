@@ -33,6 +33,45 @@ document.querySelectorAll('.site-footer__col[data-accordion] > button.site-foote
     });
   });
 
+// Crafting section stat counters — animate up when scrolled into view
+(function craftingCounters() {
+  const counters = document.querySelectorAll('.crafting-counter');
+  if (!counters.length) return;
+
+  const animate = (el) => {
+    const target = Number(el.dataset.target) || 0;
+    const suffix = el.dataset.suffix || '';
+    const duration = 1600;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      // easeOutQuart
+      const eased = 1 - Math.pow(1 - progress, 4);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target + suffix;
+    };
+    requestAnimationFrame(tick);
+  };
+
+  if (!('IntersectionObserver' in window)) {
+    counters.forEach(animate);
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animate(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  counters.forEach((el) => observer.observe(el));
+})();
+
 
 // Home Banner Slider (Embla)
  

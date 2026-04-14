@@ -599,6 +599,9 @@
   .py-\[3\.75rem\] {
     padding-block: 3.75rem;
   }
+  .py-\[6\.25rem\] {
+    padding-block: 6.25rem;
+  }
   .py-\[mobile\] {
     padding-block: mobile;
   }
@@ -659,6 +662,9 @@
   }
   .text-\[clamp\(2\.1875rem\,3\.6vw\,3\.75rem\)\] {
     font-size: clamp(2.1875rem, 3.6vw, 3.75rem);
+  }
+  .text-\[clamp\(2\.1875rem\,4vw\,3\.75rem\)\] {
+    font-size: clamp(2.1875rem, 4vw, 3.75rem);
   }
   .leading-\[1\.1\] {
     --tw-leading: 1.1;
@@ -1081,6 +1087,11 @@
     }
   }
   @media (min-width: 64rem) {
+    .lg\:py-\[10rem\] {
+      padding-block: 10rem;
+    }
+  }
+  @media (min-width: 64rem) {
     .lg\:py-\[desktop\] {
       padding-block: desktop;
     }
@@ -1373,6 +1384,10 @@ body {
 .product-nav-btn:hover {
   background: var(--color-surface);
   border-color: #d4d4d4;
+}
+.crafting-counter {
+  font-variant-numeric: tabular-nums;
+  min-width: 3.5ch;
 }
 .awards-grid {
   display: grid;

@@ -228,6 +228,16 @@ body {
 }
 
 /* =====================================================
+   CRAFTING STAT COUNTERS
+   Stabilize width while the number animates up so
+   adjacent stats don't reflow on each digit change.
+===================================================== */
+.crafting-counter {
+  font-variant-numeric: tabular-nums;
+  min-width: 3.5ch;
+}
+
+/* =====================================================
    AWARDS / CERTIFICATIONS GRID
    Border-collapse grid: adjacent cells share a single
    1px hairline by negative-margin overlap.
