@@ -467,3 +467,20 @@ if (spacesSlider && typeof EmblaCarousel !== 'undefined') {
   if (spacesPrev) spacesPrev.addEventListener('click', () => spacesEmbla.scrollPrev());
   if (spacesNext) spacesNext.addEventListener('click', () => spacesEmbla.scrollNext());
 }
+
+// Products Range slider (Embla) — Products page
+const productsRangeSlider = document.getElementById('products-range-slider');
+
+if (productsRangeSlider && typeof EmblaCarousel !== 'undefined') {
+  const productsRangeEmbla = EmblaCarousel(productsRangeSlider, {
+    loop: false,
+    align: 'start',
+    dragFree: false,
+  });
+
+  const rangeP = document.getElementById('products-range-prev');
+  const rangeN = document.getElementById('products-range-next');
+
+  if (rangeP) rangeP.addEventListener('click', () => productsRangeEmbla.scrollPrev());
+  if (rangeN) rangeN.addEventListener('click', () => productsRangeEmbla.scrollNext());
+}

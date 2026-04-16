@@ -1,16 +1,16 @@
 /* ── Nav shell ─────────────────────────────────────────── */
-.wp-block-template-part {
-  position: static;
+header.wp-block-template-part {
+  /* position: static; */
   width: 100%;
   height: 0;
   font-size: 0;
   line-height: 0;
-  z-index: auto;
+  /* z-index: auto; */
   pointer-events: auto;
 }
 
-.wp-block-template-part .wp-block-group,
-.wp-block-template-part .veenus-header-full {
+header.wp-block-template-part .wp-block-group,
+header.wp-block-template-part .veenus-header-full {
   background: transparent;
   pointer-events: auto;
 }

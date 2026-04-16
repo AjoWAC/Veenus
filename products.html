@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our Products — Veenus PVC interior solutions." />
+  <title>Our Products — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+    <link href="src/css/about-banner.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="#" role="menuitem">Tiles</a></li>
+                            <li><a href="#" role="menuitem">Sanitaryware</a></li>
+                            <li><a href="#" role="menuitem">Faucets</a></li>
+                            <li><a href="#" role="menuitem">Accessories</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="#">Tiles</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="#">Portfolio</a></li>
+                    <li class="drawer__item"><a href="#">Events</a></li>
+                    <li class="drawer__item"><a href="#">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+        <section class="about-banner" aria-label="About Veenus hero">
+  <picture class="about-banner__bg">
+    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg">
+    <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
+  </picture>
+
+  <div class="about-banner__overlay" aria-hidden="true"></div>
+
+  <div class="about-banner__inner">
+    <h1 class="about-banner__title">
+      Interior Solutions Crafted for  <em>Modern Spaces</em>
+    </h1>
+    <p class="about-banner__text">
+      A Trusted Manufacturer Delivering High-Quality PVC Interior Solutions For Residential And Commercial Spaces Across India.
+    </p>
+    <!-- <a href="#" class="btn btn--border-square btn--border-square--ghost about-banner__cta">
+      Explore Products
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a> -->
+  </div>
+</section>
+
+    <section class="products-range-section py-[3.75rem] lg:py-[8.125rem]">
+
+  <!-- Heading row -->
+  <div class="container mb-10 lg:mb-[4.5rem]">
+    <div class="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+      <h2 class="title font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black lg:max-w-[559px]">
+        Discover Our Latest <em>Product Range</em>
+      </h2>
+      <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.5] lg:max-w-[760px] lg:pt-2">
+        For nearly twenty years, Veenus has been a leader in PVC solutions in India. By combining great manufacturing with a strong distribution network, Veenus delivers high-quality products that exceed customer expectations, ensuring durability and style.
+      </p>
+    </div>
+  </div>
+
+  <!-- Slider -->
+  <div class="products-range-embla overflow-hidden" id="products-range-slider">
+    <div class="products-range-embla__container">
+
+      <!-- Card 1: PVC Wall Panels -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <img src="src/images/prod-wall-panels.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Wall Panels" />
+          </div>
+          <div class="products-range-card__info bg-[#ffe8cb]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Wall Panels</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: PVC Ceiling Panels -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Ceilings</span>
+            <img src="src/images/prod-ceiling-panels.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Ceiling Panels" />
+          </div>
+          <div class="products-range-card__info bg-[#b8b0a4]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Ceiling Panels</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: PVC Louvers -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Architectural</span>
+            <img src="src/images/prod-louvers.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Louvers" />
+          </div>
+          <div class="products-range-card__info bg-[#e1d1bf]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Louvers</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: PVC Doors -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Openings</span>
+            <img src="src/images/prod-doors.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Doors" />
+          </div>
+          <div class="products-range-card__info bg-[#e8e7e0]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Doors</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Laminate Sheets -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Surfaces</span>
+            <img src="src/images/prod-laminate.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="Laminate Sheets" />
+          </div>
+          <div class="products-range-card__info bg-[#aeb4b9]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">Laminate Sheets</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Nav arrows -->
+  <div class="container">
+    <div class="hidden lg:flex justify-end gap-3.5 mt-9">
+      <button id="products-range-prev" class="product-nav-btn" aria-label="Previous">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button id="products-range-next" class="product-nav-btn" aria-label="Next">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</section>
+    <section class="prod-manufacturing-section bg-white lg:bg-[#f3f2f1] py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+    <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-[5rem]">
+
+      <!-- Image -->
+      <div class="relative w-full h-[284px] overflow-hidden lg:h-[561px] lg:w-[58%] lg:max-w-[820px] shrink-0">
+        <img src="src/images/prod-manufacturing.jpg" width="820" height="561" class="w-full h-full object-cover" loading="lazy" alt="Veenus manufacturing facility" />
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.2)]" aria-hidden="true"></div>
+      </div>
+
+      <!-- Text -->
+      <div class="flex flex-col gap-5 lg:gap-6 lg:flex-1">
+        <h2 class="title font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          Mastering Top-Notch Manufacturing <em>Techniques</em>
+        </h2>
+        <div class="flex flex-col gap-10 lg:gap-16">
+          <p class="text-base text-[#6e6e6e] leading-[1.5] lg:text-[1.125rem]">
+            Our manufacturing capabilities combine cutting-edge technology with skilled craftsmanship, delivering products that set the benchmark for quality in the PVC interior solutions industry.
+          </p>
+          <div class="grid grid-cols-1 gap-[2.75rem] lg:grid-cols-2 lg:gap-x-11 lg:gap-y-10">
+
+            <div class="prod-mfg-feature">
+              <h3 class="prod-mfg-feature__title">Advanced Production</h3>
+              <p class="prod-mfg-feature__text">State-of-the-art manufacturing lines with automated precision controls.</p>
+            </div>
+
+            <div class="prod-mfg-feature">
+              <h3 class="prod-mfg-feature__title">Precision Engineering</h3>
+              <p class="prod-mfg-feature__text">Every panel is engineered to exact specifications for perfect fit and finish.</p>
+            </div>
+
+            <div class="prod-mfg-feature">
+              <h3 class="prod-mfg-feature__title">Skilled Workforce</h3>
+              <p class="prod-mfg-feature__text">Expert technicians with decades of combined manufacturing experience.</p>
+            </div>
+
+            <div class="prod-mfg-feature">
+              <h3 class="prod-mfg-feature__title">Modern Equipment</h3>
+              <p class="prod-mfg-feature__text">Industry-leading machinery ensuring consistent output quality.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+    <!-- CTA Banner Section -->
+    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]" style="background-image: url('src/images/about-cta-bg.png'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black/10"></div>
+      <div class="container relative z-10">
+        <div class="flex flex-col items-center text-center gap-6 max-w-[52rem] mx-auto">
+          <h2 class="text-white font-normal leading-[1.2] tracking-[-0.02em] text-[clamp(2.1875rem,3.6vw,3.25rem)]">
+            Ready to Transform<br><em class="font-serif-display">Your Space?</em>
+          </h2>
+          <p class="text-white/80 text-base lg:text-[1.125rem] leading-[1.6] max-w-[38rem]">
+            Whether you are an architect, builder, or homeowner, our team is ready to help you find the perfect PVC solution for your next project.
+          </p>
+          <a href="#" class="btn btn--border-square btn--border-square--ghost mt-2 w-full lg:w-auto">
+            Contact Us
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section> 
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="products.html" class="site-footer__link">PVC Wall Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="products.html" class="site-footer__link">Laminate Sheets</a></li>
+            <li><a href="greenrich.html" class="site-footer__link">Greenrich Laminates</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="products.html" class="site-footer__link">Our Products</a></li>
+            <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
+            <li><a href="#" class="site-footer__link">Events</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich</a></li>
+            <li><a href="#" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/embla-carousel@8.3.0/embla-carousel.umd.js"></script>
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>

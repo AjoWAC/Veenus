@@ -1,0 +1,117 @@
+<section class="products-range-section py-[3.75rem] lg:py-[8.125rem]">
+
+  <!-- Heading row -->
+  <div class="container mb-10 lg:mb-[4.5rem]">
+    <div class="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+      <h2 class="title font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black lg:max-w-[559px]">
+        Discover Our Latest <em>Product Range</em>
+      </h2>
+      <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.5] lg:max-w-[760px] lg:pt-2">
+        For nearly twenty years, Veenus has been a leader in PVC solutions in India. By combining great manufacturing with a strong distribution network, Veenus delivers high-quality products that exceed customer expectations, ensuring durability and style.
+      </p>
+    </div>
+  </div>
+
+  <!-- Slider -->
+  <div class="products-range-embla overflow-hidden" id="products-range-slider">
+    <div class="products-range-embla__container">
+
+      <!-- Card 1: PVC Wall Panels -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <img src="src/images/prod-wall-panels.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Wall Panels" />
+          </div>
+          <div class="products-range-card__info bg-[#ffe8cb]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Wall Panels</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: PVC Ceiling Panels -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Ceilings</span>
+            <img src="src/images/prod-ceiling-panels.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Ceiling Panels" />
+          </div>
+          <div class="products-range-card__info bg-[#b8b0a4]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Ceiling Panels</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: PVC Louvers -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Architectural</span>
+            <img src="src/images/prod-louvers.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Louvers" />
+          </div>
+          <div class="products-range-card__info bg-[#e1d1bf]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Louvers</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: PVC Doors -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Openings</span>
+            <img src="src/images/prod-doors.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="PVC Doors" />
+          </div>
+          <div class="products-range-card__info bg-[#e8e7e0]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Doors</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Laminate Sheets -->
+      <div class="products-range-embla__slide">
+        <div class="products-range-card">
+          <div class="products-range-card__img">
+            <span class="products-range-card__badge">Surfaces</span>
+            <img src="src/images/prod-laminate.jpg" width="401" height="350" class="w-full h-full object-cover" loading="lazy" alt="Laminate Sheets" />
+          </div>
+          <div class="products-range-card__info bg-[#aeb4b9]">
+            <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">Laminate Sheets</h3>
+            <div class="products-range-card__btn-wrap">
+              <a href="#" class="btn btn--dark text-sm py-3.5 px-8">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Nav arrows -->
+  <div class="container">
+    <div class="hidden lg:flex justify-end gap-3.5 mt-9">
+      <button id="products-range-prev" class="product-nav-btn" aria-label="Previous">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button id="products-range-next" class="product-nav-btn" aria-label="Next">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</section>

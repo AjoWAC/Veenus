@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our Products — Veenus PVC interior solutions." />
+  <title>Our Products — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+    <link href="src/css/about-banner.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <div data-include="Header.html"></div>
+
+  <main>
+        <section class="about-banner" aria-label="About Veenus hero">
+  <picture class="about-banner__bg">
+    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg">
+    <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
+  </picture>
+
+  <div class="about-banner__overlay" aria-hidden="true"></div>
+
+  <div class="about-banner__inner">
+    <h1 class="about-banner__title">
+      Interior Solutions Crafted for  <em>Modern Spaces</em>
+    </h1>
+    <p class="about-banner__text">
+      A Trusted Manufacturer Delivering High-Quality PVC Interior Solutions For Residential And Commercial Spaces Across India.
+    </p>
+    <!-- <a href="#" class="btn btn--border-square btn--border-square--ghost about-banner__cta">
+      Explore Products
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a> -->
+  </div>
+</section>
+
+    <div data-include="products/Range.html"></div>
+    <div data-include="products/Manufacturing.html"></div>
+
+    
+    <!-- CTA Banner Section -->
+    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]" style="background-image: url('src/images/about-cta-bg.png'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black/10"></div>
+      <div class="container relative z-10">
+        <div class="flex flex-col items-center text-center gap-6 max-w-[52rem] mx-auto">
+          <h2 class="text-white font-normal leading-[1.2] tracking-[-0.02em] text-[clamp(2.1875rem,3.6vw,3.25rem)]">
+            Ready to Transform<br><em class="font-serif-display">Your Space?</em>
+          </h2>
+          <p class="text-white/80 text-base lg:text-[1.125rem] leading-[1.6] max-w-[38rem]">
+            Whether you are an architect, builder, or homeowner, our team is ready to help you find the perfect PVC solution for your next project.
+          </p>
+          <a href="#" class="btn btn--border-square btn--border-square--ghost mt-2 w-full lg:w-auto">
+            Contact Us
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section> 
+
+  </main>
+
+  <div data-include="Footer.html"></div>
+
+  <script src="https://unpkg.com/embla-carousel@8.3.0/embla-carousel.umd.js"></script>
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>
