@@ -1363,4 +1363,21 @@ button.site-footer__col-title {
     opacity: 0;
     transform: translateY(8px);
   }
+
+  /* Related slider nav — disabled state when can't scroll */
+  #related-prev.is-disabled,
+  #related-next.is-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  /* Related blogs slider — 3 slides visible on desktop */
+  .related-embla__slide {
+    flex: 0 0 100%;
+  }
+  @media (min-width: 1024px) {
+    .related-embla__slide {
+      flex: 0 0 calc((100% - 3rem) / 3); /* 3 cols, gap-6 (1.5rem) × 2 = 3rem */
+    }
+  }
 }

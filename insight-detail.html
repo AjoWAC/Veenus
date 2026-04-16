@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Insight Detail — Veenus PVC interior solutions." />
+  <title>The e-commerce industry is booming — Insights — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="#" role="menuitem">Tiles</a></li>
+                            <li><a href="#" role="menuitem">Sanitaryware</a></li>
+                            <li><a href="#" role="menuitem">Faucets</a></li>
+                            <li><a href="#" role="menuitem">Accessories</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="#">Tiles</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="drawer__item"><a href="events.html">Events</a></li>
+                    <li class="drawer__item"><a href="insights.html">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+
+    <!-- Breadcrumb -->
+    <section class="insight-detail-breadcrumb py-5">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="flex items-center gap-3 text-sm font-normal leading-[1.4] whitespace-nowrap">
+            <li class="flex items-center gap-3 text-[#6d6d6d]">
+              <a href="index.html" class="hover:text-neutral-900 transition-colors">Home</a>
+              <span aria-hidden="true">/</span>
+            </li>
+            <li class="flex items-center gap-3 text-[#6d6d6d]">
+              <a href="insights.html" class="hover:text-neutral-900 transition-colors">Insights</a>
+              <span aria-hidden="true">/</span>
+            </li>
+            <li class="text-black truncate max-w-[200px] lg:max-w-none" aria-current="page">The e-commerce industry is booming…</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Article -->
+    <article class="insight-detail-article pt-[2.5rem] lg:pt-[3.125rem] pb-[3.75rem] lg:pb-[6.25rem]">
+      <div class="container">
+        <!-- Image
+             Source: 1100×588px
+             Ratio : 1100:588 (≈ 1.87:1)
+             Mobile : w-full + aspect-[1100/588]
+             Desktop: full width of 1100px article container
+        -->
+        <div class="max-w-[68.75rem] mx-auto flex flex-col gap-8">
+
+          <!-- Meta + Title block -->
+          <div class="flex flex-col gap-6 px-0 lg:px-12">
+
+            <!-- Date + Share row -->
+            <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+              <p class="text-[1rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Published on Feb 15, 2026</p>
+              <div class="flex items-center gap-5">
+                <span class="text-[0.875rem] font-normal text-[#6e6e6e] leading-[1.5] tracking-[-0.01em]">Share</span>
+                <div class="flex items-center gap-2">
+                  <!-- Facebook -->
+                  <a href="#" aria-label="Share on Facebook" class="flex items-center justify-center size-8 bg-[#ebebeb] hover:opacity-70 transition-opacity">
+                    <img src="src/images/insight-facebook.svg" alt="" width="32" height="32" aria-hidden="true">
+                  </a>
+                  <!-- LinkedIn -->
+                  <a href="#" aria-label="Share on LinkedIn" class="flex items-center justify-center size-8 bg-[#ebebeb] hover:opacity-70 transition-opacity">
+                    <img src="src/images/insight-linkedin.svg" alt="" width="32" height="32" aria-hidden="true">
+                  </a>
+                  <!-- Copy Link -->
+                  <button aria-label="Copy link" class="flex items-center justify-center size-8 bg-[#ebebeb] hover:opacity-70 transition-opacity cursor-pointer">
+                    <img src="src/images/insight-copy-link.svg" alt="" width="32" height="32" aria-hidden="true">
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-[1.75rem] lg:text-[2.25rem] font-normal leading-[1.3] tracking-[-0.02em] text-black">
+              The e-commerce industry is booming due to changing customer expectations and digitization.
+            </h1>
+
+          </div>
+
+          <!-- Hero image — full width, no side padding -->
+          <div class="w-full aspect-[1100/588] overflow-hidden">
+            <img
+              src="src/images/insight-transforming.jpg"
+              alt="Interior design insight hero"
+              width="1100"
+              height="588"
+              loading="eager"
+              fetchpriority="high"
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <!-- Body content -->
+          <div class="px-0 lg:px-12 flex flex-col gap-10">
+
+            <!-- Intro paragraphs -->
+            <div class="text-base leading-[1.5] tracking-[-0.01em] text-black space-y-4">
+              <p>Lorem ipsum dolor sit amet consectetur. Tortor erat sollicitudin non lacus. Integer a mauris rhoncus elementum ultrices eu leo viverra. Suspendisse bibendum congue urna congue est mauris nunc aliquet. In rutrum semper ultrices vulputate.</p>
+              <p>In eros odio nullam cum imperdiet cras sed nam. Euismod nunc ut tincidunt sed id gravida. Magna lectus blandit dui mauris. Suspendisse nulla quis eu pulvinar. Egestas eu elementum quam nunc placerat lectus tincidunt enim. Purus tortor id suspendisse a. Rhoncus sit aliquam id molestie nisi. Sit vitae fames est id sed. Elit netus commodo velit fusce sed facilisis donec in. Donec pellentesque vel integer blandit phasellus vitae. Hac dis mauris purus lobortis magna ut pretium sit. Lorem pellentesque ullamcorper duis ornare venenatis lobortis quis convallis. Dui vulputate sed vel volutpat dolor sit at nec velit. Faucibus erat convallis volutpat lacus.</p>
+              <p>Praesent aliquet nulla amet eget diam. Nibh feugiat sed eu maecenas. Nunc platea mattis sed morbi mattis adipiscing pharetra vitae at. Tincidunt habitant viverra tellus in sed auctor. Vulputate turpis eros cras id non. Egestas egestas dolor enim aliquam tincidunt consectetur nulla dui. Tellus tellus mattis tempus congue amet et lacus sapien vel. Scelerisque maecenas in enim quam scelerisque blandit integer amet. Nibh mattis tristique lacus nulla amet sit ornare arcu. Bibendum quam amet faucibus amet purus luctus.</p>
+              <p>Aenean ut urna scelerisque tortor massa volutpat. Sed hac leo sit at id. Enim purus congue viverra aliquet. Parturient cursus commodo est neque ante turpis pharetra duis consectetur. Lectus eget elit eget faucibus nisi sit risus nisl. Etiam elit ante tempor porta adipiscing amet morbi proin. Malesuada turpis nibh nibh facilisi ac faucibus phasellus.</p>
+            </div>
+
+            <!-- Sub-section -->
+            <div class="flex flex-col gap-5">
+              <h2 class="text-[1.5rem] font-medium leading-[1.3] tracking-[-0.01em] text-black">The e-commerce industry</h2>
+              <div class="text-base leading-[1.5] tracking-[-0.01em] text-black space-y-4">
+                <p>Lorem ipsum dolor sit amet consectetur. Tortor erat sollicitudin non lacus. Integer a mauris rhoncus elementum ultrices eu leo viverra. Suspendisse bibendum congue urna congue est mauris nunc aliquet. In rutrum semper ultrices vulputate.</p>
+                <p>In eros odio nullam cum imperdiet cras sed nam. Euismod nunc ut tincidunt sed id gravida. Magna lectus blandit dui mauris. Suspendisse nulla quis eu pulvinar. Egestas eu elementum quam nunc placerat lectus tincidunt enim. Purus tortor id suspendisse a. Rhoncus sit aliquam id molestie nisi. Sit vitae fames est id sed. Elit netus commodo velit fusce sed facilisis donec in. Donec pellentesque vel integer blandit phasellus vitae. Hac dis mauris purus lobortis magna ut pretium sit. Lorem pellentesque ullamcorper duis ornare venenatis lobortis quis convallis. Dui vulputate sed vel volutpat dolor sit at nec velit. Faucibus erat convallis volutpat lacus.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related Blogs -->
+    <section class="insight-related-section bg-[#f7f7f7] pt-[3.75rem] lg:pt-[6.25rem] pb-[3.75rem] lg:pb-[6.25rem]">
+      <div class="container">
+
+        <!-- Header row -->
+        <div class="flex items-end justify-between mb-8 lg:mb-10">
+          <h2 class="text-[2.1875rem] lg:text-[2.875rem] font-normal leading-[1.11] tracking-[-0.02em] text-black">
+            Related <em class="font-serif-display not-italic italic">blogs</em>
+          </h2>
+
+          <!-- Nav arrows -->
+          <div class="flex items-center gap-3.5">
+            <button id="related-prev" aria-label="Previous" class="flex items-center justify-center size-9 lg:size-12.5 rounded-full border border-black text-black hover:bg-black hover:text-white transition-colors">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button id="related-next" aria-label="Next" class="flex items-center justify-center size-9 lg:size-12.5 rounded-full border border-black text-black hover:bg-black hover:text-white transition-colors">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Related slider (Embla) -->
+        <div class="related-embla overflow-hidden mb-7" id="related-slider">
+          <div class="related-embla__container flex gap-6">
+
+            <div class="related-embla__slide shrink-0">
+              <article class="insights-card flex flex-col bg-[#f7f7f7]">
+                <div class="w-full h-60 overflow-hidden">
+                  <img src="src/images/insight-eco-friendly.jpg" alt="Eco-friendly home design innovations" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-6 py-8">
+                  <div class="flex flex-col gap-[18px]">
+                    <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                    <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Exploring Eco-Friendly Innovations in Home Design</h3>
+                  </div>
+                  <a href="insight-detail.html" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                    Read More
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="related-embla__slide shrink-0">
+              <article class="insights-card flex flex-col bg-[#f7f7f7]">
+                <div class="w-full h-60 overflow-hidden">
+                  <img src="src/images/insight-material.jpg" alt="PVC versus wood for modern interiors" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-6 py-8">
+                  <div class="flex flex-col gap-[18px]">
+                    <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                    <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">PVC or Wood: The Best Choice for Modern Interiors</h3>
+                  </div>
+                  <a href="insight-detail.html" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                    Read More
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="related-embla__slide shrink-0">
+              <article class="insights-card flex flex-col bg-[#f7f7f7]">
+                <div class="w-full h-60 overflow-hidden">
+                  <img src="src/images/insight-open-concept.jpg" alt="Choosing the right wall panel for your space" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-6 py-8">
+                  <div class="flex flex-col gap-[18px]">
+                    <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                    <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Choosing the Right Wall Panel for Your Space</h3>
+                  </div>
+                  <a href="insight-detail.html" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                    Read More
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="related-embla__slide shrink-0">
+              <article class="insights-card flex flex-col bg-[#f7f7f7]">
+                <div class="w-full h-60 overflow-hidden">
+                  <img src="src/images/insight-future-homes.jpg" alt="Smart home technology forecast" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-6 py-8">
+                  <div class="flex flex-col gap-[18px]">
+                    <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                    <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Future Homes: A Detailed Forecast of Smart Home Technology in 2026</h3>
+                  </div>
+                  <a href="insight-detail.html" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                    Read More
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="related-embla__slide shrink-0">
+              <article class="insights-card flex flex-col bg-[#f7f7f7]">
+                <div class="w-full h-60 overflow-hidden">
+                  <img src="src/images/insight-color-blocking.jpg" alt="Mastering color blocking in interiors" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-6 py-8">
+                  <div class="flex flex-col gap-[18px]">
+                    <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                    <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Creative Interiors: Mastering the Art of Color Blocking</h3>
+                  </div>
+                  <a href="insight-detail.html" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                    Read More
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- View All Blogs -->
+        <div class="flex justify-center">
+          <a href="insights.html" class="btn btn--border-square">
+            View All Blogs
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="products.html" class="site-footer__link">PVC Wall Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="products.html" class="site-footer__link">Laminate Sheets</a></li>
+            <li><a href="greenrich.html" class="site-footer__link">Greenrich Laminates</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="products.html" class="site-footer__link">Our Products</a></li>
+            <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
+            <li><a href="#" class="site-footer__link">Events</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich</a></li>
+            <li><a href="#" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/embla-carousel@8.3.0/embla-carousel.umd.js"></script>
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>

@@ -549,6 +549,29 @@ if (spacesSlider && typeof EmblaCarousel !== 'undefined') {
   });
 })();
 
+// Related blogs slider — Insight Detail page
+(function () {
+  const root = document.getElementById('related-slider');
+  if (!root || typeof EmblaCarousel === 'undefined') return;
+
+  const embla = EmblaCarousel(root, { loop: false, align: 'start', dragFree: false });
+
+  const prev = document.getElementById('related-prev');
+  const next = document.getElementById('related-next');
+
+  function updateArrows() {
+    if (prev) prev.classList.toggle('is-disabled', !embla.canScrollPrev());
+    if (next) next.classList.toggle('is-disabled', !embla.canScrollNext());
+  }
+
+  if (prev) prev.addEventListener('click', () => embla.scrollPrev());
+  if (next) next.addEventListener('click', () => embla.scrollNext());
+
+  embla.on('select', updateArrows);
+  embla.on('init', updateArrows);
+  updateArrows();
+})();
+
 // Insights filter — Insights page
 (function () {
   const filterBtns = document.querySelectorAll('[data-filter]');
