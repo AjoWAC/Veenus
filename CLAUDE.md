@@ -153,14 +153,34 @@ Pattern: `[content-name]-section`
 ```
 
 ### Responsive images
-- Mobile: `w-full aspect-[w/h]` — fluid with locked ratio
-- Desktop: `lg:w-[X%] lg:max-w-[Xpx]` — percentage-based, capped at design max
+- Mobile: `w-full aspect-W/H` — fluid with locked ratio (Tailwind v4: `aspect-820/561`, not `aspect-[820/561]`)
+- Desktop: `lg:w-[X%] lg:max-w-NNN` — percentage-based, capped at design max (Tailwind v4: `lg:max-w-205`, not `lg:max-w-[820px]`)
 - Always include `width`, `height`, `loading="lazy"`, and descriptive `alt`
+- **Never use fixed `h-[Xpx]`** for images — always use `aspect-W/H` so the ratio is preserved at every viewport width
+
+**Every image wrapper must have an HTML comment** recording the source dimensions, ratio, and responsive behavior for future reference:
 
 ```html
-<div class="w-full aspect-[744/479] lg:w-[45%] lg:max-w-[744px] shrink-0 overflow-hidden">
-  <img src="..." width="744" height="479" class="w-full h-full object-cover" loading="lazy" alt="...">
+<!-- Image
+     Source: 820×561px
+     Ratio : 820:561 (≈ 1.46:1)
+     Mobile : w-full + aspect-820/561  → fluid width, ratio-locked height
+     Desktop: w-[45%] max-w-205        → same ratio, capped at 820px
+-->
+<div class="w-full aspect-820/561 lg:w-[45%] lg:max-w-205 shrink-0 overflow-hidden">
+  <img src="..." width="820" height="561" class="w-full h-full object-cover" loading="lazy" alt="...">
 </div>
+```
+
+If mobile and desktop use **different crop ratios**, document both:
+
+```html
+<!-- Image
+     Source: 1200×800px
+     Ratio : 3:2 (≈ 1.5:1)
+     Mobile : w-full + aspect-4/3   → tighter crop on small screens
+     Desktop: w-[50%] max-w-[600px] + aspect-3/2
+-->
 ```
 
 ### Responsive fluid sizing

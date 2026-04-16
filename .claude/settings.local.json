@@ -40,7 +40,10 @@
       "Bash(grep -E '^[A-Z][a-zA-Z\\\\s\\\\+]+$')",
       "Bash(grep -v '^[0-9 ]*$')",
       "Bash(echo \"EXIT:$?\")",
-      "Bash(yarn build:*)"
+      "Bash(yarn build:*)",
+      "Bash(identify c:/Ajo/Veenus/HTML/src/images/prod-manufacturing.jpg)",
+      "Bash(identify c:/Ajo/Veenus/HTML/src/images/prod-wall-panels.jpg c:/Ajo/Veenus/HTML/src/images/prod-ceiling-panels.jpg c:/Ajo/Veenus/HTML/src/images/prod-louvers.jpg c:/Ajo/Veenus/HTML/src/images/prod-doors.jpg c:/Ajo/Veenus/HTML/src/images/prod-laminate.jpg)",
+      "Bash(file c:/Ajo/Veenus/HTML/src/images/prod-*.jpg)"
     ]
   }
 }
