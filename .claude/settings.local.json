@@ -43,7 +43,23 @@
       "Bash(yarn build:*)",
       "Bash(identify c:/Ajo/Veenus/HTML/src/images/prod-manufacturing.jpg)",
       "Bash(identify c:/Ajo/Veenus/HTML/src/images/prod-wall-panels.jpg c:/Ajo/Veenus/HTML/src/images/prod-ceiling-panels.jpg c:/Ajo/Veenus/HTML/src/images/prod-louvers.jpg c:/Ajo/Veenus/HTML/src/images/prod-doors.jpg c:/Ajo/Veenus/HTML/src/images/prod-laminate.jpg)",
-      "Bash(file c:/Ajo/Veenus/HTML/src/images/prod-*.jpg)"
+      "Bash(file c:/Ajo/Veenus/HTML/src/images/prod-*.jpg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/2d3fff6b-fa0e-422e-8e68-b2b451cdd95f\" -o \"src/images/event-milan-design-week.jpg\")",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/c3499c51-1c36-4aab-954e-8ac5b7b6982d\" -o \"src/images/event-building-materials-dubai.jpg\")",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/661d9b95-a638-4b8d-826e-e4f51dbdc4a2\" -o \"src/images/event-building-materials-trade.jpg\")",
+      "Bash(mv event-milan-design-week.jpg event-milan-design-week.png)",
+      "Bash(mv event-building-materials-dubai.jpg event-trade-show-global.png)",
+      "Bash(mv event-building-materials-trade.jpg event-trade-show-dubai.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/f2d65072-e53c-4055-b10e-561713d39d68\" -o \"src/images/event-gallery-01.jpg\")",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/5e3ed36a-e588-4af2-b11f-197a290e82f3\" -o \"src/images/event-gallery-02.jpg\")",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/fb2c4463-c3de-440c-bd4a-50f2731a0c1b\" -o \"src/images/event-gallery-03.jpg\")",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/9589b315-a74c-41a9-96aa-e0a3b6b332fe\" -o \"src/images/event-gallery-04.jpg\")",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/42161acb-d4ad-4e73-b9e9-a6ce19912968\" -o \"src/images/event-gallery-05.jpg\")",
+      "Bash(file c:/Ajo/Veenus/HTML/src/images/event-gallery-*.jpg)",
+      "Bash(awk '{print $1, $NF}')",
+      "mcp__claude_ai_Figma__get_metadata",
+      "Bash(curl -L \"https://www.figma.com/api/mcp/asset/a330e28e-0659-4bf2-a9d2-15975543e922\" -o \"src/images/portfolio-intro.jpg\")",
+      "Bash(grep -n \"\\\\.hidden\\\\|lg\\\\\\\\\\\\\\\\:block \" \"c:\\\\Ajo\\\\Veenus\\\\HTML\\\\src\\\\css\\\\main.css\")"
     ]
   }
 }

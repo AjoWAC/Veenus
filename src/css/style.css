@@ -1173,3 +1173,135 @@ button.site-footer__col-title {
     cursor: pointer;
   }
 }
+
+/* =====================================================
+   GALLERY LIGHTBOX
+===================================================== */
+@layer components {
+  .gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .gallery-lightbox.is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .gallery-lightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    cursor: pointer;
+  }
+
+  .gallery-lightbox__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 4rem;
+  }
+
+  .gallery-lightbox__img {
+    display: block;
+    max-width: 90vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    user-select: none;
+  }
+
+  .gallery-lightbox__close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background 0.15s ease;
+  }
+
+  .gallery-lightbox__close:hover { background: rgba(255, 255, 255, 0.28); }
+
+  .gallery-lightbox__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background 0.15s ease;
+    z-index: 2;
+  }
+
+  .gallery-lightbox__arrow:hover { background: rgba(255, 255, 255, 0.28); }
+  .gallery-lightbox__arrow--prev { left: 1.25rem; }
+  .gallery-lightbox__arrow--next { right: 1.25rem; }
+
+  .gallery-lightbox__counter {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  /* Gallery item — pointer cursor */
+  .gallery-item {
+    cursor: pointer;
+  }
+
+  /* Masonry grid */
+  .gallery-masonry__sizer,
+  .gallery-masonry__item {
+    width: calc(50% - 6px); /* mobile: 2 cols, 12px gutter */
+  }
+
+  .gallery-masonry__gutter { width: 12px; }
+
+  .gallery-masonry__item {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: 1024px) {
+    .gallery-masonry__sizer,
+    .gallery-masonry__item {
+      width: calc(25% - 15px); /* desktop: 4 cols, 20px gutter */
+    }
+
+    .gallery-masonry__gutter { width: 20px; }
+
+    .gallery-masonry__item {
+      margin-bottom: 20px;
+    }
+  }
+}

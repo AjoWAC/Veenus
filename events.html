@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Events — Veenus PVC interior solutions." />
+  <title>Events — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/about-banner.css" />
+  <link rel="stylesheet" href="src/css/main.css" />
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="#" role="menuitem">Tiles</a></li>
+                            <li><a href="#" role="menuitem">Sanitaryware</a></li>
+                            <li><a href="#" role="menuitem">Faucets</a></li>
+                            <li><a href="#" role="menuitem">Accessories</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="#">Tiles</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="drawer__item"><a href="events.html">Events</a></li>
+                    <li class="drawer__item"><a href="#">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+    <section class="about-banner" aria-label="About Veenus hero">
+  <picture class="about-banner__bg">
+    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg">
+    <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
+  </picture>
+
+  <div class="about-banner__overlay" aria-hidden="true"></div>
+
+  <div class="about-banner__inner">
+    <h1 class="about-banner__title">
+     Event <em>Highlights</em>
+    </h1>
+    <p class="about-banner__text">
+    Highlighting Veenus’s participation in global exhibitions, trade shows, product launches, and industry meetups that shape the future of interior solutions.
+    </p>
+    <!-- <a href="#" class="btn btn--border-square btn--border-square--ghost about-banner__cta">
+      Explore Products
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a> -->
+  </div>
+</section>
+
+    <section class="events-highlights-section py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+    <div class="flex flex-col gap-10 lg:gap-20">
+
+      <!-- Heading row -->
+      <div class="flex flex-col gap-5 lg:flex-row lg:items-start lg:gap-[clamp(3rem,8vw,10rem)]">
+        <h2 class="title font-normal text-[clamp(2.1875rem,3.6vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black lg:max-w-[538px] shrink-0">
+          Highlights from Our <em>Past Events</em>
+        </h2>
+        <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.6] lg:pt-2">
+          Step back in time with us as we revisit unforgettable moments from past events, celebrating achievements, partnerships, and the vibrant community that fuels our global success in design and innovation.
+        </p>
+      </div>
+
+      <!-- Event rows -->
+      <div class="flex flex-col gap-8 lg:gap-15">
+
+        <!-- Row 1: Image left, content right -->
+        <div class="flex flex-col gap-8 pb-8 lg:pb-15 border-b border-[#e5e5e5] lg:flex-row lg:items-center lg:gap-20">
+
+          <!-- Image
+               Source : 1200×649px (PNG)
+               Ratio  : 1200:649 (≈ 1.85:1)
+               Mobile : w-full + aspect-[1200/649] — fluid width, ratio-locked height
+               Desktop: w-[46%] max-w-[760px] + aspect-[1200/649]
+          -->
+          <div class="w-full aspect-1200/649 lg:w-[46%] lg:max-w-190 shrink-0 overflow-hidden">
+            <img
+              src="src/images/event-milan-design-week.png"
+              width="1200"
+              height="649"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              alt="Milan Design Week 2025 — Veenus pavilion"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="flex flex-col gap-6 lg:gap-15 lg:flex-1">
+            <h3 class="font-serif-display font-normal text-[clamp(1.75rem,2.8vw,2.25rem)] leading-[1.2] text-black">
+              Milan Design Week 2025
+            </h3>
+            <div class="flex flex-col gap-5 lg:gap-7">
+              <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-[1.25rem] font-medium text-black tracking-[-0.02em] leading-[1.4]">Key Highlights</h4>
+                  <p class="text-base text-[#6e6e6e] leading-normal">Over 5,000 visitors toured the Veenus pavilion, named a Top 10 Sustainable Exhibit by Design Digest, alongside a new partnership with Studio Verde.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-[1.25rem] font-medium text-black tracking-[-0.02em] leading-[1.4]">Impact &amp; Outcome</h4>
+                  <p class="text-base text-[#6e6e6e] leading-normal">Established Veenus as a key player in the European sustainable interior market, leading to 15 new distribution partnerships.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 flex-nowrap">
+                <div class="flex items-center gap-1.5 text-[#6e6e6e]">
+                  <img src="src/images/events-location-icon.svg" width="20" height="20" alt="" aria-hidden="true" />
+                  <span class="text-sm lg:text-base leading-normal whitespace-nowrap">Milan, Italy</span>
+                </div>
+                <div class="flex items-center gap-2 text-[#6e6e6e]">
+                  <img src="src/images/events-calendar-icon.svg" width="20" height="20" alt="" aria-hidden="true" />
+                  <span class="text-sm lg:text-base leading-normal whitespace-nowrap">April 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: Content left, image right -->
+        <div class="flex flex-col gap-8 pb-8 lg:pb-15 border-b border-[#e5e5e5] lg:flex-row lg:items-center lg:gap-20">
+
+          <!-- Content (order-2 on mobile to keep image on top) -->
+          <div class="flex flex-col gap-6 lg:gap-15 lg:flex-1 order-2 lg:order-1">
+            <h3 class="font-serif-display font-normal text-[clamp(1.75rem,2.8vw,2.25rem)] leading-[1.2] text-black">
+              Global Building Materials Trade Show
+            </h3>
+            <div class="flex flex-col gap-5 lg:gap-7">
+              <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-[1.25rem] font-medium text-black tracking-[-0.02em] leading-[1.4]">Key Highlights</h4>
+                  <p class="text-base text-[#6e6e6e] leading-normal">Over 5,000 visitors toured the Veenus pavilion, named a Top 10 Sustainable Exhibit by Design Digest, alongside a new partnership with Studio Verde.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-[1.25rem] font-medium text-black tracking-[-0.02em] leading-[1.4]">Impact &amp; Outcome</h4>
+                  <p class="text-base text-[#6e6e6e] leading-normal">Established Veenus as a key player in the European sustainable interior market, leading to 15 new distribution partnerships.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 flex-nowrap">
+                <div class="flex items-center gap-1.5 text-[#6e6e6e]">
+                  <img src="src/images/events-location-icon.svg" width="20" height="20" alt="" aria-hidden="true" />
+                  <span class="text-sm lg:text-base leading-normal whitespace-nowrap">Multiple Locations</span>
+                </div>
+                <div class="flex items-center gap-2 text-[#6e6e6e]">
+                  <img src="src/images/events-calendar-icon.svg" width="20" height="20" alt="" aria-hidden="true" />
+                  <span class="text-sm lg:text-base leading-normal whitespace-nowrap">December 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image
+               Source : 1200×675px (PNG)
+               Ratio  : 1200:675 = 16:9
+               Mobile : w-full + aspect-video — fluid width, ratio-locked height
+               Desktop: w-[46%] max-w-205 + aspect-video
+          -->
+          <div class="w-full aspect-video lg:w-[46%] lg:max-w-205 shrink-0 overflow-hidden order-1 lg:order-2">
+            <img
+              src="src/images/event-trade-show-global.png"
+              width="1200"
+              height="675"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              alt="Global Building Materials Trade Show"
+            />
+          </div>
+
+        </div>
+
+        <!-- Row 3: Image left, content right + Load More -->
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">
+
+          <!-- Image
+               Source : 1200×780px (PNG)
+               Ratio  : 1200:780 = 20:13 (≈ 1.54:1)
+               Mobile : w-full + aspect-1200/780 — fluid width, ratio-locked height
+               Desktop: w-[46%] max-w-190 + aspect-1200/780
+          -->
+          <div class="w-full aspect-1200/780 lg:w-[46%] lg:max-w-190 shrink-0 overflow-hidden">
+            <img
+              src="src/images/event-trade-show-dubai.png"
+              width="1200"
+              height="780"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              alt="Global Building Materials Trade Show — Dubai"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="flex flex-col gap-6 lg:gap-15 lg:flex-1">
+            <h3 class="font-serif-display font-normal text-[clamp(1.75rem,2.8vw,2.25rem)] leading-[1.2] text-black">
+              Global Building Materials Trade Show
+            </h3>
+            <div class="flex flex-col gap-5 lg:gap-7">
+              <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-[1.25rem] font-medium text-black tracking-[-0.02em] leading-[1.4]">Key Highlights</h4>
+                  <p class="text-base text-[#6e6e6e] leading-normal">Over 5,000 visitors toured the Veenus pavilion, named a Top 10 Sustainable Exhibit by Design Digest, alongside a new partnership with Studio Verde.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-[1.25rem] font-medium text-black tracking-[-0.02em] leading-[1.4]">Impact &amp; Outcome</h4>
+                  <p class="text-base text-[#6e6e6e] leading-normal">Established Veenus as a key player in the European sustainable interior market, leading to 15 new distribution partnerships.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 flex-nowrap">
+                <div class="flex items-center gap-1.5 text-[#6e6e6e]">
+                  <img src="src/images/events-location-icon.svg" width="20" height="20" alt="" aria-hidden="true" />
+                  <span class="text-sm lg:text-base leading-normal whitespace-nowrap">Dubai World Trade Centre</span>
+                </div>
+                <div class="flex items-center gap-2 text-[#6e6e6e]">
+                  <img src="src/images/events-calendar-icon.svg" width="20" height="20" alt="" aria-hidden="true" />
+                  <span class="text-sm lg:text-base leading-normal whitespace-nowrap">July 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Load More -->
+      <div class="flex justify-center">
+        <a href="#" class="btn btn--border-square">
+          Load More
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section class="events-gallery-section bg-white py-15 lg:py-32.5">
+  <div class="container">
+    <div class="flex flex-col gap-10 lg:gap-18">
+
+      <!-- Heading -->
+      <div class="flex flex-col gap-4 items-center text-center">
+        <h2 class="title font-normal text-[clamp(2.1875rem,3.6vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          A Visual Journey <em>Through Our Events</em>
+        </h2>
+        <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.4] lg:max-w-213">
+          A visual journey through our most memorable moments, from bustling exhibition floors to intimate designer meetups.
+        </p>
+      </div>
+
+      <!-- Masonry gallery
+           Images display at natural proportions — Masonry.js + imagesLoaded handle layout.
+           Mobile : 2 columns, 12px gutter
+           Desktop: 4 columns, 20px gutter
+      -->
+      <div class="gallery-masonry" id="gallery-masonry">
+        <!-- Sizer + gutter elements for responsive Masonry column/gap calculation -->
+        <div class="gallery-masonry__sizer"></div>
+        <div class="gallery-masonry__gutter"></div>
+
+        <!-- Image
+             Source : 1200×900px (PNG) | 4:3
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-01.png" width="1200" height="900" class="w-full h-auto block" loading="lazy" alt="Event gallery image 1" />
+        </div>
+
+        <!-- Image
+             Source : 1000×1474px (PNG) | portrait 2:3
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-02.png" width="1000" height="1474" class="w-full h-auto block" loading="lazy" alt="Event gallery image 2" />
+        </div>
+
+        <!-- Image
+             Source : 960×639px (PNG) | 3:2
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-03.png" width="960" height="639" class="w-full h-auto block" loading="lazy" alt="Event gallery image 3" />
+        </div>
+
+        <!-- Image
+             Source : 1200×800px (PNG) | 3:2
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-04.png" width="1200" height="800" class="w-full h-auto block" loading="lazy" alt="Event gallery image 4" />
+        </div>
+
+        <!-- Image
+             Source : 1200×1800px (PNG) | portrait 2:3
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-05.png" width="1200" height="1800" class="w-full h-auto block" loading="lazy" alt="Event gallery image 5" />
+        </div>
+
+        <!-- Image
+             Source : 1000×707px (PNG) | 3:2
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-06.png" width="1000" height="707" class="w-full h-auto block" loading="lazy" alt="Event gallery image 6" />
+        </div>
+
+        <!-- Image
+             Source : 1200×800px (PNG) | 3:2
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-07.png" width="1200" height="800" class="w-full h-auto block" loading="lazy" alt="Event gallery image 7" />
+        </div>
+
+        <!-- Image
+             Source : 1200×800px (PNG) | 3:2
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-08.png" width="1200" height="800" class="w-full h-auto block" loading="lazy" alt="Event gallery image 8" />
+        </div>
+
+        <!-- Image
+             Source : 1200×900px (PNG) | 4:3
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-09.png" width="1200" height="900" class="w-full h-auto block" loading="lazy" alt="Event gallery image 9" />
+        </div>
+
+        <!-- Image
+             Source : 900×637px (PNG) | 3:2
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-10.png" width="900" height="637" class="w-full h-auto block" loading="lazy" alt="Event gallery image 10" />
+        </div>
+
+        <!-- Image
+             Source : 1024×756px (PNG) | 4:3
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-11.png" width="1024" height="756" class="w-full h-auto block" loading="lazy" alt="Event gallery image 11" />
+        </div>
+
+        <!-- Image
+             Source : 870×580px (PNG) | 3:2
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-gallery-12.png" width="870" height="580" class="w-full h-auto block" loading="lazy" alt="Event gallery image 12" />
+        </div>
+
+        <!-- Image
+             Source : 1200×649px (PNG) | ≈ 1.85:1
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-milan-design-week.png" width="1200" height="649" class="w-full h-auto block" loading="lazy" alt="Milan Design Week 2025" />
+        </div>
+
+        <!-- Image
+             Source : 1200×675px (PNG) | 16:9
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-trade-show-global.png" width="1200" height="675" class="w-full h-auto block" loading="lazy" alt="Global Building Materials Trade Show" />
+        </div>
+
+        <!-- Image
+             Source : 1200×780px (PNG) | 20:13
+        -->
+        <div class="gallery-masonry__item gallery-item">
+          <img src="src/images/event-trade-show-dubai.png" width="1200" height="780" class="w-full h-auto block" loading="lazy" alt="Global Building Materials Trade Show — Dubai" />
+        </div>
+
+      </div>
+
+      <!-- Load More -->
+      <div class="flex justify-center">
+        <a href="#" class="btn btn--border-square">
+          Load More
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox -->
+  <div id="gallery-lightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true" tabindex="-1">
+    <div class="gallery-lightbox__backdrop" id="gallery-lightbox-backdrop"></div>
+    <div class="gallery-lightbox__inner">
+
+      <button class="gallery-lightbox__close" id="gallery-lightbox-close" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <path d="M13.5 4.5L4.5 13.5M4.5 4.5l9 9" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <button class="gallery-lightbox__arrow gallery-lightbox__arrow--prev" id="gallery-lightbox-prev" aria-label="Previous image">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M12.5 15L7.5 10l5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <img id="gallery-lightbox-img" src="" alt="" class="gallery-lightbox__img" />
+
+      <button class="gallery-lightbox__arrow gallery-lightbox__arrow--next" id="gallery-lightbox-next" aria-label="Next image">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="gallery-lightbox__counter" id="gallery-lightbox-counter" aria-live="polite">1 / 15</div>
+
+    </div>
+  </div>
+
+</section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="products.html" class="site-footer__link">PVC Wall Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="products.html" class="site-footer__link">Laminate Sheets</a></li>
+            <li><a href="greenrich.html" class="site-footer__link">Greenrich Laminates</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="products.html" class="site-footer__link">Our Products</a></li>
+            <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
+            <li><a href="#" class="site-footer__link">Events</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich</a></li>
+            <li><a href="#" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js" defer></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>

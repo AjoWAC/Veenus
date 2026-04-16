@@ -468,6 +468,87 @@ if (spacesSlider && typeof EmblaCarousel !== 'undefined') {
   if (spacesNext) spacesNext.addEventListener('click', () => spacesEmbla.scrollNext());
 }
 
+// Gallery Masonry — Events page
+(function () {
+  const grid = document.getElementById('gallery-masonry');
+  if (!grid || typeof Masonry === 'undefined' || typeof imagesLoaded === 'undefined') return;
+
+  imagesLoaded(grid, function () {
+    new Masonry(grid, {
+      itemSelector: '.gallery-masonry__item',
+      columnWidth:  '.gallery-masonry__sizer',
+      gutter:       '.gallery-masonry__gutter',
+      percentPosition: true,
+    });
+  });
+})();
+
+// Gallery Lightbox — Events page
+(function () {
+  const lightbox  = document.getElementById('gallery-lightbox');
+  if (!lightbox) return;
+
+  const lbImg     = document.getElementById('gallery-lightbox-img');
+  const lbCounter = document.getElementById('gallery-lightbox-counter');
+  const prevBtn   = document.getElementById('gallery-lightbox-prev');
+  const nextBtn   = document.getElementById('gallery-lightbox-next');
+  const closeBtn  = document.getElementById('gallery-lightbox-close');
+  const backdrop  = document.getElementById('gallery-lightbox-backdrop');
+
+  // Build ordered image list from masonry grid (DOM order = display order)
+  const images = Array.from(
+    document.querySelectorAll('#gallery-masonry .gallery-item img')
+  ).map(img => ({ src: img.src, alt: img.alt }));
+
+  if (!images.length) return;
+
+  let current = 0;
+
+  function goTo(idx) {
+    current = ((idx % images.length) + images.length) % images.length;
+    lbImg.src = images[current].src;
+    lbImg.alt = images[current].alt;
+    lbCounter.textContent = (current + 1) + ' / ' + images.length;
+  }
+
+  function open(idx) {
+    goTo(idx);
+    const sw = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.paddingRight = sw + 'px';
+    document.body.style.overflow = 'hidden';
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    lightbox.focus();
+  }
+
+  function close() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+  }
+
+  // Click any gallery item (desktop or mobile — match by src)
+  document.querySelectorAll('.gallery-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const clickedSrc = el.querySelector('img').src;
+      const idx = images.findIndex(img => img.src === clickedSrc);
+      open(idx >= 0 ? idx : 0);
+    });
+  });
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+  closeBtn.addEventListener('click', close);
+  backdrop.addEventListener('click', close);
+
+  lightbox.addEventListener('keydown', e => {
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+})();
+
 // Products Range slider (Embla) — Products page
 const productsRangeSlider = document.getElementById('products-range-slider');
 

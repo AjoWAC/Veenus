@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio — Veenus PVC interior solutions." />
+  <title>Portfolio — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/about-banner.css" />
+  <link rel="stylesheet" href="src/css/main.css" />
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="#" role="menuitem">Tiles</a></li>
+                            <li><a href="#" role="menuitem">Sanitaryware</a></li>
+                            <li><a href="#" role="menuitem">Faucets</a></li>
+                            <li><a href="#" role="menuitem">Accessories</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="#">Tiles</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="drawer__item"><a href="events.html">Events</a></li>
+                    <li class="drawer__item"><a href="#">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+   <section class="about-banner" aria-label="About Veenus hero">
+  <picture class="about-banner__bg">
+    <source media="(min-width: 1024px)" srcset="src/images/protfolio-banner-desk.jpg">
+    <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
+  </picture>
+
+  <div class="about-banner__overlay" aria-hidden="true"></div>
+
+  <div class="about-banner__inner">
+    <h1 class="about-banner__title">
+     Projects that   <em>Define Quality</em>
+    </h1>
+    <p class="about-banner__text">
+     Transforming interiors with high-performance PVC wall panels, ceilings, and finishes that blend aesthetics and durability. </p>
+    <!-- <a href="#" class="btn btn--border-square btn--border-square--ghost about-banner__cta">
+      Explore Products
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a> -->
+  </div>
+</section>
+
+  <section class="portfolio-intro-section pt-15 pb-10 lg:pt-[8.125rem] lg:pb-[6.25rem]">
+  <div class="container">
+
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
+
+      <!-- Image
+           Source : 1920×2880px (PNG) | portrait 2:3
+           Display: clipped to 820×561 landscape via overflow-hidden + object-cover
+           Mobile : w-full + aspect-820/561 → fluid, ratio-locked
+           Desktop: lg:w-[50%] lg:max-w-205 → capped at 820px
+      -->
+      <div class="w-full aspect-820/561 lg:w-[50%] lg:max-w-205 shrink-0 overflow-hidden">
+        <img
+          src="src/images/portfolio-intro.png"
+          alt="Modern interior featuring Veenus PVC wall panels"
+          width="1920"
+          height="2880"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Text content -->
+      <div class="flex flex-col gap-6 lg:gap-6 flex-1 min-w-0">
+
+        <h2 class="title font-normal text-[clamp(2.1875rem,3.6vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          Crafting Environments<br>
+          for <em>Modern Living</em>
+        </h2>
+
+        <div class="flex flex-col gap-3.5 text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.5]">
+          <p>Our portfolio is a testament to the versatility and elegance of Veenus PVC solutions. We believe that every interior tells a story, and our products are the medium through which these stories come to life.</p>
+          <p>From the intimate corners of luxury homes to the expansive halls of corporate offices, retail spaces, and hospitality venues, Veenus products provide the perfect balance of architectural integrity and decorative flair.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <section class="projects-section py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-8 lg:mb-[3.75rem]">
+      <h2 class="title text-[2.1875rem] lg:text-[2.875rem] font-normal leading-[1.3] tracking-[-0.02em] text-black">
+        Crafting Interiors, <em>Building Legacy</em>
+      </h2>
+    </div>
+
+    <!-- Desktop grid: 4 cols × 2 rows -->
+    <div class="hidden lg:grid lg:grid-cols-4 gap-x-5 gap-y-11">
+
+      <div class="flex flex-col gap-6" data-project-idx="0" data-images="src/images/Figure.jpg,src/images/Figure (3).jpg,src/images/Figure (6).jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Modern Living Room</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6" data-project-idx="1" data-images="src/images/Figure (1).jpg,src/images/Figure (4).jpg,src/images/Figure (7).jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure%20(1).jpg" alt="Corporate Reception interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Corporate Reception</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6" data-project-idx="2" data-images="src/images/Figure (2).jpg,src/images/Figure (5).jpg,src/images/Figure.jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure%20(2).jpg" alt="Institute Corridor interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Institute Corridor</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6" data-project-idx="3" data-images="src/images/Figure (3).jpg,src/images/Figure (6).jpg,src/images/Figure (1).jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure%20(3).jpg" alt="Master Bedroom Suite interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6" data-project-idx="4" data-images="src/images/Figure (4).jpg,src/images/Figure (7).jpg,src/images/Figure (2).jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure%20(4).jpg" alt="Hotel Grand Lobby interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Hotel Grand Lobby</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6" data-project-idx="5" data-images="src/images/Figure (5).jpg,src/images/Figure.jpg,src/images/Figure (3).jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure%20(5).jpg" alt="Fine Dining Space interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6" data-project-idx="6" data-images="src/images/Figure (6).jpg,src/images/Figure (1).jpg,src/images/Figure (4).jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure%20(6).jpg" alt="Master Bedroom Suite interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6" data-project-idx="7" data-images="src/images/Figure (7).jpg,src/images/Figure (2).jpg,src/images/Figure (5).jpg">
+        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+          <img src="src/images/Figure%20(7).jpg" alt="Fine Dining Space interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mobile: Embla slider -->
+    <div class="lg:hidden">
+      <div class="projects-embla -mx-5" id="projects-slider">
+        <div class="projects-embla__container px-5">
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="0" data-images="src/images/Figure.jpg,src/images/Figure (3).jpg,src/images/Figure (6).jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Modern Living Room</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="1" data-images="src/images/Figure (1).jpg,src/images/Figure (4).jpg,src/images/Figure (7).jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure%20(1).jpg" alt="Corporate Reception interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Corporate Reception</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="2" data-images="src/images/Figure (2).jpg,src/images/Figure (5).jpg,src/images/Figure.jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure%20(2).jpg" alt="Institute Corridor interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Institute Corridor</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="3" data-images="src/images/Figure (3).jpg,src/images/Figure (6).jpg,src/images/Figure (1).jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure%20(3).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="4" data-images="src/images/Figure (4).jpg,src/images/Figure (7).jpg,src/images/Figure (2).jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure%20(4).jpg" alt="Hotel Grand Lobby interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Hotel Grand Lobby</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="5" data-images="src/images/Figure (5).jpg,src/images/Figure.jpg,src/images/Figure (3).jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure%20(5).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="6" data-images="src/images/Figure (6).jpg,src/images/Figure (1).jpg,src/images/Figure (4).jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure%20(6).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="7" data-images="src/images/Figure (7).jpg,src/images/Figure (2).jpg,src/images/Figure (5).jpg">
+            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
+              <img src="src/images/Figure%20(7).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Nav arrows -->
+      <div class="flex items-center justify-center gap-[0.652rem] mt-8">
+        <button id="projects-prev" class="product-nav-btn" aria-label="Previous project">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button id="projects-next" class="product-nav-btn" aria-label="Next project">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <section class="products-section bg-[#f7f7f7] py-[3.75rem] lg:py-[8.125rem] overflow-hidden">
+  <div class="products-section__inner">
+
+    <!-- Intro -->
+    <div class="w-full lg:w-[536px] shrink-0 lg:self-start flex flex-col gap-5 lg:gap-[4.5rem]">
+      <div class="flex flex-col gap-5 lg:gap-6">
+        <h2 class="title text-[2.1875rem] lg:text-[2.875rem] font-normal leading-[1.3] tracking-[-0.02em] text-black">
+          Discover Our Latest <em>Product Range</em>
+        </h2>
+        <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.5]">
+          For two decades, Veenus has led PVC solutions in India, combining excellence with distribution to deliver premium products.
+        </p>
+      </div>
+      <div class="hidden lg:block lg:self-start">
+        <a href="products.html" class="btn btn--border-square">
+          Explore All Products
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Slider + Controls -->
+    <div class="flex flex-col gap-8 flex-1 min-w-0">
+
+      <!-- Embla slider — bleeds right on mobile -->
+      <div class="-mr-5 lg:mr-0">
+        <div class="products-embla" id="products-slider">
+          <div class="products-embla__container">
+
+            <!-- Slide: Wall Panels -->
+            <div class="products-embla__slide flex flex-col gap-3 group">
+              <div class="bg-[#f0f0f0] h-[24.25rem] lg:h-[28.5rem] overflow-hidden">
+                <img src="src/images/wall-panels.jpg" alt="Wall Panels" width="397" height="456" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="font-serif-display text-[1.25rem] text-black tracking-[-0.02em] leading-[1.6]">Wall Panels</p>
+                <div class="relative lg:min-h-[3rem] overflow-hidden">
+                  <p class="text-sm text-[#6e6e6e] leading-[1.5] transition-opacity duration-200 lg:group-hover:opacity-0">Transform walls with elegant, durable PVC panels in wood, marble, and designer finishes.</p>
+                  <div class="hidden lg:block lg:absolute lg:inset-x-0 lg:top-0">
+                    <a href="#" class="btn btn--dark w-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">Explore Wall Panels</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide: Louvers -->
+            <div class="products-embla__slide flex flex-col gap-3 group">
+              <div class="bg-[#f0f0f0] h-[24.25rem] lg:h-[28.5rem] overflow-hidden">
+                <img src="src/images/louvers.jpg" alt="Louvers" width="397" height="456" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="font-serif-display text-[1.25rem] text-black tracking-[-0.02em] leading-[1.6]">Louvers</p>
+                <div class="relative lg:min-h-[3rem] overflow-hidden">
+                  <p class="text-sm text-[#6e6e6e] leading-[1.5] transition-opacity duration-200 lg:group-hover:opacity-0">Architectural louvers that blend ventilation with bold design for facades and interiors.</p>
+                  <div class="hidden lg:block lg:absolute lg:inset-x-0 lg:top-0">
+                    <a href="#" class="btn btn--dark w-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">Explore Louvers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide: PVC Doors -->
+            <div class="products-embla__slide flex flex-col gap-3 group">
+              <div class="bg-[#f0f0f0] h-[24.25rem] lg:h-[28.5rem] overflow-hidden">
+                <img src="src/images/pvc-doors.jpg" alt="PVC Doors" width="397" height="456" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="font-serif-display text-[1.25rem] text-black tracking-[-0.02em] leading-[1.6]">PVC Doors</p>
+                <div class="relative lg:min-h-[3rem] overflow-hidden">
+                  <p class="text-sm text-[#6e6e6e] leading-[1.5] transition-opacity duration-200 lg:group-hover:opacity-0">Waterproof, termite-proof doors engineered for bathrooms, bedrooms, and commercial spaces.</p>
+                  <div class="hidden lg:block lg:absolute lg:inset-x-0 lg:top-0">
+                    <a href="#" class="btn btn--dark w-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">Explore PVC Doors</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide: Ceiling Panels -->
+            <div class="products-embla__slide flex flex-col gap-3 group">
+              <div class="bg-[#f0f0f0] h-[24.25rem] lg:h-[28.5rem] overflow-hidden">
+                <img src="src/images/ceiling-panels.jpg" alt="Ceiling Panels" width="397" height="456" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="font-serif-display text-[1.25rem] text-black tracking-[-0.02em] leading-[1.6]">Ceiling Panels</p>
+                <div class="relative lg:min-h-[3rem] overflow-hidden">
+                  <p class="text-sm text-[#6e6e6e] leading-[1.5] transition-opacity duration-200 lg:group-hover:opacity-0">Lightweight, moisture-resistant ceiling solutions for clean, modern overhead aesthetics.</p>
+                  <div class="hidden lg:block lg:absolute lg:inset-x-0 lg:top-0">
+                    <a href="#" class="btn btn--dark w-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">Explore Ceiling Panels</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide: Laminated Sheets -->
+            <div class="products-embla__slide flex flex-col gap-3 group">
+              <div class="bg-[#f0f0f0] h-[24.25rem] lg:h-[28.5rem] overflow-hidden">
+                <img src="src/images/laminated-sheets.jpg" alt="Laminated Sheets" width="397" height="456" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="font-serif-display text-[1.25rem] text-black tracking-[-0.02em] leading-[1.6]">Laminated Sheets</p>
+                <div class="relative lg:min-h-[3rem] overflow-hidden">
+                  <p class="text-sm text-[#6e6e6e] leading-[1.5] transition-opacity duration-200 lg:group-hover:opacity-0">Premium surface finishes in wood-grain, solid, and textured laminates for furniture and walls.</p>
+                  <div class="hidden lg:block lg:absolute lg:inset-x-0 lg:top-0">
+                    <a href="#" class="btn btn--dark w-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">Explore Laminated Sheets</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav arrows -->
+      <div class="flex flex-col items-center gap-6 lg:flex-row lg:justify-end lg:gap-5 pr-5 lg:pr-[calc((100vw-min(100vw,1660px))/2+0.9375rem)]">
+        <div class="flex items-center gap-3.5">
+          <button id="products-prev" class="product-nav-btn" aria-label="Previous product">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button id="products-next" class="product-nav-btn" aria-label="Next product">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Projects Lightbox -->
+  <div id="projects-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Project image viewer" aria-hidden="true">
+    <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox__card">
+      <div class="lightbox__image-wrap">
+        <button class="lightbox__arrow lightbox__arrow--prev" id="lightbox-prev" aria-label="Previous project">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="lightbox-embla" id="lightbox-embla">
+          <div class="lightbox-embla__container" id="lightbox-embla-container"></div>
+        </div>
+        <button class="lightbox__arrow lightbox__arrow--next" id="lightbox-next" aria-label="Next project">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="lightbox__dots" id="lightbox-dots"></div>
+      </div>
+      <div class="lightbox__footer">
+        <div>
+          <p class="lightbox__category" id="lightbox-category"></p>
+          <p class="lightbox__title" id="lightbox-title"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="products.html" class="site-footer__link">PVC Wall Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="products.html" class="site-footer__link">Laminate Sheets</a></li>
+            <li><a href="greenrich.html" class="site-footer__link">Greenrich Laminates</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="products.html" class="site-footer__link">Our Products</a></li>
+            <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
+            <li><a href="#" class="site-footer__link">Events</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich</a></li>
+            <li><a href="#" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/embla-carousel@8.3.0/embla-carousel.umd.js"></script>
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>
