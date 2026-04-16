@@ -1305,3 +1305,62 @@ button.site-footer__col-title {
     }
   }
 }
+
+/* =====================================================
+   INSIGHTS FILTER
+===================================================== */
+@layer components {
+  .insights-filter {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.25s cubic-bezier(0.4,0,0.2,1),
+                color 0.25s cubic-bezier(0.4,0,0.2,1),
+                border-color 0.25s ease;
+  }
+
+  /* Inactive hover bg — only when NOT active so white text never shows on light bg */
+  .insights-filter:not(.insights-filter--active):hover {
+    background-color: #f5f5f5;
+  }
+
+  /* Hover anchor — bottom line that slides in from center */
+  .insights-filter::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.22s cubic-bezier(0.4,0,0.2,1);
+  }
+  .insights-filter:not(.insights-filter--active):hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Click pop */
+  @keyframes filter-pop {
+    0%   { transform: scale(1); }
+    35%  { transform: scale(0.91); }
+    100% { transform: scale(1); }
+  }
+  .insights-filter.is-activating {
+    animation: filter-pop 0.28s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+
+  /* Cards */
+  .insights-card {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .insights-card.is-hiding {
+    opacity: 0;
+    transform: translateY(8px);
+    pointer-events: none;
+  }
+  .insights-card.is-entering {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}

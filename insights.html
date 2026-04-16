@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Insights — Veenus PVC interior solutions." />
+  <title>Insights — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="#" role="menuitem">Tiles</a></li>
+                            <li><a href="#" role="menuitem">Sanitaryware</a></li>
+                            <li><a href="#" role="menuitem">Faucets</a></li>
+                            <li><a href="#" role="menuitem">Accessories</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="#">Tiles</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="drawer__item"><a href="events.html">Events</a></li>
+                    <li class="drawer__item"><a href="insights.html">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="#" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+
+    <!-- Breadcrumb -->
+    <section class="insights-breadcrumb-section py-5">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="flex items-center gap-3 text-sm font-normal leading-[1.4] whitespace-nowrap">
+            <li class="flex items-center gap-3 text-[#6d6d6d]">
+              <a href="index.html" class="hover:text-neutral-900 transition-colors">Home</a>
+              <span aria-hidden="true">/</span>
+            </li>
+            <li class="text-black" aria-current="page">Insight</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Popular Topics -->
+    <section class="insights-topics-section pb-[3.75rem] lg:pb-[6.25rem]">
+      <div class="container">
+
+        <!-- Section header: title + filter tabs -->
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between pt-8 lg:pt-10 pb-8 lg:pb-10">
+          <h2 class="text-[2.1875rem] lg:text-[2.875rem] font-normal leading-[1.11] tracking-[-0.02em] text-black">
+            Popular <em class="font-serif-display not-italic italic">Topics</em>
+          </h2>
+
+          <!-- Filter tabs -->
+          <div class="flex items-center gap-2" role="group" aria-label="Filter by topic">
+            <button data-filter="all"  class="insights-filter insights-filter--active px-6 py-3 text-[0.75rem] font-semibold uppercase tracking-[0.04em] leading-[1.3] text-white bg-black transition-colors" aria-pressed="true">All</button>
+            <button data-filter="blog" class="insights-filter px-6 py-3 text-[0.75rem] font-medium uppercase tracking-[0.04em] leading-[1.3] text-[#222] bg-white border border-[#eaeaea]" aria-pressed="false">Blogs</button>
+            <button data-filter="news" class="insights-filter px-6 py-3 text-[0.75rem] font-medium uppercase tracking-[0.04em] leading-[1.3] text-[#222] bg-white border border-[#eaeaea]" aria-pressed="false">News</button>
+          </div>
+        </div>
+
+        <!-- Cards grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-x-6 lg:gap-y-8">
+
+          <!-- Card 1 -->
+          <article class="insights-card flex flex-col bg-white" data-category="blog">
+            <!-- Image -->
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-eco-friendly.jpg" alt="Eco-friendly home design innovations" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <!-- Content -->
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Exploring Eco-Friendly Innovations in Home Design</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="insights-card flex flex-col bg-white" data-category="blog">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-material.jpg" alt="PVC versus wood for modern interiors" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">PVC or Wood: The Best Choice for Modern Interiors</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="insights-card flex flex-col bg-white" data-category="news">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-transforming.jpg" alt="Choosing the right wall panel for your space" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Choosing the Right Wall Panel for Your Space</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="insights-card flex flex-col bg-white" data-category="news">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-color-blocking.jpg" alt="Interior design trends 2026" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">5 Interior Design Trends Dominating 2026</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="insights-card flex flex-col bg-white" data-category="blog">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-open-concept.jpg" alt="Open-concept living benefits and drawbacks" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Open-Concept Living: Weighing the Benefits and Drawbacks</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="insights-card flex flex-col bg-white" data-category="news">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-transforming.jpg" alt="The impact of custom millwork on interiors" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Transforming Interiors: The Impact of Custom Millwork</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="insights-card flex flex-col bg-white" data-category="news">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-future-homes.jpg" alt="Smart home technology forecast 2026" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Future Homes: A Detailed Forecast of Smart Home Technology in 2026</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="insights-card flex flex-col bg-white" data-category="blog">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-material.jpg" alt="Stone versus tile material comparison" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Material Face-Off: A Comprehensive Comparison of Stone and Tile</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="insights-card flex flex-col bg-white" data-category="blog">
+            <div class="w-full aspect-[3/2] overflow-hidden">
+              <img src="src/images/insight-color-blocking.jpg" alt="Mastering the art of color blocking in interiors" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="flex flex-col gap-6 py-8">
+              <div class="flex flex-col gap-[18px]">
+                <p class="text-[0.875rem] font-medium uppercase tracking-[-0.01em] text-[#6e6e6e] leading-[1.1]">Feb 15, 2026</p>
+                <h3 class="text-[1.25rem] font-normal leading-[1.4] text-black">Creative Interiors: Mastering the Art of Color Blocking</h3>
+              </div>
+              <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:opacity-70 transition-opacity">
+                Read More
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Load More -->
+        <div class="flex justify-center mt-[1.75rem] lg:mt-[1.75rem]">
+          <button class="inline-flex items-center gap-1.5 border border-black px-[2.125rem] py-4 text-base font-medium text-black tracking-[-0.015em] hover:bg-black hover:text-white transition-colors">
+            Load More
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="products.html" class="site-footer__link">PVC Wall Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="products.html" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="products.html" class="site-footer__link">Laminate Sheets</a></li>
+            <li><a href="greenrich.html" class="site-footer__link">Greenrich Laminates</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="products.html" class="site-footer__link">Our Products</a></li>
+            <li><a href="#" class="site-footer__link">Portfolio / Our Work</a></li>
+            <li><a href="#" class="site-footer__link">Events</a></li>
+            <li><a href="#" class="site-footer__link">Greenrich</a></li>
+            <li><a href="#" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>

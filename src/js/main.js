@@ -549,6 +549,64 @@ if (spacesSlider && typeof EmblaCarousel !== 'undefined') {
   });
 })();
 
+// Insights filter — Insights page
+(function () {
+  const filterBtns = document.querySelectorAll('[data-filter]');
+  if (!filterBtns.length) return;
+
+  const cards = document.querySelectorAll('[data-category]');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      // Pop animation on clicked button
+      btn.classList.remove('is-activating');
+      void btn.offsetWidth; // reflow to restart animation
+      btn.classList.add('is-activating');
+      btn.addEventListener('animationend', () => btn.classList.remove('is-activating'), { once: true });
+
+      // Update button states
+      filterBtns.forEach((b) => {
+        const active = b === btn;
+        b.setAttribute('aria-pressed', String(active));
+        b.classList.toggle('insights-filter--active', active);
+        b.classList.toggle('bg-black', active);
+        b.classList.toggle('text-white', active);
+        b.classList.toggle('font-semibold', active);
+        b.classList.toggle('border', !active);
+        b.classList.toggle('border-[#eaeaea]', !active);
+        b.classList.toggle('bg-white', !active);
+        b.classList.toggle('text-[#222]', !active);
+        b.classList.toggle('font-medium', !active);
+      });
+
+      // Animate cards in/out
+      let visibleIdx = 0;
+      cards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.category === filter;
+
+        if (match) {
+          // Remove any lingering hide state
+          card.classList.remove('is-hiding');
+          card.style.display = '';
+          // Set entering state, then stagger the fade-in
+          card.classList.add('is-entering');
+          const delay = visibleIdx * 50;
+          setTimeout(() => card.classList.remove('is-entering'), delay + 16);
+          visibleIdx++;
+        } else {
+          card.classList.remove('is-entering');
+          card.classList.add('is-hiding');
+          card.addEventListener('transitionend', () => {
+            if (card.classList.contains('is-hiding')) card.style.display = 'none';
+          }, { once: true });
+        }
+      });
+    });
+  });
+})();
+
 // Products Range slider (Embla) — Products page
 const productsRangeSlider = document.getElementById('products-range-slider');
 

@@ -59,7 +59,8 @@
       "Bash(awk '{print $1, $NF}')",
       "mcp__claude_ai_Figma__get_metadata",
       "Bash(curl -L \"https://www.figma.com/api/mcp/asset/a330e28e-0659-4bf2-a9d2-15975543e922\" -o \"src/images/portfolio-intro.jpg\")",
-      "Bash(grep -n \"\\\\.hidden\\\\|lg\\\\\\\\\\\\\\\\:block \" \"c:\\\\Ajo\\\\Veenus\\\\HTML\\\\src\\\\css\\\\main.css\")"
+      "Bash(grep -n \"\\\\.hidden\\\\|lg\\\\\\\\\\\\\\\\:block \" \"c:\\\\Ajo\\\\Veenus\\\\HTML\\\\src\\\\css\\\\main.css\")",
+      "mcp__claude_ai_Figma__get_screenshot"
     ]
   }
 }

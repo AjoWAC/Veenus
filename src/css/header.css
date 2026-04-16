@@ -77,7 +77,7 @@ body.page-solid-header .nav .hamburger span {
 
 /* Reserve space below the fixed nav so page content doesn't sit under it */
 body.page-solid-header main {
-  padding-top: 57px;
+  padding-top: 80px;
 }
 
 .nav__bar {
