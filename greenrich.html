@@ -115,10 +115,16 @@
   <main>
     <section class="gr-hero">
   <div class="gr-hero__bg">
+    <!-- Image
+         Source : 2880×1463px (landscape)
+         Ratio  : 2880:1463 (≈ 1.97:1)
+         Mobile : full-bleed hero bg — CSS-fixed height via .gr-hero, object-cover crops
+         Desktop: full-bleed hero bg — CSS-fixed height via .gr-hero, object-cover crops
+    -->
     <img
       src="src/images/greenrich-hero-bg.jpg"
-      width="1920"
-      height="1080"
+      width="2880"
+      height="1463"
       class="gr-hero__bg-img"
       loading="eager"
       alt="Modern dining interior with PVC wall panels"
@@ -129,10 +135,16 @@
   <div class="gr-hero__content">
     <div class="gr-hero__upper">
       <a href="/" class="gr-hero__logo" aria-label="Greenrich Laminates home">
+        <!-- Image
+             Source : 270×147px (logo, PNG with transparency)
+             Ratio  : 270:147 (≈ 1.84:1)
+             Mobile : fixed 180×97px display (CSS-controlled via .gr-hero__logo)
+             Desktop: fixed 180×97px display (CSS-controlled via .gr-hero__logo)
+        -->
         <img
           src="src/images/greenrich-logo.png"
-          width="180"
-          height="97"
+          width="270"
+          height="147"
           alt="Greenrich Laminates"
         />
       </a>
@@ -161,13 +173,18 @@
     <section class="gr-about-section overflow-hidden">
   <div class="flex flex-col gap-[2.5rem] px-5 py-[3.75rem] lg:flex-row lg:gap-0 lg:p-0 lg:items-stretch">
 
-    <!-- Image: padded on mobile, bleeds left on desktop -->
+    <!-- Image — dual source (mobile / desktop switch)
+         Mobile  source : greenrich-about-mob.png  530×566px  (ratio 265:283 ≈ 0.94:1)
+                          wrapper aspect-[352/376] — design-spec crop, fluid width
+         Desktop source : greenrich-about-img.jpg  1425×1461px (ratio ≈ 1:1, near-square)
+                          lg:aspect-auto + lg:self-stretch — fills full section column height, object-cover crops
+    -->
     <div class="w-full aspect-[352/376] lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
       <!-- Mobile image -->
       <img
         src="src/images/greenrich-about-mob.png"
-        width="352"
-        height="376"
+        width="530"
+        height="566"
         class="w-full h-full object-cover lg:hidden"
         loading="lazy"
         alt="Greenrich Laminates interior showcase"
@@ -175,8 +192,8 @@
       <!-- Desktop image -->
       <img
         src="src/images/greenrich-about-img.jpg"
-        width="950"
-        height="974"
+        width="1425"
+        height="1461"
         class="hidden w-full h-full object-cover lg:block"
         loading="lazy"
         alt="Greenrich Laminates interior showcase"
@@ -377,10 +394,16 @@
 
       <!-- Right image — desktop only, fills remaining space -->
       <div class="hidden lg:block lg:flex-1 relative overflow-hidden">
+        <!-- Image
+             Source : 1140×1079px (near-square)
+             Ratio  : 1140:1079 (≈ 1.06:1)
+             Mobile : hidden (desktop-only)
+             Desktop: lg:flex-1 — fills remaining column width; absolute inset + object-cover crops to section height
+        -->
         <img
           src="src/images/gr-crafting-img.jpg"
-          width="763"
-          height="1017"
+          width="1140"
+          height="1079"
           class="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
           alt="Interior space crafted with Greenrich laminates"

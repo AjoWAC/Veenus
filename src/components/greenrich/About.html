@@ -1,13 +1,18 @@
 <section class="gr-about-section overflow-hidden">
   <div class="flex flex-col gap-[2.5rem] px-5 py-[3.75rem] lg:flex-row lg:gap-0 lg:p-0 lg:items-stretch">
 
-    <!-- Image: padded on mobile, bleeds left on desktop -->
+    <!-- Image — dual source (mobile / desktop switch)
+         Mobile  source : greenrich-about-mob.png  530×566px  (ratio 265:283 ≈ 0.94:1)
+                          wrapper aspect-[352/376] — design-spec crop, fluid width
+         Desktop source : greenrich-about-img.jpg  1425×1461px (ratio ≈ 1:1, near-square)
+                          lg:aspect-auto + lg:self-stretch — fills full section column height, object-cover crops
+    -->
     <div class="w-full aspect-[352/376] lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
       <!-- Mobile image -->
       <img
         src="src/images/greenrich-about-mob.png"
-        width="352"
-        height="376"
+        width="530"
+        height="566"
         class="w-full h-full object-cover lg:hidden"
         loading="lazy"
         alt="Greenrich Laminates interior showcase"
@@ -15,8 +20,8 @@
       <!-- Desktop image -->
       <img
         src="src/images/greenrich-about-img.jpg"
-        width="950"
-        height="974"
+        width="1425"
+        height="1461"
         class="hidden w-full h-full object-cover lg:block"
         loading="lazy"
         alt="Greenrich Laminates interior showcase"
