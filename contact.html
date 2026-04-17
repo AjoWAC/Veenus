@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Us — Veenus PVC interior solutions." />
+  <title>Contact Us — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="product-listing.html" role="menuitem">PVC Ceiling Panels</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Doors</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Interior Wall Panels</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Louvers</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Panels</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Laminate</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="contact.html" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="product-listing.html">PVC Ceiling Panels</a></li>
+                        <li><a href="product-listing.html">PVC Doors</a></li>
+                        <li><a href="product-listing.html">PVC Interior Wall Panels</a></li>
+                        <li><a href="product-listing.html">PVC Louvers</a></li>
+                        <li><a href="product-listing.html">PVC Panels</a></li>
+                        <li><a href="product-listing.html">PVC Laminate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="drawer__item"><a href="events.html">Events</a></li>
+                    <li class="drawer__item"><a href="insights.html">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="contact.html" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+
+    <!-- Breadcrumb -->
+    <section class="contact-breadcrumb py-5">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="flex items-center gap-3 text-sm font-normal leading-[1.4] whitespace-nowrap">
+            <li class="flex items-center gap-3 text-[#6d6d6d]">
+              <a href="index.html" class="hover:text-neutral-900 transition-colors">Home</a>
+              <span aria-hidden="true">/</span>
+            </li>
+            <li class="text-black" aria-current="page">Contact Us</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="product-listing.html" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Interior Wall Panels</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Louvers</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Panels</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Laminate</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="products.html" class="site-footer__link">Our Products</a></li>
+            <li><a href="portfolio.html" class="site-footer__link">Portfolio</a></li>
+            <li><a href="events.html" class="site-footer__link">Events</a></li>
+            <li><a href="insights.html" class="site-footer__link">Insights</a></li>
+            <li><a href="greenrich.html" class="site-footer__link">Greenrich</a></li>
+            <li><a href="contact.html" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>
