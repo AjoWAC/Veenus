@@ -16,7 +16,9 @@
   <main>
    <section class="about-banner" aria-label="About Veenus hero">
   <picture class="about-banner__bg">
-    <source media="(min-width: 1024px)" srcset="src/images/protfolio-banner-desk.jpg">
+    <!-- Desktop: protfolio-banner-desk.jpg | 1920×600px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <source media="(min-width: 1024px)" srcset="src/images/protfolio-banner-desk.jpg" width="1920" height="600">
+    <!-- Mobile:  390×640px | full-bleed hero, CSS-fixed height via .about-banner -->
     <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
   </picture>
 

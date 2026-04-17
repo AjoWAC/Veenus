@@ -99,7 +99,7 @@
   font-family: 'Playfair', serif;
   font-style: italic;
   font-weight: 400;
-  color: #f5e8d0;       /* fix: was var(--cream) — variable was never defined */
+   
 }
 
 .slide__body {

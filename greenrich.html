@@ -119,12 +119,6 @@
   <main>
     <section class="gr-hero">
   <div class="gr-hero__bg">
-    <!-- Image
-         Source : 2880×1463px (landscape)
-         Ratio  : 2880:1463 (≈ 1.97:1)
-         Mobile : full-bleed hero bg — CSS-fixed height via .gr-hero, object-cover crops
-         Desktop: full-bleed hero bg — CSS-fixed height via .gr-hero, object-cover crops
-    -->
     <img
       src="src/images/greenrich-hero-bg.jpg"
       width="2880"
@@ -139,12 +133,6 @@
   <div class="gr-hero__content">
     <div class="gr-hero__upper">
       <a href="/" class="gr-hero__logo" aria-label="Greenrich Laminates home">
-        <!-- Image
-             Source : 270×147px (logo, PNG with transparency)
-             Ratio  : 270:147 (≈ 1.84:1)
-             Mobile : fixed 180×97px display (CSS-controlled via .gr-hero__logo)
-             Desktop: fixed 180×97px display (CSS-controlled via .gr-hero__logo)
-        -->
         <img
           src="src/images/greenrich-logo.png"
           width="270"
@@ -177,32 +165,21 @@
     <section class="gr-about-section overflow-hidden">
   <div class="flex flex-col gap-[2.5rem] px-5 py-[3.75rem] lg:flex-row lg:gap-0 lg:p-0 lg:items-stretch">
 
-    <!-- Image — dual source (mobile / desktop switch)
-         Mobile  source : greenrich-about-mob.png  530×566px  (ratio 265:283 ≈ 0.94:1)
-                          wrapper aspect-[352/376] — design-spec crop, fluid width
-         Desktop source : greenrich-about-img.jpg  1425×1461px (ratio ≈ 1:1, near-square)
-                          lg:aspect-auto + lg:self-stretch — fills full section column height, object-cover crops
-    -->
-    <div class="w-full aspect-[352/376] lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
-      <!-- Mobile image -->
-      <img
-        src="src/images/greenrich-about-mob.png"
-        width="530"
-        height="566"
-        class="w-full h-full object-cover lg:hidden"
-        loading="lazy"
-        alt="Greenrich Laminates interior showcase"
-      />
-      <!-- Desktop image -->
-      <img
-        src="src/images/greenrich-about-img.jpg"
-        width="1425"
-        height="1461"
-        class="hidden w-full h-full object-cover lg:block"
-        loading="lazy"
-        alt="Greenrich Laminates interior showcase"
-      />
-    </div>
+    <figure class="w-full aspect-352/376 lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
+      <picture>
+        <!-- Desktop: 1425×1461px | lg:aspect-auto + self-stretch — fills column height, object-cover crops -->
+        <source media="(min-width: 1024px)" srcset="src/images/greenrich-about-img.jpg" width="1425" height="1461">
+        <!-- Mobile:  530×566px | aspect-352/376 | fluid width, ratio-locked -->
+        <img
+          src="src/images/greenrich-about-mob.png"
+          width="530"
+          height="566"
+          class="w-full h-full object-cover"
+          loading="lazy"
+          alt="Greenrich Laminates interior showcase"
+        />
+      </picture>
+    </figure>
 
     <!-- Content -->
     <div class="flex flex-col justify-center gap-[clamp(2.5rem,5vw,4.5rem)] pb-15 lg:w-1/2 lg:px-[clamp(3rem,5vw,5rem)] lg:pr-[clamp(4rem,7vw,8.125rem)] lg:py-[2.6875rem]">
@@ -357,7 +334,6 @@
           <div class="flex gap-[0.625rem]">
 
             <div class="shrink-0 w-[83%] flex flex-col gap-6">
-              <!-- Image: 355×449px -->
               <div class="w-full aspect-[355/449] overflow-hidden bg-[#c2a385]">
                 <img src="src/images/prod-wall-panels.jpg" alt="Architectural Woods PVC wall panels" width="355" height="449" loading="lazy" class="w-full h-full object-cover">
               </div>
@@ -459,7 +435,6 @@
       <div class="hidden lg:grid lg:grid-cols-4 gap-5">
 
         <div class="flex flex-col gap-6">
-          <!-- Image: Source 400×505px, ratio ≈ 0.79:1 -->
           <div class="w-full aspect-400/505 overflow-hidden bg-[#c2a385]">
             <img src="src/images/prod-wall-panels.jpg" alt="Architectural Woods PVC wall panels" width="400" height="505" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
           </div>
@@ -609,12 +584,6 @@
 
       <!-- Right image — desktop only, fills remaining space -->
       <div class="hidden lg:block lg:flex-1 relative overflow-hidden">
-        <!-- Image
-             Source : 1140×1079px (near-square)
-             Ratio  : 1140:1079 (≈ 1.06:1)
-             Mobile : hidden (desktop-only)
-             Desktop: lg:flex-1 — fills remaining column width; absolute inset + object-cover crops to section height
-        -->
         <img
           src="src/images/gr-crafting-img.jpg"
           width="1140"

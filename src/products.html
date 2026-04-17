@@ -17,7 +17,9 @@
   <main>
         <section class="about-banner" aria-label="About Veenus hero">
   <picture class="about-banner__bg">
-    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg">
+    <!-- Desktop: product-banner-desk.jpg | 1920×600px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg" width="1920" height="600">
+    <!-- Mobile:  390×640px | full-bleed hero, CSS-fixed height via .about-banner -->
     <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
   </picture>
 
@@ -44,7 +46,13 @@
 
     
     <!-- CTA Banner Section -->
-    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]" style="background-image: url('src/images/about-cta-bg.png'); background-size: cover; background-position: center;">
+    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]">
+      <figure class="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <picture>
+          <!-- Source: 2880×887px | ratio ≈ 3.25:1 | full-bleed background, object-cover center -->
+          <img src="src/images/about-cta-bg.png" width="2880" height="887" class="w-full h-full object-cover object-center" loading="lazy" alt="">
+        </picture>
+      </figure>
       <div class="absolute inset-0 bg-black/10"></div>
       <div class="container relative z-10">
         <div class="flex flex-col items-center text-center gap-6 max-w-[52rem] mx-auto">

@@ -3,22 +3,20 @@
 
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
 
-      <!-- Image
-           Source : 1920×2880px (PNG) | portrait 2:3
-           Display: clipped to 820×561 landscape via overflow-hidden + object-cover
-           Mobile : w-full + aspect-820/561 → fluid, ratio-locked
-           Desktop: lg:w-[50%] lg:max-w-205 → capped at 820px
-      -->
-      <div class="w-full aspect-820/561 lg:w-[50%] lg:max-w-205 shrink-0 overflow-hidden">
-        <img
-          src="src/images/portfolio-intro.png"
-          alt="Modern interior featuring Veenus PVC wall panels"
-          width="1920"
-          height="2880"
-          class="w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
+      <figure class="w-full aspect-820/561 lg:w-[50%] lg:max-w-205 shrink-0 overflow-hidden">
+        <picture>
+          <!-- Source: 1920×2880px (portrait) | displayed as 820×561 via overflow+object-cover
+               Desktop + Mobile: aspect-820/561 fluid width, ratio-locked -->
+          <img
+            src="src/images/portfolio-intro.png"
+            alt="Modern interior featuring Veenus PVC wall panels"
+            width="1920"
+            height="2880"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </picture>
+      </figure>
 
       <!-- Text content -->
       <div class="flex flex-col gap-6 lg:gap-6 flex-1 min-w-0">

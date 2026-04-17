@@ -1,32 +1,21 @@
 <section class="gr-about-section overflow-hidden">
   <div class="flex flex-col gap-[2.5rem] px-5 py-[3.75rem] lg:flex-row lg:gap-0 lg:p-0 lg:items-stretch">
 
-    <!-- Image — dual source (mobile / desktop switch)
-         Mobile  source : greenrich-about-mob.png  530×566px  (ratio 265:283 ≈ 0.94:1)
-                          wrapper aspect-[352/376] — design-spec crop, fluid width
-         Desktop source : greenrich-about-img.jpg  1425×1461px (ratio ≈ 1:1, near-square)
-                          lg:aspect-auto + lg:self-stretch — fills full section column height, object-cover crops
-    -->
-    <div class="w-full aspect-[352/376] lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
-      <!-- Mobile image -->
-      <img
-        src="src/images/greenrich-about-mob.png"
-        width="530"
-        height="566"
-        class="w-full h-full object-cover lg:hidden"
-        loading="lazy"
-        alt="Greenrich Laminates interior showcase"
-      />
-      <!-- Desktop image -->
-      <img
-        src="src/images/greenrich-about-img.jpg"
-        width="1425"
-        height="1461"
-        class="hidden w-full h-full object-cover lg:block"
-        loading="lazy"
-        alt="Greenrich Laminates interior showcase"
-      />
-    </div>
+    <figure class="w-full aspect-352/376 lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
+      <picture>
+        <!-- Desktop: 1425×1461px | lg:aspect-auto + self-stretch — fills column height, object-cover crops -->
+        <source media="(min-width: 1024px)" srcset="src/images/greenrich-about-img.jpg" width="1425" height="1461">
+        <!-- Mobile:  530×566px | aspect-352/376 | fluid width, ratio-locked -->
+        <img
+          src="src/images/greenrich-about-mob.png"
+          width="530"
+          height="566"
+          class="w-full h-full object-cover"
+          loading="lazy"
+          alt="Greenrich Laminates interior showcase"
+        />
+      </picture>
+    </figure>
 
     <!-- Content -->
     <div class="flex flex-col justify-center gap-[clamp(2.5rem,5vw,4.5rem)] pb-15 lg:w-1/2 lg:px-[clamp(3rem,5vw,5rem)] lg:pr-[clamp(4rem,7vw,8.125rem)] lg:py-[2.6875rem]">

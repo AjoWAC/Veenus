@@ -153,34 +153,71 @@ Pattern: `[content-name]-section`
 ```
 
 ### Responsive images
-- Mobile: `w-full aspect-W/H` — fluid with locked ratio (Tailwind v4: `aspect-820/561`, not `aspect-[820/561]`)
-- Desktop: `lg:w-[X%] lg:max-w-NNN` — percentage-based, capped at design max (Tailwind v4: `lg:max-w-205`, not `lg:max-w-[820px]`)
-- Always include `width`, `height`, `loading="lazy"`, and descriptive `alt`
+
+**Standard pattern — `<figure>` + `<picture>` with size comments inside:**
+
+Every content image must be wrapped in `<figure>` (outer, carries layout classes) → `<picture>` (inner, carries size comments + optional `<source>`) → `<img>`.
+
+- `<figure>` replaces the old `<div>` wrapper — carries all Tailwind layout/aspect/overflow classes
+- `<picture>` holds HTML comments documenting source dimensions, ratio, and responsive behavior per breakpoint
+- Use `<source media="(min-width: 1024px)">` when desktop and mobile serve **different image files**
+- Always include `width`, `height`, `loading="lazy"`, and descriptive `alt` on `<img>`
 - **Never use fixed `h-[Xpx]`** for images — always use `aspect-W/H` so the ratio is preserved at every viewport width
+- Mobile: `w-full aspect-W/H` — fluid with locked ratio (Tailwind v4: `aspect-820/561`, not `aspect-[820/561]`)
+- Desktop: `lg:w-[X%] lg:max-w-NNN` — percentage-based, capped at design max
 
-**Every image wrapper must have an HTML comment** recording the source dimensions, ratio, and responsive behavior for future reference:
-
+**Same image, same ratio (both breakpoints):**
 ```html
-<!-- Image
-     Source: 820×561px
-     Ratio : 820:561 (≈ 1.46:1)
-     Mobile : w-full + aspect-820/561  → fluid width, ratio-locked height
-     Desktop: w-[45%] max-w-205        → same ratio, capped at 820px
--->
-<div class="w-full aspect-820/561 lg:w-[45%] lg:max-w-205 shrink-0 overflow-hidden">
-  <img src="..." width="820" height="561" class="w-full h-full object-cover" loading="lazy" alt="...">
-</div>
+<figure class="w-full aspect-820/561 lg:w-[45%] lg:max-w-205 shrink-0 overflow-hidden">
+  <picture>
+    <!-- Source: 820×561px | ratio 820:561 (≈ 1.46:1)
+         Desktop + Mobile: aspect-820/561 fluid width, ratio-locked -->
+    <img src="..." width="820" height="561" class="w-full h-full object-cover" loading="lazy" alt="...">
+  </picture>
+</figure>
 ```
 
-If mobile and desktop use **different crop ratios**, document both:
-
+**Different image files per breakpoint (use `<source>`):**
 ```html
-<!-- Image
-     Source: 1200×800px
-     Ratio : 3:2 (≈ 1.5:1)
-     Mobile : w-full + aspect-4/3   → tighter crop on small screens
-     Desktop: w-[50%] max-w-[600px] + aspect-3/2
--->
+<figure class="w-full aspect-352/376 lg:w-1/2 lg:aspect-auto lg:self-stretch shrink-0 overflow-hidden">
+  <picture>
+    <!-- Desktop: 1425×1461px | lg:aspect-auto + self-stretch — fills column height, object-cover crops -->
+    <source media="(min-width: 1024px)" srcset="src/images/desktop-image.jpg" width="1425" height="1461">
+    <!-- Mobile:  530×566px | aspect-352/376 | fluid width, ratio-locked -->
+    <img src="src/images/mobile-image.png" width="530" height="566" class="w-full h-full object-cover" loading="lazy" alt="...">
+  </picture>
+</figure>
+```
+
+**Fixed-height containers (sliders, grids):**
+```html
+<figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+  <picture>
+    <!-- Source: 392×272px | fixed h-[17rem] | fluid width | object-cover crops -->
+    <img src="..." width="392" height="272" class="w-full h-full object-cover" loading="lazy" alt="...">
+  </picture>
+</figure>
+```
+
+**With absolute-position overlay inside figure (gradient, badge, etc.):**
+```html
+<figure class="relative w-full aspect-820/561 overflow-hidden lg:w-[58%] lg:max-w-205 shrink-0">
+  <picture>
+    <!-- Source: 820×561px | aspect-820/561 | object-cover -->
+    <img src="..." width="820" height="561" class="w-full h-full object-cover" loading="lazy" alt="...">
+  </picture>
+  <div class="absolute inset-0 ..." aria-hidden="true"></div>
+</figure>
+```
+
+**Awards/logo grid — figure+picture inside the cell div:**
+```html
+<div class="awards-grid__cell">
+  <figure><picture>
+    <!-- Source: 120×60px | constrained by cell aspect-ratio via CSS -->
+    <img src="..." width="120" height="60" loading="lazy" alt="...">
+  </picture></figure>
+</div>
 ```
 
 ### Responsive fluid sizing

@@ -120,7 +120,9 @@
   <main>
         <section class="about-banner" aria-label="About Veenus hero">
   <picture class="about-banner__bg">
-    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg">
+    <!-- Desktop: product-banner-desk.jpg | 1920×600px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg" width="1920" height="600">
+    <!-- Mobile:  390×640px | full-bleed hero, CSS-fixed height via .about-banner -->
     <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
   </picture>
 
@@ -163,15 +165,12 @@
       <!-- Card 1: PVC Wall Panels -->
       <div class="products-range-embla__slide">
         <div class="products-range-card">
-          <!-- Image
-               Source : 602×830px (portrait)
-               Ratio  : 301:415 (≈ 0.73:1)
-               Mobile : ~75vw wide × 385px tall  — CSS fixed height, object-cover crops
-               Desktop: 401px wide × 553px tall  — CSS fixed height, object-cover crops
-          -->
-          <div class="products-range-card__img">
-            <img src="src/images/prod-wall-panels.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Wall Panels" />
-          </div>
+          <figure class="products-range-card__img">
+            <picture>
+              <!-- Source: 602×830px (portrait) | CSS fixed height via .products-range-card__img | object-cover crops -->
+              <img src="src/images/prod-wall-panels.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Wall Panels" />
+            </picture>
+          </figure>
           <div class="products-range-card__info bg-[#ffe8cb]">
             <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Wall Panels</h3>
             <div class="products-range-card__btn-wrap">
@@ -184,16 +183,13 @@
       <!-- Card 2: PVC Ceiling Panels -->
       <div class="products-range-embla__slide">
         <div class="products-range-card">
-          <!-- Image
-               Source : 602×830px (portrait)
-               Ratio  : 301:415 (≈ 0.73:1)
-               Mobile : ~75vw wide × 385px tall  — CSS fixed height, object-cover crops
-               Desktop: 401px wide × 553px tall  — CSS fixed height, object-cover crops
-          -->
-          <div class="products-range-card__img">
+          <figure class="products-range-card__img">
             <span class="products-range-card__badge">Ceilings</span>
-            <img src="src/images/prod-ceiling-panels.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Ceiling Panels" />
-          </div>
+            <picture>
+              <!-- Source: 602×830px (portrait) | CSS fixed height via .products-range-card__img | object-cover crops -->
+              <img src="src/images/prod-ceiling-panels.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Ceiling Panels" />
+            </picture>
+          </figure>
           <div class="products-range-card__info bg-[#b8b0a4]">
             <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Ceiling Panels</h3>
             <div class="products-range-card__btn-wrap">
@@ -206,16 +202,13 @@
       <!-- Card 3: PVC Louvers -->
       <div class="products-range-embla__slide">
         <div class="products-range-card">
-          <!-- Image
-               Source : 602×830px (portrait)
-               Ratio  : 301:415 (≈ 0.73:1)
-               Mobile : ~75vw wide × 385px tall  — CSS fixed height, object-cover crops
-               Desktop: 401px wide × 553px tall  — CSS fixed height, object-cover crops
-          -->
-          <div class="products-range-card__img">
+          <figure class="products-range-card__img">
             <span class="products-range-card__badge">Architectural</span>
-            <img src="src/images/prod-louvers.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Louvers" />
-          </div>
+            <picture>
+              <!-- Source: 602×830px (portrait) | CSS fixed height via .products-range-card__img | object-cover crops -->
+              <img src="src/images/prod-louvers.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Louvers" />
+            </picture>
+          </figure>
           <div class="products-range-card__info bg-[#e1d1bf]">
             <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Louvers</h3>
             <div class="products-range-card__btn-wrap">
@@ -228,16 +221,13 @@
       <!-- Card 4: PVC Doors -->
       <div class="products-range-embla__slide">
         <div class="products-range-card">
-          <!-- Image
-               Source : 602×830px (portrait)
-               Ratio  : 301:415 (≈ 0.73:1)
-               Mobile : ~75vw wide × 385px tall  — CSS fixed height, object-cover crops
-               Desktop: 401px wide × 553px tall  — CSS fixed height, object-cover crops
-          -->
-          <div class="products-range-card__img">
+          <figure class="products-range-card__img">
             <span class="products-range-card__badge">Openings</span>
-            <img src="src/images/prod-doors.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Doors" />
-          </div>
+            <picture>
+              <!-- Source: 602×830px (portrait) | CSS fixed height via .products-range-card__img | object-cover crops -->
+              <img src="src/images/prod-doors.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="PVC Doors" />
+            </picture>
+          </figure>
           <div class="products-range-card__info bg-[#e8e7e0]">
             <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">PVC Doors</h3>
             <div class="products-range-card__btn-wrap">
@@ -250,16 +240,13 @@
       <!-- Card 5: Laminate Sheets -->
       <div class="products-range-embla__slide">
         <div class="products-range-card">
-          <!-- Image
-               Source : 602×830px (portrait)
-               Ratio  : 301:415 (≈ 0.73:1)
-               Mobile : ~75vw wide × 385px tall  — CSS fixed height, object-cover crops
-               Desktop: 401px wide × 553px tall  — CSS fixed height, object-cover crops
-          -->
-          <div class="products-range-card__img">
+          <figure class="products-range-card__img">
             <span class="products-range-card__badge">Surfaces</span>
-            <img src="src/images/prod-laminate.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="Laminate Sheets" />
-          </div>
+            <picture>
+              <!-- Source: 602×830px (portrait) | CSS fixed height via .products-range-card__img | object-cover crops -->
+              <img src="src/images/prod-laminate.jpg" width="602" height="830" class="w-full h-full object-cover" loading="lazy" alt="Laminate Sheets" />
+            </picture>
+          </figure>
           <div class="products-range-card__info bg-[#aeb4b9]">
             <h3 class="font-serif-display text-base lg:text-2xl text-black tracking-[-0.02em] leading-normal">Laminate Sheets</h3>
             <div class="products-range-card__btn-wrap">
@@ -293,16 +280,13 @@
   <div class="container">
     <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-[5rem]">
 
-      <!-- Image
-           Source: 1230×842px
-           Ratio : 820:561 (≈ 1.46:1)
-           Mobile : w-full + aspect-[820/561]  → fluid width, ratio-locked height
-           Desktop: w-[58%] max-w-[820px] + aspect-[820/561] → same ratio, capped at 820px
-      -->
-      <div class="relative w-full aspect-820/561 overflow-hidden lg:w-[58%] lg:max-w-205 shrink-0">
-        <img src="src/images/prod-manufacturing.jpg" width="820" height="561" class="w-full h-full object-cover" loading="lazy" alt="Veenus manufacturing facility" />
+      <figure class="relative w-full aspect-820/561 overflow-hidden lg:w-[58%] lg:max-w-205 shrink-0">
+        <picture>
+          <!-- Source: 1230×842px | displayed as 820×561 | Desktop + Mobile: aspect-820/561 fluid, ratio-locked -->
+          <img src="src/images/prod-manufacturing.jpg" width="820" height="561" class="w-full h-full object-cover" loading="lazy" alt="Veenus manufacturing facility" />
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.2)]" aria-hidden="true"></div>
-      </div>
+      </figure>
 
       <!-- Text -->
       <div class="flex flex-col gap-5 lg:gap-6 lg:flex-1">
@@ -345,7 +329,13 @@
 
     
     <!-- CTA Banner Section -->
-    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]" style="background-image: url('src/images/about-cta-bg.png'); background-size: cover; background-position: center;">
+    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]">
+      <figure class="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <picture>
+          <!-- Source: 2880×887px | ratio ≈ 3.25:1 | full-bleed background, object-cover center -->
+          <img src="src/images/about-cta-bg.png" width="2880" height="887" class="w-full h-full object-cover object-center" loading="lazy" alt="">
+        </picture>
+      </figure>
       <div class="absolute inset-0 bg-black/10"></div>
       <div class="container relative z-10">
         <div class="flex flex-col items-center text-center gap-6 max-w-[52rem] mx-auto">

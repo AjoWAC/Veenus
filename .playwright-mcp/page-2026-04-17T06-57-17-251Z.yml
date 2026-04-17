@@ -1,0 +1,319 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - generic:
+      - generic:
+        - banner:
+          - navigation "Main navigation" [ref=e2]:
+            - generic [ref=e3]:
+              - link "Veenus – My Home My Style" [ref=e4] [cursor=pointer]:
+                - /url: index.html
+                - img "Veenus" [ref=e5]
+              - list [ref=e6]:
+                - listitem [ref=e7]:
+                  - link "About" [ref=e8] [cursor=pointer]:
+                    - /url: about-us.html
+                - listitem [ref=e9]:
+                  - link "Products" [ref=e10] [cursor=pointer]:
+                    - /url: products.html
+                    - text: Products
+                    - img [ref=e12]
+                - listitem [ref=e14]:
+                  - link "Portfolio" [ref=e15] [cursor=pointer]:
+                    - /url: portfolio.html
+                - listitem [ref=e16]:
+                  - link "Events" [ref=e17] [cursor=pointer]:
+                    - /url: events.html
+                - listitem [ref=e18]:
+                  - link "Insights" [ref=e19] [cursor=pointer]:
+                    - /url: insights.html
+                - listitem [ref=e20]:
+                  - link "Greenrich" [ref=e21] [cursor=pointer]:
+                    - /url: greenrich.html
+              - link "Contact Us" [ref=e23] [cursor=pointer]:
+                - /url: contact.html
+                - text: Contact Us
+                - img [ref=e24]
+  - main [ref=e26]:
+    - region "About Veenus hero" [ref=e27]:
+      - generic [ref=e30]:
+        - heading "Shaping Interiors with Purpose" [level=1] [ref=e31]:
+          - text: Shaping Interiors with
+          - emphasis [ref=e32]: Purpose
+        - paragraph [ref=e33]: A Trusted Manufacturer Delivering High-Quality PVC Interior Solutions For Residential And Commercial Spaces Across India.
+        - link "Explore Products" [ref=e34] [cursor=pointer]:
+          - /url: "#"
+          - text: Explore Products
+          - img [ref=e35]
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - heading "Crafting Environments That Inspire" [level=2] [ref=e42]:
+            - text: Crafting Environments
+            - text: That
+            - emphasis [ref=e43]: Inspire
+          - paragraph [ref=e44]: Founded on the principles of innovation and integrity, Veenus has grown from a specialized manufacturing unit into a market leader in PVC interior solutions. Our journey is defined by a relentless pursuit of quality and a deep understanding of architectural needs.
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - heading "Our Vision" [level=3] [ref=e47]
+            - paragraph [ref=e48]: To redefine interior spaces through sustainable, durable, and aesthetically superior PVC solutions.
+          - generic [ref=e49]:
+            - heading "Our Values" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Precision, reliability, and a customer-centric approach are at the heart of everything we build.
+      - figure [ref=e52]:
+        - img "Veenus ceramic vases showcased in a minimal PVC-panelled interior" [ref=e54]
+    - generic [ref=e56]:
+      - heading "Veenus at a Glance" [level=2] [ref=e57]:
+        - text: Veenus at a
+        - emphasis [ref=e58]: Glance
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: 150+
+          - paragraph [ref=e62]: Cities Served
+        - generic [ref=e63]:
+          - paragraph [ref=e64]: 10M+
+          - paragraph [ref=e65]: Sq Ft Installed
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: 500+
+          - paragraph [ref=e68]: Units Produced
+        - generic [ref=e69]:
+          - paragraph [ref=e70]: 15+
+          - paragraph [ref=e71]: Years Of Experience
+    - generic [ref=e74]:
+      - figure [ref=e75]:
+        - img "Veenus manufacturing facility interior" [ref=e77]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - heading "Mastering Top-Notch Manufacturing Techniques" [level=2] [ref=e80]:
+            - text: Mastering Top-Notch
+            - text: Manufacturing
+            - emphasis [ref=e81]: Techniques
+          - paragraph [ref=e82]: Our manufacturing capabilities combine cutting-edge technology with skilled craftsmanship, delivering products that set the benchmark for quality in the PVC interior solutions industry.
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - heading "Advanced Production" [level=3] [ref=e85]
+            - paragraph [ref=e86]: State-of-the-art manufacturing lines with automated precision controls.
+          - generic [ref=e87]:
+            - heading "Precision Engineering" [level=3] [ref=e88]
+            - paragraph [ref=e89]: Every panel is engineered to exact specifications for perfect fit and finish.
+          - generic [ref=e90]:
+            - heading "Skilled Workforce" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Expert technicians with decades of combined manufacturing experience.
+          - generic [ref=e93]:
+            - heading "Modern Equipment" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Industry-leading machinery ensuring consistent output quality.
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - heading "Built on Quality. Defined by Precision." [level=2] [ref=e99]:
+          - text: Built on Quality.
+          - emphasis [ref=e100]: Defined by Precision.
+        - paragraph [ref=e101]: For nearly two decades, Veenus has been at the forefront of PVC interior solutions in India combining manufacturing excellence with nationwide distribution to deliver premium products that stand the test of time.
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - img [ref=e105]
+            - generic [ref=e106]: Waterproof
+          - paragraph [ref=e108]: 100% moisture resistant ideal for kitchens, bathrooms, and humid environments.
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - img [ref=e111]
+            - generic [ref=e112]: Termite-Resistant
+          - paragraph [ref=e114]: PVC material naturally repels termites and pests, ensuring lasting durability.
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - img [ref=e117]
+            - generic [ref=e118]: Fire-Retardant
+          - paragraph [ref=e120]: Self-extinguishing properties provide an added layer of safety to every space.
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e124]: Long-Lasting
+          - paragraph [ref=e126]: Engineered to maintain appearance and structural integrity for decades.
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - heading "Serving Diverse Interior Spaces" [level=2] [ref=e130]:
+          - text: Serving Diverse
+          - emphasis [ref=e131]: Interior Spaces
+        - paragraph [ref=e132]: Explore our extensive range of PVC interior solutions, meticulously crafted to meet the diverse needs of every application, ensuring durability and style in any setting.
+      - generic [ref=e133]:
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - figure [ref=e137]:
+              - img "Residential Homes interior" [ref=e139]
+            - generic [ref=e140]:
+              - paragraph [ref=e141]: Residential Homes
+              - paragraph [ref=e142]: Elegant living spaces
+          - generic [ref=e143]:
+            - figure [ref=e144]:
+              - img "Professional environments interior" [ref=e146]
+            - generic [ref=e147]:
+              - paragraph [ref=e148]: Commercial Spaces
+              - paragraph [ref=e149]: Professional environments
+          - generic [ref=e150]:
+            - figure [ref=e151]:
+              - img "Stunning showrooms interior" [ref=e153]
+            - generic [ref=e154]:
+              - paragraph [ref=e155]: Showrooms
+              - paragraph [ref=e156]: Stunning showrooms
+          - generic [ref=e157]:
+            - figure [ref=e158]:
+              - img "Luxury experiences interior" [ref=e160]
+            - generic [ref=e161]:
+              - paragraph [ref=e162]: Hospitality
+              - paragraph [ref=e163]: Luxury experiences
+          - generic [ref=e164]:
+            - figure [ref=e165]:
+              - img "Functional design interior" [ref=e167]
+            - generic [ref=e168]:
+              - paragraph [ref=e169]: Institutional
+              - paragraph [ref=e170]: Functional design
+          - generic [ref=e171]:
+            - figure [ref=e172]:
+              - img "Transform any interior" [ref=e174]
+            - generic [ref=e175]:
+              - paragraph [ref=e176]: Retail
+              - paragraph [ref=e177]: Transform any space
+        - generic [ref=e178]:
+          - button "Previous" [ref=e179] [cursor=pointer]:
+            - img [ref=e180]
+          - button "Next" [ref=e182] [cursor=pointer]:
+            - img [ref=e183]
+    - generic [ref=e187]:
+      - heading "Awards & Certifications" [level=2] [ref=e188]:
+        - text: Awards &
+        - emphasis [ref=e189]: Certifications
+      - generic [ref=e190]:
+        - figure [ref=e192]:
+          - img "FAMI-QS certification" [ref=e194]
+        - figure [ref=e196]:
+          - img "Government of India quality certification" [ref=e198]
+        - figure [ref=e200]:
+          - img "Kosher Union (U) certification" [ref=e202]
+        - figure [ref=e204]:
+          - img "BRCS Food Safety certification" [ref=e206]
+        - figure [ref=e208]:
+          - img "FSSC 22000 certification" [ref=e210]
+    - generic [ref=e214]:
+      - heading "Ready to Transform Your Space?" [level=2] [ref=e215]:
+        - text: Ready to Transform
+        - emphasis [ref=e216]: Your Space?
+      - paragraph [ref=e217]: Whether you are an architect, builder, or homeowner, our team is ready to help you find the perfect PVC solution for your next project.
+      - link "Contact Us" [ref=e218] [cursor=pointer]:
+        - /url: "#"
+        - text: Contact Us
+        - img [ref=e219]
+  - contentinfo [ref=e221]:
+    - generic [ref=e222]:
+      - generic [ref=e223]:
+        - generic [ref=e224]:
+          - generic [ref=e225]:
+            - button "Our Products" [ref=e226] [cursor=pointer]:
+              - text: Our Products
+              - img [ref=e227]
+            - list:
+              - listitem [ref=e229]:
+                - link "PVC Ceiling Panels" [ref=e230] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e231]:
+                - link "PVC Doors" [ref=e232] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e233]:
+                - link "PVC Interior Wall Panels" [ref=e234] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e235]:
+                - link "PVC Louvers" [ref=e236] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e237]:
+                - link "PVC Panels" [ref=e238] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e239]:
+                - link "PVC Laminate" [ref=e240] [cursor=pointer]:
+                  - /url: product-listing.html
+          - generic [ref=e241]:
+            - button "Quick Links" [ref=e242] [cursor=pointer]:
+              - text: Quick Links
+              - img [ref=e243]
+            - list:
+              - listitem [ref=e245]:
+                - link "About Us" [ref=e246] [cursor=pointer]:
+                  - /url: about-us.html
+              - listitem [ref=e247]:
+                - link "Our Products" [ref=e248] [cursor=pointer]:
+                  - /url: products.html
+              - listitem [ref=e249]:
+                - link "Portfolio" [ref=e250] [cursor=pointer]:
+                  - /url: portfolio.html
+              - listitem [ref=e251]:
+                - link "Events" [ref=e252] [cursor=pointer]:
+                  - /url: events.html
+              - listitem [ref=e253]:
+                - link "Insights" [ref=e254] [cursor=pointer]:
+                  - /url: insights.html
+              - listitem [ref=e255]:
+                - link "Greenrich" [ref=e256] [cursor=pointer]:
+                  - /url: greenrich.html
+              - listitem [ref=e257]:
+                - link "Contact Us" [ref=e258] [cursor=pointer]:
+                  - /url: contact.html
+          - generic [ref=e259]:
+            - button "Contact Information" [ref=e260] [cursor=pointer]:
+              - text: Contact Information
+              - img [ref=e261]
+            - generic:
+              - generic [ref=e263]:
+                - text: Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India
+                - text: "680641"
+              - list [ref=e264]:
+                - listitem [ref=e265]:
+                  - img [ref=e266]
+                  - link "hello@logoipsum.com" [ref=e267] [cursor=pointer]:
+                    - /url: mailto:hello@logoipsum.com
+                - listitem [ref=e268]:
+                  - img [ref=e269]
+                  - link "+91 0987 654321" [ref=e270] [cursor=pointer]:
+                    - /url: tel:+910987654321
+                - listitem [ref=e271]:
+                  - img [ref=e272]
+                  - link "+91 0987 654321" [ref=e273] [cursor=pointer]:
+                    - /url: https://wa.me/910987654321
+        - link "Veenus home" [ref=e274] [cursor=pointer]:
+          - /url: /
+          - img "Veenus" [ref=e275]
+      - generic [ref=e276]:
+        - list "Social links" [ref=e277]:
+          - listitem [ref=e278]:
+            - link "Facebook" [ref=e279] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e280]
+          - listitem [ref=e281]:
+            - link "Instagram" [ref=e282] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e283]
+          - listitem [ref=e284]:
+            - link "Pinterest" [ref=e285] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e286]
+          - listitem [ref=e287]:
+            - link "YouTube" [ref=e288] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e289]
+          - listitem [ref=e290]:
+            - link "WhatsApp" [ref=e291] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e292]
+        - link "Get Catalogue" [ref=e293] [cursor=pointer]:
+          - /url: "#"
+          - text: Get Catalogue
+          - img [ref=e294]
+      - generic [ref=e296]:
+        - list [ref=e297]:
+          - listitem [ref=e298]: © 2026 Veenus PVC Profiles. All Rights Reserved.
+          - listitem [ref=e299]:
+            - link "Terms and Conditions" [ref=e300] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e301]:
+            - link "Privacy Policy" [ref=e302] [cursor=pointer]:
+              - /url: "#"
+        - paragraph [ref=e303]:
+          - text: Designed by
+          - link "Webandcrafts" [ref=e304] [cursor=pointer]:
+            - /url: "#"

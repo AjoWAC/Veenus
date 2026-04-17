@@ -119,7 +119,9 @@
   <main>
    <section class="about-banner" aria-label="About Veenus hero">
   <picture class="about-banner__bg">
-    <source media="(min-width: 1024px)" srcset="src/images/protfolio-banner-desk.jpg">
+    <!-- Desktop: protfolio-banner-desk.jpg | 1920×600px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <source media="(min-width: 1024px)" srcset="src/images/protfolio-banner-desk.jpg" width="1920" height="600">
+    <!-- Mobile:  390×640px | full-bleed hero, CSS-fixed height via .about-banner -->
     <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
   </picture>
 
@@ -145,22 +147,20 @@
 
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
 
-      <!-- Image
-           Source : 1920×2880px (PNG) | portrait 2:3
-           Display: clipped to 820×561 landscape via overflow-hidden + object-cover
-           Mobile : w-full + aspect-820/561 → fluid, ratio-locked
-           Desktop: lg:w-[50%] lg:max-w-205 → capped at 820px
-      -->
-      <div class="w-full aspect-820/561 lg:w-[50%] lg:max-w-205 shrink-0 overflow-hidden">
-        <img
-          src="src/images/portfolio-intro.png"
-          alt="Modern interior featuring Veenus PVC wall panels"
-          width="1920"
-          height="2880"
-          class="w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
+      <figure class="w-full aspect-820/561 lg:w-[50%] lg:max-w-205 shrink-0 overflow-hidden">
+        <picture>
+          <!-- Source: 1920×2880px (portrait) | displayed as 820×561 via overflow+object-cover
+               Desktop + Mobile: aspect-820/561 fluid width, ratio-locked -->
+          <img
+            src="src/images/portfolio-intro.png"
+            alt="Modern interior featuring Veenus PVC wall panels"
+            width="1920"
+            height="2880"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </picture>
+      </figure>
 
       <!-- Text content -->
       <div class="flex flex-col gap-6 lg:gap-6 flex-1 min-w-0">
@@ -195,9 +195,12 @@
     <div class="hidden lg:grid lg:grid-cols-4 gap-x-5 gap-y-11">
 
       <div class="flex flex-col gap-6" data-project-idx="0" data-images="src/images/Figure.jpg,src/images/Figure (3).jpg,src/images/Figure (6).jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
-          <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
-        </div>
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
         <div class="flex flex-col gap-0.5">
           <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
           <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Modern Living Room</p>
@@ -205,7 +208,7 @@
       </div>
 
       <div class="flex flex-col gap-6" data-project-idx="1" data-images="src/images/Figure (1).jpg,src/images/Figure (4).jpg,src/images/Figure (7).jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+        <div class="bg-[#f6f6f6] h-68 overflow-hidden">
           <img src="src/images/Figure%20(1).jpg" alt="Corporate Reception interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="flex flex-col gap-0.5">
@@ -215,7 +218,7 @@
       </div>
 
       <div class="flex flex-col gap-6" data-project-idx="2" data-images="src/images/Figure (2).jpg,src/images/Figure (5).jpg,src/images/Figure.jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+        <div class="bg-[#f6f6f6] h-68 overflow-hidden">
           <img src="src/images/Figure%20(2).jpg" alt="Institute Corridor interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="flex flex-col gap-0.5">
@@ -225,7 +228,7 @@
       </div>
 
       <div class="flex flex-col gap-6" data-project-idx="3" data-images="src/images/Figure (3).jpg,src/images/Figure (6).jpg,src/images/Figure (1).jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+        <div class="bg-[#f6f6f6] h-68 overflow-hidden">
           <img src="src/images/Figure%20(3).jpg" alt="Master Bedroom Suite interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="flex flex-col gap-0.5">
@@ -235,7 +238,7 @@
       </div>
 
       <div class="flex flex-col gap-6" data-project-idx="4" data-images="src/images/Figure (4).jpg,src/images/Figure (7).jpg,src/images/Figure (2).jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+        <div class="bg-[#f6f6f6] h-68 overflow-hidden">
           <img src="src/images/Figure%20(4).jpg" alt="Hotel Grand Lobby interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="flex flex-col gap-0.5">
@@ -245,7 +248,7 @@
       </div>
 
       <div class="flex flex-col gap-6" data-project-idx="5" data-images="src/images/Figure (5).jpg,src/images/Figure.jpg,src/images/Figure (3).jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+        <div class="bg-[#f6f6f6] h-68 overflow-hidden">
           <img src="src/images/Figure%20(5).jpg" alt="Fine Dining Space interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="flex flex-col gap-0.5">
@@ -255,7 +258,7 @@
       </div>
 
       <div class="flex flex-col gap-6" data-project-idx="6" data-images="src/images/Figure (6).jpg,src/images/Figure (1).jpg,src/images/Figure (4).jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+        <div class="bg-[#f6f6f6] h-68 overflow-hidden">
           <img src="src/images/Figure%20(6).jpg" alt="Master Bedroom Suite interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="flex flex-col gap-0.5">
@@ -265,7 +268,7 @@
       </div>
 
       <div class="flex flex-col gap-6" data-project-idx="7" data-images="src/images/Figure (7).jpg,src/images/Figure (2).jpg,src/images/Figure (5).jpg">
-        <div class="bg-[#f6f6f6] h-[17rem] overflow-hidden">
+        <div class="bg-[#f6f6f6] h-68 overflow-hidden">
           <img src="src/images/Figure%20(7).jpg" alt="Fine Dining Space interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="flex flex-col gap-0.5">
@@ -282,9 +285,12 @@
         <div class="projects-embla__container px-5">
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="0" data-images="src/images/Figure.jpg,src/images/Figure (3).jpg,src/images/Figure (6).jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Modern Living Room</p>
@@ -292,9 +298,12 @@
           </div>
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="1" data-images="src/images/Figure (1).jpg,src/images/Figure (4).jpg,src/images/Figure (7).jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure%20(1).jpg" alt="Corporate Reception interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure%20(1).jpg" alt="Corporate Reception interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Corporate Reception</p>
@@ -302,9 +311,12 @@
           </div>
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="2" data-images="src/images/Figure (2).jpg,src/images/Figure (5).jpg,src/images/Figure.jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure%20(2).jpg" alt="Institute Corridor interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure%20(2).jpg" alt="Institute Corridor interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Institute Corridor</p>
@@ -312,9 +324,12 @@
           </div>
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="3" data-images="src/images/Figure (3).jpg,src/images/Figure (6).jpg,src/images/Figure (1).jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure%20(3).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure%20(3).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
@@ -322,9 +337,12 @@
           </div>
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="4" data-images="src/images/Figure (4).jpg,src/images/Figure (7).jpg,src/images/Figure (2).jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure%20(4).jpg" alt="Hotel Grand Lobby interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure%20(4).jpg" alt="Hotel Grand Lobby interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Hotel Grand Lobby</p>
@@ -332,9 +350,12 @@
           </div>
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="5" data-images="src/images/Figure (5).jpg,src/images/Figure.jpg,src/images/Figure (3).jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure%20(5).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure%20(5).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
@@ -342,9 +363,12 @@
           </div>
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="6" data-images="src/images/Figure (6).jpg,src/images/Figure (1).jpg,src/images/Figure (4).jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure%20(6).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure%20(6).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
@@ -352,9 +376,12 @@
           </div>
 
           <div class="projects-embla__slide flex flex-col gap-5" data-project-idx="7" data-images="src/images/Figure (7).jpg,src/images/Figure (2).jpg,src/images/Figure (5).jpg">
-            <div class="bg-[#f6f6f6] h-[13.75rem] overflow-hidden">
-              <img src="src/images/Figure%20(7).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 (220px) | fluid width | object-cover -->
+                <img src="src/images/Figure%20(7).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
               <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>

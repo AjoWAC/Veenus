@@ -119,7 +119,9 @@
   <main>
     <section class="about-banner" aria-label="About Veenus hero">
   <picture class="about-banner__bg">
-    <source media="(min-width: 1024px)" srcset="src/images/about-banner-desk.jpg">
+    <!-- Desktop: about-banner-desk.jpg | 1920×600px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <source media="(min-width: 1024px)" srcset="src/images/about-banner-desk.jpg" width="1920" height="600">
+    <!-- Mobile:  390×640px | full-bleed hero, CSS-fixed height via .about-banner -->
     <img src="src/images/about-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
   </picture>
 
@@ -173,17 +175,21 @@
             </div>
           </div>
 
-          <!-- Image -->
-          <div class="w-full aspect-[353/227] lg:flex-1 lg:basis-0 lg:w-auto lg:aspect-[675/715] shrink-0 overflow-hidden">
-            <img
-              src="src/images/about-vision.jpg"
-              alt="Veenus ceramic vases showcased in a minimal PVC-panelled interior"
-              width="675"
-              height="715"
-              class="w-full h-full object-cover"
-              loading="lazy"
-            >
-          </div>
+          <figure class="w-full aspect-353/227 lg:w-168.75 lg:aspect-675/715 shrink-0 overflow-hidden">
+            <picture>
+              <!-- Source: 675×715px (portrait)
+                   Desktop: 675×715px fixed — aspect-675/715, w-168.75
+                   Mobile : aspect-353/227 — landscape crop of source -->
+              <img
+                src="src/images/about-vision.jpg"
+                alt="Veenus ceramic vases showcased in a minimal PVC-panelled interior"
+                width="675"
+                height="715"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </picture>
+          </figure>
 
         </div>
       </div>
@@ -228,10 +234,11 @@
       <div class="container">
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-[clamp(3rem,6vw,7.5rem)] lg:items-stretch">
 
-          <!-- Image -->
-          <div class="w-full aspect-[530/426] lg:w-[42%] lg:aspect-auto lg:min-h-[680px] shrink-0 overflow-hidden">
+          <figure class="w-full aspect-530/426 lg:w-[42%] lg:aspect-auto lg:min-h-[680px] shrink-0 overflow-hidden">
             <picture>
+              <!-- Desktop: about-manufacturing-desk.jpg | lg:aspect-auto + min-h-[680px] | object-cover crops -->
               <source media="(min-width: 1024px)" srcset="src/images/about-manufacturing-desk.jpg">
+              <!-- Mobile:  530×426px | aspect-530/426 fluid width, ratio-locked -->
               <img
                 src="src/images/about-manufacturing-mob.png"
                 alt="Veenus manufacturing facility interior"
@@ -241,7 +248,7 @@
                 loading="lazy"
               >
             </picture>
-          </div>
+          </figure>
 
           <!-- Content block -->
           <div class="flex-1 min-w-0 flex flex-col gap-8 lg:gap-10 lg:justify-center">
@@ -371,9 +378,12 @@
 
           <!-- Row 1 -->
           <div class="lg:col-span-2 flex flex-col gap-3">
-            <div class="w-full aspect-[1229/560] overflow-hidden">
-              <img src="src/images/about-spaces-1.jpg" alt="Residential Homes interior" width="1229" height="560" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="w-full aspect-1229/560 overflow-hidden">
+              <picture>
+                <!-- Source: 1229×560px | Desktop: aspect-1229/560 fluid | same image mobile -->
+                <img src="src/images/about-spaces-1.jpg" alt="Residential Homes interior" width="1229" height="560" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-[1.5rem] text-black font-normal leading-[1.4]">Residential Homes</p>
               <p class="text-base text-[#6e6e6e] leading-[1.4]">Elegant living spaces</p>
@@ -381,9 +391,12 @@
           </div>
 
           <div class="lg:col-span-1 flex flex-col gap-3">
-            <div class="w-full aspect-[597/560] overflow-hidden">
-              <img src="src/images/about-spaces-2.jpg" alt="Professional environments interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="w-full aspect-597/560 overflow-hidden">
+              <picture>
+                <!-- Source: 597×560px | Desktop: aspect-597/560 fluid -->
+                <img src="src/images/about-spaces-2.jpg" alt="Professional environments interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-[1.5rem] text-black font-normal leading-[1.4]">Commercial Spaces</p>
               <p class="text-base text-[#6e6e6e] leading-[1.4]">Professional environments</p>
@@ -391,9 +404,12 @@
           </div>
 
           <div class="lg:col-span-1 flex flex-col gap-3">
-            <div class="w-full aspect-[597/560] overflow-hidden">
-              <img src="src/images/about-spaces-3.jpg" alt="Stunning showrooms interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="w-full aspect-597/560 overflow-hidden">
+              <picture>
+                <!-- Source: 597×560px | Desktop: aspect-597/560 fluid -->
+                <img src="src/images/about-spaces-3.jpg" alt="Stunning showrooms interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-[1.5rem] text-black font-normal leading-[1.4]">Showrooms</p>
               <p class="text-base text-[#6e6e6e] leading-[1.4]">Stunning showrooms</p>
@@ -402,9 +418,12 @@
 
           <!-- Row 2 -->
           <div class="lg:col-span-1 flex flex-col gap-3">
-            <div class="w-full aspect-[596/560] overflow-hidden">
-              <img src="src/images/about-spaces-4.jpg" alt="Luxury experiences interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="w-full aspect-596/560 overflow-hidden">
+              <picture>
+                <!-- Source: 596×560px | Desktop: aspect-596/560 fluid -->
+                <img src="src/images/about-spaces-4.jpg" alt="Luxury experiences interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-[1.5rem] text-black font-normal leading-[1.4]">Hospitality</p>
               <p class="text-base text-[#6e6e6e] leading-[1.4]">Luxury experiences</p>
@@ -412,9 +431,12 @@
           </div>
 
           <div class="lg:col-span-1 flex flex-col gap-3">
-            <div class="w-full aspect-[596/560] overflow-hidden">
-              <img src="src/images/about-spaces-5.jpg" alt="Functional design interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="w-full aspect-596/560 overflow-hidden">
+              <picture>
+                <!-- Source: 596×560px | Desktop: aspect-596/560 fluid -->
+                <img src="src/images/about-spaces-5.jpg" alt="Functional design interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-[1.5rem] text-black font-normal leading-[1.4]">Institutional</p>
               <p class="text-base text-[#6e6e6e] leading-[1.4]">Functional design</p>
@@ -422,9 +444,12 @@
           </div>
 
           <div class="lg:col-span-2 flex flex-col gap-3">
-            <div class="w-full aspect-[1227/560] overflow-hidden">
-              <img src="src/images/about-spaces-6.jpg" alt="Transform any interior" width="1227" height="560" class="w-full h-full object-cover" loading="lazy">
-            </div>
+            <figure class="w-full aspect-1227/560 overflow-hidden">
+              <picture>
+                <!-- Source: 1227×560px | Desktop: aspect-1227/560 fluid -->
+                <img src="src/images/about-spaces-6.jpg" alt="Transform any interior" width="1227" height="560" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
             <div class="flex flex-col gap-0.5">
               <p class="text-[1.5rem] text-black font-normal leading-[1.4]">Retail</p>
               <p class="text-base text-[#6e6e6e] leading-[1.4]">Transform any space</p>
@@ -439,9 +464,12 @@
             <div class="spaces-embla__container">
 
               <div class="spaces-embla__slide flex flex-col gap-3">
-                <div class="w-full aspect-[4/3] overflow-hidden">
-                  <img src="src/images/about-spaces-1.jpg" alt="Residential Homes interior" width="1229" height="560" class="w-full h-full object-cover" loading="lazy">
-                </div>
+                <figure class="w-full aspect-4/3 overflow-hidden">
+                  <picture>
+                    <!-- Source: 1229×560px | Mobile: aspect-4/3 tighter crop -->
+                    <img src="src/images/about-spaces-1.jpg" alt="Residential Homes interior" width="1229" height="560" class="w-full h-full object-cover" loading="lazy">
+                  </picture>
+                </figure>
                 <div class="flex flex-col gap-0.5">
                   <p class="text-[1.25rem] text-black font-normal leading-[1.4]">Residential Homes</p>
                   <p class="text-sm text-[#6e6e6e] leading-[1.4]">Elegant living spaces</p>
@@ -449,9 +477,12 @@
               </div>
 
               <div class="spaces-embla__slide flex flex-col gap-3">
-                <div class="w-full aspect-[4/3] overflow-hidden">
-                  <img src="src/images/about-spaces-2.jpg" alt="Professional environments interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
-                </div>
+                <figure class="w-full aspect-4/3 overflow-hidden">
+                  <picture>
+                    <!-- Source: 597×560px | Mobile: aspect-4/3 tighter crop -->
+                    <img src="src/images/about-spaces-2.jpg" alt="Professional environments interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
+                  </picture>
+                </figure>
                 <div class="flex flex-col gap-0.5">
                   <p class="text-[1.25rem] text-black font-normal leading-[1.4]">Commercial Spaces</p>
                   <p class="text-sm text-[#6e6e6e] leading-[1.4]">Professional environments</p>
@@ -459,9 +490,12 @@
               </div>
 
               <div class="spaces-embla__slide flex flex-col gap-3">
-                <div class="w-full aspect-[4/3] overflow-hidden">
-                  <img src="src/images/about-spaces-3.jpg" alt="Stunning showrooms interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
-                </div>
+                <figure class="w-full aspect-4/3 overflow-hidden">
+                  <picture>
+                    <!-- Source: 597×560px | Mobile: aspect-4/3 tighter crop -->
+                    <img src="src/images/about-spaces-3.jpg" alt="Stunning showrooms interior" width="597" height="560" class="w-full h-full object-cover" loading="lazy">
+                  </picture>
+                </figure>
                 <div class="flex flex-col gap-0.5">
                   <p class="text-[1.25rem] text-black font-normal leading-[1.4]">Showrooms</p>
                   <p class="text-sm text-[#6e6e6e] leading-[1.4]">Stunning showrooms</p>
@@ -469,9 +503,12 @@
               </div>
 
               <div class="spaces-embla__slide flex flex-col gap-3">
-                <div class="w-full aspect-[4/3] overflow-hidden">
-                  <img src="src/images/about-spaces-4.jpg" alt="Luxury experiences interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
-                </div>
+                <figure class="w-full aspect-4/3 overflow-hidden">
+                  <picture>
+                    <!-- Source: 596×560px | Mobile: aspect-4/3 tighter crop -->
+                    <img src="src/images/about-spaces-4.jpg" alt="Luxury experiences interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
+                  </picture>
+                </figure>
                 <div class="flex flex-col gap-0.5">
                   <p class="text-[1.25rem] text-black font-normal leading-[1.4]">Hospitality</p>
                   <p class="text-sm text-[#6e6e6e] leading-[1.4]">Luxury experiences</p>
@@ -479,9 +516,12 @@
               </div>
 
               <div class="spaces-embla__slide flex flex-col gap-3">
-                <div class="w-full aspect-[4/3] overflow-hidden">
-                  <img src="src/images/about-spaces-5.jpg" alt="Functional design interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
-                </div>
+                <figure class="w-full aspect-4/3 overflow-hidden">
+                  <picture>
+                    <!-- Source: 596×560px | Mobile: aspect-4/3 tighter crop -->
+                    <img src="src/images/about-spaces-5.jpg" alt="Functional design interior" width="596" height="560" class="w-full h-full object-cover" loading="lazy">
+                  </picture>
+                </figure>
                 <div class="flex flex-col gap-0.5">
                   <p class="text-[1.25rem] text-black font-normal leading-[1.4]">Institutional</p>
                   <p class="text-sm text-[#6e6e6e] leading-[1.4]">Functional design</p>
@@ -489,9 +529,12 @@
               </div>
 
               <div class="spaces-embla__slide flex flex-col gap-3">
-                <div class="w-full aspect-[4/3] overflow-hidden">
-                  <img src="src/images/about-spaces-6.jpg" alt="Transform any interior" width="1227" height="560" class="w-full h-full object-cover" loading="lazy">
-                </div>
+                <figure class="w-full aspect-4/3 overflow-hidden">
+                  <picture>
+                    <!-- Source: 1227×560px | Mobile: aspect-4/3 tighter crop -->
+                    <img src="src/images/about-spaces-6.jpg" alt="Transform any interior" width="1227" height="560" class="w-full h-full object-cover" loading="lazy">
+                  </picture>
+                </figure>
                 <div class="flex flex-col gap-0.5">
                   <p class="text-[1.25rem] text-black font-normal leading-[1.4]">Retail</p>
                   <p class="text-sm text-[#6e6e6e] leading-[1.4]">Transform any space</p>
@@ -529,19 +572,34 @@
 
           <div class="awards-grid">
             <div class="awards-grid__cell">
-              <img src="src/images/cert-fami-qs.png" width="120" height="60" loading="lazy" alt="FAMI-QS certification">
+              <figure><picture>
+                <!-- Source: 120×60px | constrained by cell aspect-ratio via CSS -->
+                <img src="src/images/cert-fami-qs.png" width="120" height="60" loading="lazy" alt="FAMI-QS certification">
+              </picture></figure>
             </div>
             <div class="awards-grid__cell">
-              <img src="src/images/cert-emblem.png" width="120" height="120" loading="lazy" alt="Government of India quality certification">
+              <figure><picture>
+                <!-- Source: 120×120px | constrained by cell aspect-ratio via CSS -->
+                <img src="src/images/cert-emblem.png" width="120" height="120" loading="lazy" alt="Government of India quality certification">
+              </picture></figure>
             </div>
             <div class="awards-grid__cell">
-              <img src="src/images/cert-kosher-u.png" width="80" height="80" loading="lazy" alt="Kosher Union (U) certification">
+              <figure><picture>
+                <!-- Source: 80×80px | constrained by cell aspect-ratio via CSS -->
+                <img src="src/images/cert-kosher-u.png" width="80" height="80" loading="lazy" alt="Kosher Union (U) certification">
+              </picture></figure>
             </div>
             <div class="awards-grid__cell">
-              <img src="src/images/cert-brcs.png" width="120" height="90" loading="lazy" alt="BRCS Food Safety certification">
+              <figure><picture>
+                <!-- Source: 120×90px | constrained by cell aspect-ratio via CSS -->
+                <img src="src/images/cert-brcs.png" width="120" height="90" loading="lazy" alt="BRCS Food Safety certification">
+              </picture></figure>
             </div>
             <div class="awards-grid__cell">
-              <img src="src/images/cert-fssc.png" width="140" height="40" loading="lazy" alt="FSSC 22000 certification">
+              <figure><picture>
+                <!-- Source: 140×40px | constrained by cell aspect-ratio via CSS -->
+                <img src="src/images/cert-fssc.png" width="140" height="40" loading="lazy" alt="FSSC 22000 certification">
+              </picture></figure>
             </div>
           </div>
         </div>
@@ -549,7 +607,13 @@
     </section>
 
     <!-- CTA Banner Section -->
-    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]" style="background-image: url('src/images/about-cta-bg.png'); background-size: cover; background-position: center;">
+    <section class="cta-banner-section relative flex items-center py-[5rem] lg:py-[9.375rem]">
+      <figure class="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <picture>
+          <!-- Source: 2880×887px | ratio ≈ 3.25:1 | full-bleed background, object-cover center -->
+          <img src="src/images/about-cta-bg.png" width="2880" height="887" class="w-full h-full object-cover object-center" loading="lazy" alt="">
+        </picture>
+      </figure>
       <div class="absolute inset-0 bg-black/10"></div>
       <div class="container relative z-10">
         <div class="flex flex-col items-center text-center gap-6 max-w-[52rem] mx-auto">
