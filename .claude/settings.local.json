@@ -63,7 +63,16 @@
       "mcp__claude_ai_Figma__get_screenshot",
       "mcp__plugin_playwright_playwright__browser_navigate",
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
-      "Bash(node -e ':*)"
+      "Bash(node -e ':*)",
+      "Bash(powershell -command 'Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path '\\\\''src/images/insight-transforming.jpg'\\\\''\\)\\); Write-Host $img.Width '\\\\''x'\\\\'' $img.Height; $img.Dispose\\(\\)')",
+      "Bash(taskkill //F //IM chrome.exe)",
+      "Bash(npx -y http-server -p 8765 --silent)",
+      "Bash(npx -y serve -p 8765 -s)",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Bash(node -e \"const{execSync}=require\\('child_process'\\);try{execSync\\('node build.js',{timeout:20000,encoding:'utf8'}\\);console.log\\('done'\\)}catch\\(e\\){console.log\\(e.stdout\\)}\")"
     ]
   }
 }

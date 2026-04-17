@@ -174,17 +174,20 @@
           </div>
 
           <!-- Hero image — full width, no side padding -->
-          <div class="w-full aspect-[1100/588] overflow-hidden">
-            <img
-              src="src/images/insight-transforming.jpg"
-              alt="Interior design insight hero"
-              width="1100"
-              height="588"
-              loading="eager"
-              fetchpriority="high"
-              class="w-full h-full object-cover"
-            >
-          </div>
+          <figure class="w-full aspect-1100/588 overflow-hidden">
+            <picture>
+              <!-- Source: 1920×1920px (square) | displayed at aspect-[1100/588] ≈ 1.87:1 | object-cover crops vertically -->
+              <img
+                src="src/images/insight-transforming.jpg"
+                alt="Interior design insight hero"
+                width="1920"
+                height="1920"
+                loading="eager"
+                fetchpriority="high"
+                class="w-full h-full object-cover"
+              >
+            </picture>
+          </figure>
 
           <!-- Body content -->
           <div class="px-0 lg:px-12 flex flex-col gap-10">

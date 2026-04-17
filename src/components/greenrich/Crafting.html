@@ -62,16 +62,19 @@
       </div>
 
       <!-- Right image — desktop only, fills remaining space -->
-      <div class="hidden lg:block lg:flex-1 relative overflow-hidden">
-        <img
-          src="src/images/gr-crafting-img.jpg"
-          width="1140"
-          height="1079"
-          class="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-          alt="Interior space crafted with Greenrich laminates"
-        />
-      </div>
+      <figure class="hidden lg:block lg:flex-1 relative overflow-hidden">
+        <picture>
+          <!-- Source: 1140×1079px | ratio ≈ 1.06:1 | Desktop only: absolute inset-0, fills column height via object-cover -->
+          <img
+            src="src/images/gr-crafting-img.jpg"
+            width="1140"
+            height="1079"
+            class="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+            alt="Interior space crafted with Greenrich laminates"
+          />
+        </picture>
+      </figure>
 
     </div>
   </div>

@@ -652,6 +652,116 @@ if (spacesSlider && typeof EmblaCarousel !== 'undefined') {
   });
 })();
 
+// Product Listing — mobile filter drawer
+(function () {
+  const openBtn  = document.getElementById('pl-mobile-filter-btn');
+  const drawer   = document.getElementById('pl-mobile-filter-drawer');
+  if (!openBtn || !drawer) return;
+
+  const panel    = document.getElementById('pl-mobile-filter-panel');
+  const closeBtn = document.getElementById('pl-mobile-filter-close');
+  const backdrop = document.getElementById('pl-mobile-filter-backdrop');
+
+  function open() {
+    drawer.classList.remove('hidden');
+    drawer.setAttribute('aria-hidden', 'false');
+    // Force reflow before removing translate so the transition animates
+    panel.offsetHeight;
+    panel.classList.remove('-translate-x-full');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    panel.classList.add('-translate-x-full');
+    document.body.style.overflow = '';
+    setTimeout(function () {
+      drawer.classList.add('hidden');
+      drawer.setAttribute('aria-hidden', 'true');
+    }, 300);
+  }
+
+  openBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    open();
+  });
+  closeBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    close();
+  });
+  backdrop.addEventListener('click', function (e) {
+    e.stopPropagation();
+    close();
+  });
+
+  // Accordion toggles inside drawer
+  drawer.querySelectorAll('[data-mobile-filter-toggle]').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const list = toggle.nextElementSibling;
+      const svg  = toggle.querySelector('svg');
+      const isOpen = !list.classList.contains('hidden');
+      list.classList.toggle('hidden', isOpen);
+      if (svg) svg.classList.toggle('rotate-180', !isOpen);
+    });
+  });
+})();
+
+// Product Listing — filter dropdowns
+(function () {
+  const dropdowns = document.querySelectorAll('[data-filter-dropdown]');
+  if (!dropdowns.length) return;
+
+  function closeAll(except) {
+    dropdowns.forEach(d => {
+      if (d === except) return;
+      const btn   = d.querySelector('.pl-filter-btn');
+      const panel = d.querySelector('.pl-filter-panel');
+      const svg   = btn && btn.querySelector('svg');
+      if (btn)   btn.setAttribute('aria-expanded', 'false');
+      if (panel) panel.classList.add('hidden');
+      if (svg)   svg.classList.remove('rotate-180');
+    });
+  }
+
+  dropdowns.forEach(dropdown => {
+    const btn   = dropdown.querySelector('.pl-filter-btn');
+    const panel = dropdown.querySelector('.pl-filter-panel');
+    const label = dropdown.querySelector('.pl-filter-label');
+    const svg   = btn && btn.querySelector('svg');
+    if (!btn || !panel) return;
+
+    // Toggle open/close
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      closeAll(dropdown);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      panel.classList.toggle('hidden', isOpen);
+      if (svg) svg.classList.toggle('rotate-180', !isOpen);
+    });
+
+    // Select an option
+    panel.querySelectorAll('.pl-filter-option').forEach(option => {
+      option.addEventListener('click', () => {
+        label.textContent = option.textContent.trim();
+        panel.querySelectorAll('.pl-filter-option').forEach(o =>
+          o.setAttribute('aria-selected', String(o === option))
+        );
+        btn.setAttribute('aria-expanded', 'false');
+        panel.classList.add('hidden');
+        if (svg) svg.classList.remove('rotate-180');
+      });
+    });
+  });
+
+  // Close on outside click
+  document.addEventListener('click', () => closeAll());
+
+  // Close on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeAll();
+  });
+})();
+
 // Products Range slider (Embla) — Products page
 const productsRangeSlider = document.getElementById('products-range-slider');
 

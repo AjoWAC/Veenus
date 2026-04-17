@@ -1,0 +1,351 @@
+- generic [ref=e1]:
+  - banner:
+    - generic:
+      - generic:
+        - banner:
+          - navigation "Main navigation" [ref=e2]:
+            - generic [ref=e3]:
+              - link "Veenus – My Home My Style" [ref=e4] [cursor=pointer]:
+                - /url: index.html
+                - img "Veenus" [ref=e5]
+              - list [ref=e6]:
+                - listitem [ref=e7]:
+                  - link "About" [ref=e8] [cursor=pointer]:
+                    - /url: about-us.html
+                - listitem [ref=e9]:
+                  - link "Products" [ref=e10] [cursor=pointer]:
+                    - /url: products.html
+                    - text: Products
+                    - img [ref=e12]
+                - listitem [ref=e14]:
+                  - link "Portfolio" [ref=e15] [cursor=pointer]:
+                    - /url: portfolio.html
+                - listitem [ref=e16]:
+                  - link "Events" [ref=e17] [cursor=pointer]:
+                    - /url: events.html
+                - listitem [ref=e18]:
+                  - link "Insights" [ref=e19] [cursor=pointer]:
+                    - /url: insights.html
+                - listitem [ref=e20]:
+                  - link "Greenrich" [ref=e21] [cursor=pointer]:
+                    - /url: greenrich.html
+              - link "Contact Us" [ref=e23] [cursor=pointer]:
+                - /url: contact.html
+                - text: Contact Us
+                - img [ref=e24]
+  - main [ref=e26]:
+    - navigation "Breadcrumb" [ref=e29]:
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - link "Home" [ref=e32] [cursor=pointer]:
+            - /url: index.html
+          - generic [ref=e33]: /
+        - listitem [ref=e34]:
+          - link "Products" [ref=e35] [cursor=pointer]:
+            - /url: products.html
+          - generic [ref=e36]: /
+        - listitem [ref=e37]: PVC Wall Panels
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - heading "PVC Wall Panels" [level=1] [ref=e42]:
+          - text: PVC Wall
+          - emphasis [ref=e43]: Panels
+        - paragraph [ref=e44]: Discover our premium collection of PVC wall panels, engineered for durability and aesthetic excellence. From realistic marble textures to warm wood grains, our solutions transform residential and commercial interiors with sophisticated architectural finishes.
+      - generic [ref=e45]:
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - img [ref=e49]
+            - generic [ref=e50]: Filter by
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - button "Filter by finish type" [expanded] [active] [ref=e54]:
+                - generic [ref=e55]: All Finish Type
+                - img [ref=e56]
+              - listbox "Finish type options" [ref=e387]:
+                - option "All Finish Type" [selected] [ref=e388] [cursor=pointer]
+                - option "Matte" [ref=e389] [cursor=pointer]
+                - option "Gloss" [ref=e390] [cursor=pointer]
+                - option "Textured" [ref=e391] [cursor=pointer]
+                - option "Satin" [ref=e392] [cursor=pointer]
+            - button "Filter by size" [ref=e59]:
+              - generic [ref=e60]: All Size
+              - img [ref=e61]
+            - button "Filter by application" [ref=e64]:
+              - generic [ref=e65]: All Application
+              - img [ref=e66]
+            - button "Filter by color" [ref=e69]:
+              - generic [ref=e70]: All Colors
+              - img [ref=e71]
+        - generic [ref=e73]:
+          - generic [ref=e74]: Showing 8 Results
+          - generic [ref=e75]:
+            - generic [ref=e76]: "Sort by:"
+            - button "Sort order" [ref=e77]:
+              - generic [ref=e78]: Featured
+              - img [ref=e79]
+    - generic [ref=e83]:
+      - complementary [ref=e84]:
+        - generic [ref=e85]:
+          - heading "Product categories" [level=2] [ref=e86]
+          - list [ref=e87]:
+            - listitem [ref=e88]:
+              - link "PVC Ceiling Panels" [ref=e89] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e90]:
+              - link "PVC Doors" [ref=e91] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e92]:
+              - link "PVC Interior Wall Panels" [ref=e93] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e94]:
+              - link "PVC Louvers" [ref=e95] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e96]:
+              - link "PVC Panels" [ref=e97] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e98]:
+              - link "PVC Laminate" [ref=e99] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - figure [ref=e104]:
+              - img "VEENUS PVC Ceiling Panel 1 — Matte Wood Texture" [ref=e106]
+            - link "Details View" [ref=e107] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e108]: Details View
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: VEENUS PVC Ceiling 1
+            - paragraph [ref=e111]: Matte Wood Texture
+            - generic [ref=e118]: 3+
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - figure [ref=e121]:
+              - img "VEENUS PVC Ceiling Panel 2 — Marble White" [ref=e123]
+            - link "Details View" [ref=e124] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e125]: Details View
+          - generic [ref=e126]:
+            - paragraph [ref=e127]: VEENUS PVC Ceiling 2
+            - paragraph [ref=e128]: Marble White
+            - generic [ref=e135]: 3+
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - figure [ref=e138]:
+              - img "VEENUS PVC Ceiling Panel 3 — Stone Grey" [ref=e140]
+            - link "Details View" [ref=e141] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e142]: Details View
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: VEENUS PVC Ceiling 3
+            - paragraph [ref=e145]: Stone Grey
+            - generic [ref=e152]: 3+
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - figure [ref=e155]:
+              - img "VEENUS PVC Ceiling Panel 4 — Oak Natural" [ref=e157]
+            - link "Details View" [ref=e158] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e159]: Details View
+          - generic [ref=e160]:
+            - paragraph [ref=e161]: VEENUS PVC Ceiling 4
+            - paragraph [ref=e162]: Oak Natural
+            - generic [ref=e169]: 3+
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - figure [ref=e172]:
+              - img "VEENUS PVC Ceiling Panel 5 — Walnut Brown" [ref=e174]
+            - link "Details View" [ref=e175] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e176]: Details View
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: VEENUS PVC Ceiling 5
+            - paragraph [ref=e179]: Walnut Brown
+            - generic [ref=e186]: 3+
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - figure [ref=e189]:
+              - img "VEENUS PVC Ceiling Panel 6 — Ivory Gloss" [ref=e191]
+            - link "Details View" [ref=e192] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e193]: Details View
+          - generic [ref=e194]:
+            - paragraph [ref=e195]: VEENUS PVC Ceiling 6
+            - paragraph [ref=e196]: Ivory Gloss
+            - generic [ref=e203]: 3+
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - figure [ref=e206]:
+              - img "VEENUS PVC Ceiling Panel 7 — Teak Finish" [ref=e208]
+            - link "Details View" [ref=e209] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e210]: Details View
+          - generic [ref=e211]:
+            - paragraph [ref=e212]: VEENUS PVC Ceiling 7
+            - paragraph [ref=e213]: Teak Finish
+            - generic [ref=e220]: 3+
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - figure [ref=e223]:
+              - img "VEENUS PVC Ceiling Panel 8 — Dark Slate" [ref=e225]
+            - link "Details View" [ref=e226] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e227]: Details View
+          - generic [ref=e228]:
+            - paragraph [ref=e229]: VEENUS PVC Ceiling 8
+            - paragraph [ref=e230]: Dark Slate
+            - generic [ref=e237]: 3+
+        - generic [ref=e238]:
+          - generic [ref=e239]:
+            - figure [ref=e240]:
+              - img "VEENUS PVC Ceiling Panel 9 — Pearl White" [ref=e242]
+            - link "Details View" [ref=e243] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e244]: Details View
+          - generic [ref=e245]:
+            - paragraph [ref=e246]: VEENUS PVC Ceiling 9
+            - paragraph [ref=e247]: Pearl White
+            - generic [ref=e254]: 3+
+        - generic [ref=e255]:
+          - generic [ref=e256]:
+            - figure [ref=e257]:
+              - img "VEENUS PVC Ceiling Panel 10 — Rustic Oak" [ref=e259]
+            - link "Details View" [ref=e260] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e261]: Details View
+          - generic [ref=e262]:
+            - paragraph [ref=e263]: VEENUS PVC Ceiling 10
+            - paragraph [ref=e264]: Rustic Oak
+            - generic [ref=e271]: 3+
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - figure [ref=e274]:
+              - img "VEENUS PVC Ceiling Panel 11 — Beige Stone" [ref=e276]
+            - link "Details View" [ref=e277] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e278]: Details View
+          - generic [ref=e279]:
+            - paragraph [ref=e280]: VEENUS PVC Ceiling 11
+            - paragraph [ref=e281]: Beige Stone
+            - generic [ref=e288]: 3+
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - figure [ref=e291]:
+              - img "VEENUS PVC Ceiling Panel 12 — Graphite" [ref=e293]
+            - link "Details View" [ref=e294] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e295]: Details View
+          - generic [ref=e296]:
+            - paragraph [ref=e297]: VEENUS PVC Ceiling 12
+            - paragraph [ref=e298]: Graphite
+            - generic [ref=e305]: 3+
+  - contentinfo [ref=e306]:
+    - generic [ref=e307]:
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - button "Our Products" [ref=e311]
+            - list [ref=e312]:
+              - listitem [ref=e313]:
+                - link "PVC Ceiling Panels" [ref=e314] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e315]:
+                - link "PVC Doors" [ref=e316] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e317]:
+                - link "PVC Interior Wall Panels" [ref=e318] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e319]:
+                - link "PVC Louvers" [ref=e320] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e321]:
+                - link "PVC Panels" [ref=e322] [cursor=pointer]:
+                  - /url: product-listing.html
+              - listitem [ref=e323]:
+                - link "PVC Laminate" [ref=e324] [cursor=pointer]:
+                  - /url: product-listing.html
+          - generic [ref=e325]:
+            - button "Quick Links" [ref=e326]
+            - list [ref=e327]:
+              - listitem [ref=e328]:
+                - link "About Us" [ref=e329] [cursor=pointer]:
+                  - /url: about-us.html
+              - listitem [ref=e330]:
+                - link "Our Products" [ref=e331] [cursor=pointer]:
+                  - /url: products.html
+              - listitem [ref=e332]:
+                - link "Portfolio" [ref=e333] [cursor=pointer]:
+                  - /url: portfolio.html
+              - listitem [ref=e334]:
+                - link "Events" [ref=e335] [cursor=pointer]:
+                  - /url: events.html
+              - listitem [ref=e336]:
+                - link "Insights" [ref=e337] [cursor=pointer]:
+                  - /url: insights.html
+              - listitem [ref=e338]:
+                - link "Greenrich" [ref=e339] [cursor=pointer]:
+                  - /url: greenrich.html
+              - listitem [ref=e340]:
+                - link "Contact Us" [ref=e341] [cursor=pointer]:
+                  - /url: contact.html
+          - generic [ref=e342]:
+            - button "Contact Information" [ref=e343]
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - text: Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India
+                - text: "680641"
+              - list [ref=e346]:
+                - listitem [ref=e347]:
+                  - img [ref=e348]
+                  - link "hello@logoipsum.com" [ref=e349] [cursor=pointer]:
+                    - /url: mailto:hello@logoipsum.com
+                - listitem [ref=e350]:
+                  - img [ref=e351]
+                  - link "+91 0987 654321" [ref=e352] [cursor=pointer]:
+                    - /url: tel:+910987654321
+                - listitem [ref=e353]:
+                  - img [ref=e354]
+                  - link "+91 0987 654321" [ref=e355] [cursor=pointer]:
+                    - /url: https://wa.me/910987654321
+        - link "Veenus home" [ref=e356] [cursor=pointer]:
+          - /url: /
+          - img "Veenus" [ref=e357]
+      - generic [ref=e358]:
+        - list "Social links" [ref=e359]:
+          - listitem [ref=e360]:
+            - link "Facebook" [ref=e361] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e362]
+          - listitem [ref=e363]:
+            - link "Instagram" [ref=e364] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e365]
+          - listitem [ref=e366]:
+            - link "Pinterest" [ref=e367] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e368]
+          - listitem [ref=e369]:
+            - link "YouTube" [ref=e370] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e371]
+          - listitem [ref=e372]:
+            - link "WhatsApp" [ref=e373] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e374]
+        - link "Get Catalogue" [ref=e375] [cursor=pointer]:
+          - /url: "#"
+          - text: Get Catalogue
+          - img [ref=e376]
+      - generic [ref=e378]:
+        - list [ref=e379]:
+          - listitem [ref=e380]: © 2026 Veenus PVC Profiles. All Rights Reserved.
+          - listitem [ref=e381]:
+            - link "Terms and Conditions" [ref=e382] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e383]:
+            - link "Privacy Policy" [ref=e384] [cursor=pointer]:
+              - /url: "#"
+        - paragraph [ref=e385]:
+          - text: Designed by
+          - link "Webandcrafts" [ref=e386] [cursor=pointer]:
+            - /url: "#"

@@ -18,16 +18,19 @@
         <!-- Row 1: Image left, content right -->
         <div class="flex flex-col gap-8 pb-8 lg:pb-15 border-b border-[#e5e5e5] lg:flex-row lg:items-center lg:gap-20">
 
-          <div class="w-full aspect-1200/649 lg:w-[46%] lg:max-w-190 shrink-0 overflow-hidden">
-            <img
-              src="src/images/event-milan-design-week.png"
-              width="1200"
-              height="649"
-              class="w-full h-full object-cover"
-              loading="lazy"
-              alt="Milan Design Week 2025 — Veenus pavilion"
-            />
-          </div>
+          <figure class="w-full aspect-1200/649 lg:w-[46%] lg:max-w-190 shrink-0 overflow-hidden">
+            <picture>
+              <!-- Source: 1200×649px | ratio 1200:649 (≈ 1.85:1) | Desktop + Mobile: aspect-1200/649 fluid, ratio-locked -->
+              <img
+                src="src/images/event-milan-design-week.png"
+                width="1200"
+                height="649"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                alt="Milan Design Week 2025 — Veenus pavilion"
+              />
+            </picture>
+          </figure>
 
           <!-- Content -->
           <div class="flex flex-col gap-6 lg:gap-15 lg:flex-1">
@@ -92,32 +95,38 @@
             </div>
           </div>
 
-          <div class="w-full aspect-video lg:w-[46%] lg:max-w-205 shrink-0 overflow-hidden order-1 lg:order-2">
-            <img
-              src="src/images/event-trade-show-global.png"
-              width="1200"
-              height="675"
-              class="w-full h-full object-cover"
-              loading="lazy"
-              alt="Global Building Materials Trade Show"
-            />
-          </div>
+          <figure class="w-full aspect-video lg:w-[46%] lg:max-w-205 shrink-0 overflow-hidden order-1 lg:order-2">
+            <picture>
+              <!-- Source: 1200×675px | ratio 16:9 (aspect-video) | Desktop + Mobile: aspect-video fluid, ratio-locked -->
+              <img
+                src="src/images/event-trade-show-global.png"
+                width="1200"
+                height="675"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                alt="Global Building Materials Trade Show"
+              />
+            </picture>
+          </figure>
 
         </div>
 
         <!-- Row 3: Image left, content right + Load More -->
         <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">
 
-          <div class="w-full aspect-1200/780 lg:w-[46%] lg:max-w-190 shrink-0 overflow-hidden">
-            <img
-              src="src/images/event-trade-show-dubai.png"
-              width="1200"
-              height="780"
-              class="w-full h-full object-cover"
-              loading="lazy"
-              alt="Global Building Materials Trade Show — Dubai"
-            />
-          </div>
+          <figure class="w-full aspect-1200/780 lg:w-[46%] lg:max-w-190 shrink-0 overflow-hidden">
+            <picture>
+              <!-- Source: 1200×780px | ratio 1200:780 (≈ 1.54:1) | Desktop + Mobile: aspect-1200/780 fluid, ratio-locked -->
+              <img
+                src="src/images/event-trade-show-dubai.png"
+                width="1200"
+                height="780"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                alt="Global Building Materials Trade Show — Dubai"
+              />
+            </picture>
+          </figure>
 
           <!-- Content -->
           <div class="flex flex-col gap-6 lg:gap-15 lg:flex-1">
