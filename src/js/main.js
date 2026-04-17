@@ -549,6 +549,28 @@ if (spacesSlider && typeof EmblaCarousel !== 'undefined') {
   });
 })();
 
+// Product Series slider — Greenrich page (mobile only)
+(function () {
+  const root = document.getElementById('gr-series-slider');
+  if (!root || typeof EmblaCarousel === 'undefined') return;
+
+  const embla = EmblaCarousel(root, { loop: false, align: 'start', dragFree: false });
+
+  const prev = document.getElementById('gr-series-prev');
+  const next = document.getElementById('gr-series-next');
+
+  function updateArrows() {
+    if (prev) prev.classList.toggle('is-disabled', !embla.canScrollPrev());
+    if (next) next.classList.toggle('is-disabled', !embla.canScrollNext());
+  }
+
+  if (prev) prev.addEventListener('click', () => embla.scrollPrev());
+  if (next) next.addEventListener('click', () => embla.scrollNext());
+  embla.on('select', updateArrows);
+  embla.on('init', updateArrows);
+  updateArrows();
+})();
+
 // Related blogs slider — Insight Detail page
 (function () {
   const root = document.getElementById('related-slider');
