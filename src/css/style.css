@@ -289,6 +289,29 @@ body {
   border-color: #d4d4d4;
 }
 
+/* Product-detail Related Products slider */
+.pd-related-embla {
+  overflow: hidden;
+}
+.pd-related-embla__container {
+  display: flex;
+  gap: 1rem;
+}
+.pd-related-embla__slide {
+  flex: 0 0 80%;
+  min-width: 0;
+}
+@media (min-width: 1024px) {
+  .pd-related-embla__slide {
+    flex: 0 0 314px;
+  }
+}
+#pd-related-prev.is-disabled,
+#pd-related-next.is-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 /* Products Range slider */
 .products-range-embla {
   overflow: hidden;

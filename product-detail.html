@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Product Detail — Veenus PVC interior solutions." />
+  <title>Product Detail — Veenus</title>
+  <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/main.css" />
+</head>
+<body class="bg-white text-neutral-900 antialiased page-solid-header">
+
+  <header class="site-header wp-block-template-part">
+    <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+        <div class="veenus-header-full">
+            <header>
+                <nav id="mainNav" class="nav" aria-label="Main navigation">
+
+                    <!-- Top bar -->
+                    <div class="nav__bar">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="nav__logo" aria-label="Veenus – My Home My Style">
+                        <img src="src/images/logo.png" alt="Veenus" />
+                    </a>
+
+                    <!-- Desktop links (hidden ≤900px) -->
+                    <ul class="nav__links">
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true">
+                            Products
+                            <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="product-listing.html" role="menuitem">PVC Ceiling Panels</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Doors</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Interior Wall Panels</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Louvers</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Panels</a></li>
+                            <li><a href="product-listing.html" role="menuitem">PVC Laminate</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="greenrich.html">Greenrich</a></li>
+                    </ul>
+
+                    <!-- Desktop CTA (hidden ≤900px) -->
+                    <div class="nav__cta">
+                        <a href="contact.html" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Hamburger (visible ≤900px) -->
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="drawer"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    </div><!-- /.nav__bar -->
+
+                    <!-- Mobile drawer (injected open/closed via JS) -->
+                    <ul class="nav__drawer" id="drawer" role="list" aria-hidden="true">
+
+                    <li class="drawer__item"><a href="about-us.html">About</a></li>
+
+                    <!-- Products accordion -->
+                    <li class="drawer__item">
+                        <button class="drawer__toggle" id="products-toggle" aria-expanded="false" aria-controls="products-sub">
+                        Products
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+                        </button>
+                        <ul class="drawer__sub" id="products-sub" aria-hidden="true">
+                        <li><a href="product-listing.html">PVC Ceiling Panels</a></li>
+                        <li><a href="product-listing.html">PVC Doors</a></li>
+                        <li><a href="product-listing.html">PVC Interior Wall Panels</a></li>
+                        <li><a href="product-listing.html">PVC Louvers</a></li>
+                        <li><a href="product-listing.html">PVC Panels</a></li>
+                        <li><a href="product-listing.html">PVC Laminate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drawer__item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="drawer__item"><a href="events.html">Events</a></li>
+                    <li class="drawer__item"><a href="insights.html">Insights</a></li>
+                    <li class="drawer__item"><a href="greenrich.html">Greenrich</a></li>
+
+                    <li class="drawer__divider" role="separator"></li>
+
+                    <li class="drawer__cta">
+                        <a href="contact.html" class="btn-contact">
+                        Contact Us
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="6 4 10 8 6 12"/></svg>
+                        </a>
+                    </li>
+
+                    </ul><!-- /#drawer -->
+
+                </nav>
+            </header>
+        </div>
+    </div>
+</header>
+
+  <main>
+
+    <!-- Breadcrumb -->
+    <section class="product-detail-breadcrumb py-5">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm font-normal leading-[1.4]">
+            <li class="flex items-center gap-3 text-[#6d6d6d]">
+              <a href="index.html" class="hover:text-neutral-900 transition-colors">Home</a>
+              <span aria-hidden="true">/</span>
+            </li>
+            <li class="flex items-center gap-3 text-[#6d6d6d]">
+              <a href="products.html" class="hover:text-neutral-900 transition-colors">Products</a>
+              <span aria-hidden="true">/</span>
+            </li>
+            <li class="flex items-center gap-3 text-[#6d6d6d]">
+              <a href="product-listing.html" class="hover:text-neutral-900 transition-colors">PVC Wall Panels</a>
+              <span aria-hidden="true">/</span>
+            </li>
+            <li class="text-black" aria-current="page">Product Name</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="pd-info-section bg-white pt-2 pb-[3.75rem] lg:pt-2 lg:pb-[8.125rem]">
+  <div class="container" style="max-width: 1360px">
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-15 items-start">
+
+      <!-- Left: Product images (sticky on desktop) -->
+      <div class="w-full lg:w-[45.6%] lg:shrink-0 lg:sticky lg:top-18 flex flex-col gap-2.5">
+
+        <!-- Main image -->
+        <figure class="w-full aspect-9/10 bg-[#f5f5f5] overflow-hidden">
+          <picture>
+            <!-- Source: 620×692px | aspect ≈ 9:10 | main product image -->
+            <img
+              id="pd-main-image"
+              src="src/images/prod-wall-panels.jpg"
+              width="620" height="692"
+              class="w-full h-full object-cover"
+              loading="eager"
+              alt="Acamond Halo Stud Conse — main view"
+            />
+          </picture>
+        </figure>
+
+        <!-- Thumbnail strip with arrows -->
+        <div class="relative" id="pd-thumb-wrap">
+          <!-- Prev arrow -->
+          <button class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/90 border border-[#eaeaea] items-center justify-center hover:bg-white transition-colors hidden" id="pd-thumb-prev" aria-label="Previous thumbnails">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M8.5 3L4.5 7l4 4" stroke="#222" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <!-- Scrollable track -->
+          <div class="overflow-hidden" id="pd-thumb-track">
+            <div class="flex gap-3 transition-transform duration-300" id="pd-thumb-slider">
+              <button class="relative shrink-0 w-[calc((100%-36px)/4)] md:w-[calc((100%-48px)/5)] aspect-114/121 overflow-hidden cursor-pointer" data-pd-thumb data-src="src/images/prod-wall-panels.jpg" aria-label="View image 1">
+                <figure class="w-full h-full bg-[#f5f5f5]">
+                  <picture>
+                    <img src="src/images/prod-wall-panels.jpg" width="114" height="121" class="w-full h-full object-cover" loading="lazy" alt="Thumbnail 1" />
+                  </picture>
+                </figure>
+                <span class="absolute bottom-0 left-0 right-0 h-[3px] bg-black" data-pd-thumb-bar></span>
+              </button>
+              <button class="relative shrink-0 w-[calc((100%-36px)/4)] md:w-[calc((100%-48px)/5)] aspect-114/121 overflow-hidden cursor-pointer" data-pd-thumb data-src="src/images/prod-ceiling-panels.jpg" aria-label="View image 2">
+                <figure class="w-full h-full bg-[#f5f5f5]">
+                  <picture>
+                    <img src="src/images/prod-ceiling-panels.jpg" width="114" height="121" class="w-full h-full object-cover" loading="lazy" alt="Thumbnail 2" />
+                  </picture>
+                </figure>
+                <span class="absolute bottom-0 left-0 right-0 h-[3px] bg-black hidden" data-pd-thumb-bar></span>
+              </button>
+              <button class="relative shrink-0 w-[calc((100%-36px)/4)] md:w-[calc((100%-48px)/5)] aspect-114/121 overflow-hidden cursor-pointer" data-pd-thumb data-src="src/images/prod-louvers.jpg" aria-label="View image 3">
+                <figure class="w-full h-full bg-[#f5f5f5]">
+                  <picture>
+                    <img src="src/images/prod-louvers.jpg" width="114" height="121" class="w-full h-full object-cover" loading="lazy" alt="Thumbnail 3" />
+                  </picture>
+                </figure>
+                <span class="absolute bottom-0 left-0 right-0 h-[3px] bg-black hidden" data-pd-thumb-bar></span>
+              </button>
+              <button class="relative shrink-0 w-[calc((100%-36px)/4)] md:w-[calc((100%-48px)/5)] aspect-114/121 overflow-hidden cursor-pointer" data-pd-thumb data-src="src/images/prod-doors.jpg" aria-label="View image 4">
+                <figure class="w-full h-full bg-[#f5f5f5]">
+                  <picture>
+                    <img src="src/images/prod-doors.jpg" width="114" height="121" class="w-full h-full object-cover" loading="lazy" alt="Thumbnail 4" />
+                  </picture>
+                </figure>
+                <span class="absolute bottom-0 left-0 right-0 h-[3px] bg-black hidden" data-pd-thumb-bar></span>
+              </button>
+              <button class="relative shrink-0 w-[calc((100%-36px)/4)] md:w-[calc((100%-48px)/5)] aspect-114/121 overflow-hidden cursor-pointer" data-pd-thumb data-src="src/images/prod-laminate.jpg" aria-label="View image 5">
+                <figure class="w-full h-full bg-[#f5f5f5]">
+                  <picture>
+                    <img src="src/images/prod-laminate.jpg" width="114" height="121" class="w-full h-full object-cover" loading="lazy" alt="Thumbnail 5" />
+                  </picture>
+                </figure>
+                <span class="absolute bottom-0 left-0 right-0 h-[3px] bg-black hidden" data-pd-thumb-bar></span>
+              </button>
+              <button class="relative shrink-0 w-[calc((100%-36px)/4)] md:w-[calc((100%-48px)/5)] aspect-114/121 overflow-hidden cursor-pointer" data-pd-thumb data-src="src/images/prod-manufacturing.jpg" aria-label="View image 6">
+                <figure class="w-full h-full bg-[#f5f5f5]">
+                  <picture>
+                    <img src="src/images/prod-manufacturing.jpg" width="114" height="121" class="w-full h-full object-cover" loading="lazy" alt="Thumbnail 6" />
+                  </picture>
+                </figure>
+                <span class="absolute bottom-0 left-0 right-0 h-[3px] bg-black hidden" data-pd-thumb-bar></span>
+              </button>
+              <button class="relative shrink-0 w-[calc((100%-36px)/4)] md:w-[calc((100%-48px)/5)] aspect-114/121 overflow-hidden cursor-pointer" data-pd-thumb data-src="src/images/prod-wall-panels.jpg" aria-label="View image 7">
+                <figure class="w-full h-full bg-[#f5f5f5]">
+                  <picture>
+                    <img src="src/images/prod-wall-panels.jpg" width="114" height="121" class="w-full h-full object-cover" loading="lazy" alt="Thumbnail 7" />
+                  </picture>
+                </figure>
+                <span class="absolute bottom-0 left-0 right-0 h-[3px] bg-black hidden" data-pd-thumb-bar></span>
+              </button>
+            </div>
+          </div>
+          <!-- Next arrow -->
+          <button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/90 border border-[#eaeaea] flex items-center justify-center hover:bg-white transition-colors" id="pd-thumb-next" aria-label="Next thumbnails">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5.5 3L9.5 7l-4 4" stroke="#222" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Product details -->
+      <div class="w-full lg:flex-1 lg:min-w-0 flex flex-col gap-6 lg:pt-2">
+
+        <!-- Title + Rating + Description -->
+        <div class="flex flex-col gap-5">
+          <h1 class="text-[1.5rem] font-normal leading-[1.3] tracking-[-0.02em] text-black">
+            Acamond Halo Stud Conse
+          </h1>
+          <div class="flex flex-col gap-2.5">
+            <!-- Star rating + review link -->
+            <div class="flex items-center gap-6">
+              <div class="flex items-center" aria-label="4.5 out of 5 stars">
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="#d4a017" aria-hidden="true"><path d="M7 0l2.16 4.37 4.84.7-3.5 3.42.83 4.81L7 10.87 2.67 13.3l.83-4.81L0 5.07l4.84-.7z"/></svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="#d4a017" aria-hidden="true"><path d="M7 0l2.16 4.37 4.84.7-3.5 3.42.83 4.81L7 10.87 2.67 13.3l.83-4.81L0 5.07l4.84-.7z"/></svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="#d4a017" aria-hidden="true"><path d="M7 0l2.16 4.37 4.84.7-3.5 3.42.83 4.81L7 10.87 2.67 13.3l.83-4.81L0 5.07l4.84-.7z"/></svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="#d4a017" aria-hidden="true"><path d="M7 0l2.16 4.37 4.84.7-3.5 3.42.83 4.81L7 10.87 2.67 13.3l.83-4.81L0 5.07l4.84-.7z"/></svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" aria-hidden="true"><path d="M7 0l2.16 4.37 4.84.7-3.5 3.42.83 4.81L7 10.87 2.67 13.3l.83-4.81L0 5.07l4.84-.7z" stroke="#d4a017" stroke-width="1"/></svg>
+              </div>
+              <a href="#reviews" class="text-[0.75rem] font-medium text-[#6e6e6e] uppercase leading-[17px] hover:text-black transition-colors">View All Reviews</a>
+            </div>
+            <!-- Description -->
+            <p class="text-base text-[#6e6e6e] leading-[1.5]">
+              Veenus PVC Interior Solutions are designed for architects and designers who value both form and function. Our panels are made from high-density virgin PVC, offering lightweight and robust alternative to wood or stone.
+            </p>
+          </div>
+        </div>
+
+        <!-- Meta: Tags, SKU, Category -->
+        <div class="flex flex-col gap-[7px]">
+          <div class="flex items-center">
+            <span class="text-sm font-medium text-black leading-[1.6] w-25 xl:w-32.5 shrink-0">Tags:</span>
+            <span class="text-sm font-medium text-[#6e6e6e] leading-[1.6]">Pink</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sm font-medium text-black leading-[1.6] w-25 xl:w-32.5 shrink-0">SKU:</span>
+            <span class="text-sm font-medium text-[#6e6e6e] leading-[1.6]">E-00024</span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-sm font-medium text-black leading-[1.6] w-25 xl:w-32.5 shrink-0">Category:</span>
+            <span class="text-sm font-medium text-[#6e6e6e] leading-[1.6]">Armchair</span>
+          </div>
+        </div>
+
+        <!-- Color swatches with arrows -->
+        <div class="flex flex-col gap-3">
+          <span class="text-sm font-medium text-black leading-[1.6]">Color: <span id="pd-color-label">Red</span></span>
+          <div class="relative" id="pd-swatch-wrap">
+            <!-- Prev arrow -->
+            <button class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-7 h-7 bg-white/90 border border-[#eaeaea] items-center justify-center hover:bg-white transition-colors hidden" id="pd-swatch-prev" aria-label="Previous colors">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M8.5 3L4.5 7l4 4" stroke="#222" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <!-- Scrollable track -->
+            <div class="overflow-hidden w-full" id="pd-swatch-track">
+              <div class="flex gap-3 transition-transform duration-300" id="pd-swatch-slider">
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Red">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-wall-panels.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Blue">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-ceiling-panels.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Brown">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-louvers.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Beige">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-doors.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Grey">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-laminate.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: White">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-manufacturing.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Oak">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-wall-panels.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Walnut">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-ceiling-panels.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Teak">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-louvers.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Ivory">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-doors.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Slate">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-laminate.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+                <button class="relative shrink-0 w-13 h-16 overflow-hidden cursor-pointer" data-pd-swatch aria-label="Color: Pearl">
+                  <figure class="w-full h-full bg-[#f5f5f5]">
+                    <picture><img src="src/images/prod-manufacturing.jpg" width="52" height="64" class="w-full h-full object-cover" loading="lazy" alt="" /></picture>
+                  </figure>
+                  <span class="absolute bottom-0 left-0 right-0 h-0.75 bg-black hidden" data-pd-swatch-bar></span>
+                </button>
+              </div>
+            </div>
+            <!-- Next arrow -->
+            <button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-7 h-7 bg-white/90 border border-[#eaeaea] items-center justify-center hover:bg-white transition-colors hidden" id="pd-swatch-next" aria-label="Next colors">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5.5 3L9.5 7l-4 4" stroke="#222" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quantity + Buttons -->
+        <div class="flex flex-col gap-3">
+          <span class="text-sm font-medium text-black leading-[1.6]">Quantity:</span>
+          <div class="flex flex-col gap-3">
+            <a href="#" class="flex items-center justify-center bg-black py-4 text-sm font-normal text-white tracking-[-0.015em] hover:bg-neutral-800 transition-colors">
+              Get a Quote
+            </a>
+            <a href="#" class="flex items-center justify-center border border-black py-4 text-sm font-normal text-black tracking-[-0.015em] hover:bg-neutral-50 transition-colors">
+              Download Catalog
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="pd-why-section bg-[#f7f7f7] lg:bg-[#fafafa] py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+    <div class="flex flex-col gap-[2.5rem] lg:gap-[4.5rem]">
+
+      <!-- Heading + description -->
+      <div class="flex flex-col gap-5 lg:items-center lg:text-center">
+        <h2 class="font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          Why Choose <br class="lg:hidden"><em>Our Products?</em>
+        </h2>
+        <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.5] lg:leading-[1.4] lg:max-w-[957px]">
+          Veenus PVC interior solutions are engineered for architects and designers who demand both performance and elegance — durable, lightweight, and easy to install.
+        </p>
+      </div>
+
+      <!-- Cards: single col mobile → 3-col desktop -->
+      <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-8 lg:max-w-[1140px] lg:w-full lg:mx-auto">
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-01.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Fast Installation</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Lightweight PVC panels cut on-site labour significantly, speeding up every project timeline.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-02.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Durable &amp; Stable</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">High-density virgin PVC resists moisture, warping, and impact for lasting structural integrity.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-03.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Premium Finish</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Rich textures and consistent colour across every panel for a seamless, luxurious interior look.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-04.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Lower Total Cost</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">No extra cladding or finishes needed — one product handles the full interior solution affordably.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-05.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Eco-Friendly</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Precision-cut panels minimise off-cuts and waste, supporting a more sustainable build process.</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#f7f7f7] flex flex-col gap-[1.125rem] px-9 py-[2.375rem]">
+          <div class="bg-[#fafafa] w-fit">
+            <img class="w-12.5 h-12.5" src="src/images/gr-why-06.svg" width="28" height="28" alt="" aria-hidden="true" />
+          </div>
+          <div class="flex flex-col gap-[0.8125rem]">
+            <h3 class="font-serif-display text-[1.125rem] text-black tracking-[-0.02em] leading-[1.6]">Easy Maintenance</h3>
+            <p class="text-sm text-[#6e6e6e] leading-[1.6]">Non-porous surface repels stains and dirt — a simple wipe keeps panels looking brand new.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="pd-projects-section py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-8 lg:mb-[3.75rem]">
+      <h2 class="text-[2.1875rem] lg:text-[2.875rem] font-normal leading-[1.3] tracking-[-0.02em] text-black">
+        See It In <em>Real Projects</em>
+      </h2>
+    </div>
+
+    <!-- Desktop grid: 4 cols × 2 rows -->
+    <div class="hidden lg:grid lg:grid-cols-4 gap-x-5 gap-y-11">
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Modern Living Room</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure%20(1).jpg" alt="Corporate Reception interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Corporate Reception</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure%20(2).jpg" alt="Institute Corridor interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Institute Corridor</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure%20(3).jpg" alt="Master Bedroom Suite interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure%20(4).jpg" alt="Hotel Grand Lobby interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Hotel Grand Lobby</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure%20(5).jpg" alt="Fine Dining Space interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure%20(6).jpg" alt="Master Bedroom Suite interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <figure class="bg-[#f6f6f6] h-68 overflow-hidden">
+          <picture>
+            <!-- Source: 392×272px | Desktop: fixed h-68 | fluid width | object-cover -->
+            <img src="src/images/Figure%20(7).jpg" alt="Fine Dining Space interior" width="392" height="272" class="w-full h-full object-cover" loading="lazy">
+          </picture>
+        </figure>
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+          <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mobile: Embla slider -->
+    <div class="lg:hidden">
+      <div class="projects-embla -mx-5" id="pd-projects-slider">
+        <div class="projects-embla__container px-5">
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure.jpg" alt="Modern Living Room interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Modern Living Room</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure%20(1).jpg" alt="Corporate Reception interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Corporate Reception</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure%20(2).jpg" alt="Institute Corridor interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Institute Corridor</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure%20(3).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure%20(4).jpg" alt="Hotel Grand Lobby interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Hotel Grand Lobby</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure%20(5).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Residential</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure%20(6).jpg" alt="Master Bedroom Suite interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Institutional</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Master Bedroom Suite</p>
+            </div>
+          </div>
+
+          <div class="projects-embla__slide flex flex-col gap-5">
+            <figure class="bg-[#f6f6f6] h-55 overflow-hidden">
+              <picture>
+                <!-- Source: 392×220px | Mobile: fixed h-55 | fluid width | object-cover -->
+                <img src="src/images/Figure%20(7).jpg" alt="Fine Dining Space interior" width="392" height="220" class="w-full h-full object-cover" loading="lazy">
+              </picture>
+            </figure>
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-[#6e6e6e] leading-[1.4]">Commercial</p>
+              <p class="text-[1.125rem] text-black tracking-[-0.02em] leading-normal">Fine Dining Space</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Nav arrows -->
+      <div class="flex items-center justify-center gap-[0.652rem] mt-8">
+        <button id="pd-projects-prev" class="product-nav-btn" aria-label="Previous project">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button id="pd-projects-next" class="product-nav-btn" aria-label="Next project">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section class="pd-related-section bg-[#f7f7f7] py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+
+    <!-- Heading row + arrows -->
+    <div class="flex items-center justify-between mb-8 lg:mb-[3.75rem]">
+      <h2 class="font-normal text-[clamp(2.1875rem,3.2vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+        Explore <em>Related Products</em>
+      </h2>
+      <div class="flex items-center gap-3.5 shrink-0">
+        <button id="pd-related-prev" class="product-nav-btn" aria-label="Previous products">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M11.25 13.5L6.75 9l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button id="pd-related-next" class="product-nav-btn" aria-label="Next products">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M6.75 4.5L11.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Embla slider -->
+    <div class="pd-related-embla -mx-5 lg:mx-0" id="pd-related-slider">
+      <div class="pd-related-embla__container px-5 lg:px-0">
+
+        <!-- Card 1 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-wall-panels.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS PVC Wall Panel">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS PVC Wall Panel</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">Matte Wood Texture</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-ceiling-panels.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS PVC Ceiling Panel">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS PVC Ceiling Panel</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">Matte Wood Texture</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-louvers.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS PVC Louvers">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS PVC Louvers</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">Classic Groove Finish</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-doors.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS PVC Door">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS PVC Door</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">Premium Flush Design</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-laminate.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS Laminated Sheet">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS Laminated Sheet</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">High Gloss Surface</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-manufacturing.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS PVC Wall Panel">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS PVC Wall Panel</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">Stone Marble Texture</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-wall-panels.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS PVC Ceiling Panel">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS PVC Ceiling Panel</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">Natural Linen Finish</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="pd-related-embla__slide group">
+          <a href="product-detail.html" class="block bg-white">
+            <figure class="h-[390px] overflow-hidden relative">
+              <picture>
+                <!-- Source: 314×390px | fixed h-[390px] | fluid width | object-cover -->
+                <img src="src/images/prod-louvers.jpg" width="314" height="390" class="w-full h-full object-cover" loading="lazy" alt="VEENUS PVC Louvers">
+              </picture>
+              <div class="absolute bottom-0 left-0 right-0 bg-black py-4 px-[1.875rem] translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p class="text-white text-base font-medium tracking-[-0.015em] text-center">Details View</p>
+              </div>
+            </figure>
+            <div class="flex flex-col gap-[3px] items-center py-4 px-3 overflow-hidden">
+              <p class="text-base text-black leading-[1.3] text-center">VEENUS PVC Louvers</p>
+              <p class="text-sm text-[#6e6e6e] leading-[1.7] text-center">Dark Walnut Texture</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+
+    <!-- Top: link columns + logo -->
+    <div class="site-footer__top">
+
+      <div class="site-footer__cols">
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-products">
+            Our Products
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-products">
+            <li><a href="product-listing.html" class="site-footer__link">PVC Ceiling Panels</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Doors</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Interior Wall Panels</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Louvers</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Panels</a></li>
+            <li><a href="product-listing.html" class="site-footer__link">PVC Laminate</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-links">
+            Quick Links
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="site-footer__list" id="footer-col-links">
+            <li><a href="about-us.html" class="site-footer__link">About Us</a></li>
+            <li><a href="products.html" class="site-footer__link">Our Products</a></li>
+            <li><a href="portfolio.html" class="site-footer__link">Portfolio</a></li>
+            <li><a href="events.html" class="site-footer__link">Events</a></li>
+            <li><a href="insights.html" class="site-footer__link">Insights</a></li>
+            <li><a href="greenrich.html" class="site-footer__link">Greenrich</a></li>
+            <li><a href="contact.html" class="site-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--contact" data-accordion>
+          <button type="button" class="site-footer__col-title" aria-expanded="false" aria-controls="footer-col-contact">
+            Contact Information
+            <svg class="site-footer__col-chevron" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="4 6 8 10 12 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="site-footer__contact-body" id="footer-col-contact">
+            <address class="site-footer__address">
+              Door no II/193 A,B, Hi tech polymers, PO, Alapad, Thrissur, Kerala, India<br>
+              680641
+            </address>
+            <ul class="site-footer__contact">
+              <li>
+                <img src="src/images/footer-mail.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="mailto:hello@logoipsum.com">hello@logoipsum.com</a>
+              </li>
+              <li>
+                <img src="src/images/footer-call.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="tel:+910987654321">+91 0987 654321</a>
+              </li>
+              <li>
+                <img src="src/images/footer-whatapp.svg" width="18" height="18" alt="" class="site-footer__icon" aria-hidden="true">
+                <a href="https://wa.me/910987654321">+91 0987 654321</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+        <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
+      </a>
+
+    </div>
+
+    <!-- Middle: socials + catalogue -->
+    <div class="site-footer__actions">
+      <ul class="site-footer__socials" aria-label="Social links">
+        <li>
+          <a href="#" aria-label="Facebook" class="site-footer__social">
+            <img src="src/images/footer-facebook.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram" class="site-footer__social">
+            <img src="src/images/footer-insta.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest" class="site-footer__social">
+            <img src="src/images/footer-pinrest.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube" class="site-footer__social">
+            <img src="src/images/footer-youtube.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="WhatsApp" class="site-footer__social">
+            <img src="src/images/footer-whatapplink.svg" width="36" height="36" alt="" aria-hidden="true">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--border-square btn--border-square--ghost site-footer__catalogue">
+        Get Catalogue
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Bottom: legal + credit -->
+    <div class="site-footer__bottom">
+      <ul class="site-footer__legal">
+        <li>&copy; 2026 Veenus PVC Profiles. All Rights Reserved.</li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="site-footer__credit">Designed by <a href="#">Webandcrafts</a></p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>

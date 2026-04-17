@@ -107,10 +107,10 @@
       <div class="container">
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-[clamp(3rem,6vw,7.5rem)] lg:items-stretch">
 
-          <figure class="w-full aspect-530/426 lg:w-[42%] lg:aspect-auto lg:min-h-[680px] shrink-0 overflow-hidden">
+          <figure class="w-full aspect-530/426 lg:w-[42%] lg:aspect-820/560 shrink-0 overflow-hidden">
             <picture>
-              <!-- Desktop: about-manufacturing-desk.jpg | lg:aspect-auto + min-h-[680px] | object-cover crops -->
-              <source media="(min-width: 1024px)" srcset="src/images/about-manufacturing-desk.jpg">
+              <!-- Desktop: 820×560px | aspect-820/560 fluid width, ratio-locked -->
+              <source media="(min-width: 1024px)" srcset="src/images/about-manufacturing-desk.jpg" width="820" height="560">
               <!-- Mobile:  530×426px | aspect-530/426 fluid width, ratio-locked -->
               <img
                 src="src/images/about-manufacturing-mob.png"
