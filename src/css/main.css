@@ -571,9 +571,6 @@
   .min-h-\[160px\] {
     min-height: 160px;
   }
-  .min-h-\[680px\] {
-    min-height: 680px;
-  }
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
@@ -1890,11 +1887,6 @@
     }
   }
   @media (min-width: 64rem) {
-    .lg\:min-h-\[680px\] {
-      min-height: 680px;
-    }
-  }
-  @media (min-width: 64rem) {
     .lg\:w-1\/2 {
       width: calc(1 / 2 * 100%);
     }
@@ -2853,9 +2845,6 @@ body {
 .product-nav-btn:hover {
   background: var(--color-surface);
   border-color: #d4d4d4;
-}
-.pd-related-embla {
-  overflow: hidden;
 }
 .pd-related-embla__container {
   display: flex;

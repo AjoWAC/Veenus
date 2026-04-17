@@ -291,7 +291,7 @@ body {
 
 /* Product-detail Related Products slider */
 .pd-related-embla {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .pd-related-embla__container {
   display: flex;
