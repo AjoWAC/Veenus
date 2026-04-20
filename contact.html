@@ -6,6 +6,7 @@
   <meta name="description" content="Contact Us — Veenus PVC interior solutions." />
   <title>Contact Us — Veenus</title>
   <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/about-banner.css" /> 
   <link rel="stylesheet" href="src/css/main.css" />
 </head>
 <body class="bg-white text-neutral-900 antialiased page-solid-header">
@@ -116,21 +117,219 @@
 </header>
 
   <main>
+ <section class="about-banner" aria-label="About Veenus hero">
+  <picture class="about-banner__bg">
+    <!-- Desktop: product-banner-desk.jpg | 1920×600px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg" width="1920" height="600">
+    <!-- Mobile:  390×640px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
+  </picture>
 
-    <!-- Breadcrumb -->
-    <section class="contact-breadcrumb py-5">
-      <div class="container">
-        <nav aria-label="Breadcrumb">
-          <ol class="flex items-center gap-3 text-sm font-normal leading-[1.4] whitespace-nowrap">
-            <li class="flex items-center gap-3 text-[#6d6d6d]">
-              <a href="index.html" class="hover:text-neutral-900 transition-colors">Home</a>
-              <span aria-hidden="true">/</span>
-            </li>
-            <li class="text-black" aria-current="page">Contact Us</li>
-          </ol>
-        </nav>
+  <div class="about-banner__overlay" aria-hidden="true"></div>
+
+  <div class="about-banner__inner">
+    <h1 class="about-banner__title">
+     Connect  <em>With Us</em>
+    </h1>
+    <p class="about-banner__text">
+   Architects, contractors, dealers, and homeowners our team is ready to help you transform spaces with premium PVC interior solutions.</p>
+    <!-- <a href="#" class="btn btn--border-square btn--border-square--ghost about-banner__cta">
+      Explore Products
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a> -->
+  </div>
+</section>
+
+    <section class="contact-info-section bg-white py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+    <div class="flex flex-col lg:flex-row lg:items-start">
+
+      <!-- Left: heading + description + contact details -->
+      <div class="flex flex-col gap-5 lg:gap-6 lg:w-[45%] lg:shrink-0">
+
+        <!-- Heading -->
+        <h2 class="font-serif-display font-normal text-[clamp(2.1875rem,3.6vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          Have a Project in Mind?<br>
+          <em>Let's Talk</em>
+        </h2>
+
+        <!-- Description + divider + contact (gap-52px desktop) -->
+        <div class="flex flex-col gap-8 lg:gap-13">
+
+          <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-normal tracking-[-0.02em]">
+            Have a specific project in mind or need technical specifications? Our specialist team is ready to help you transform spaces with premium PVC interior solutions.
+          </p>
+
+          <!-- Divider + contact (gap-52px desktop) -->
+          <div class="flex flex-col gap-8 lg:gap-13">
+
+            <hr class="border-0 border-t border-[#e8e8e8]">
+
+            <!-- Contact items (gap-32px desktop) -->
+            <div class="flex items-start gap-6 lg:gap-8">
+
+              <div class="flex flex-col gap-3 flex-1 min-w-0">
+                <span class="text-[0.875rem] font-medium text-[#6e6e6e] uppercase leading-[1.1] tracking-[0.04em]">Call Support</span>
+                <a href="tel:+910987654321" class="text-[1.25rem] font-medium text-black leading-normal tracking-[-0.02em] hover:text-[#6e6e6e] transition-colors">+91 0987 654321</a>
+              </div>
+
+              <div class="flex flex-col gap-3 flex-1 min-w-0">
+                <span class="text-[0.875rem] font-medium text-[#6e6e6e] uppercase leading-[1.1] tracking-[0.04em]">Email Enquiries</span>
+                <a href="mailto:hello@veenus.com" class="text-[1.25rem] font-medium text-black leading-normal tracking-[-0.02em] hover:text-[#6e6e6e] transition-colors">hello@veenus.com</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+
+      <!-- Right: intentionally blank -->
+
+    </div>
+  </div>
+</section>
+
+    <section class="contact-find-section bg-[#f3f2f1] py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-[clamp(3rem,9vw,8.125rem)] lg:items-center">
+
+      <!-- Left: image -->
+      <figure class="w-full aspect-800/544 lg:w-[45%] lg:aspect-auto lg:h-[447px] shrink-0 overflow-hidden">
+        <picture>
+          <!-- Source: Figure.jpg | 800×544px | ratio 800:544 (≈ 1.47:1)
+               Mobile: aspect-800/544 fluid width, ratio-locked
+               Desktop: lg:h-[447px] fixed height | object-cover crops -->
+          <img src="src/images/Figure.jpg" width="800" height="544" class="w-full h-full object-cover" loading="lazy" alt="Veenus showroom interior">
+        </picture>
+      </figure>
+
+      <!-- Right: heading + location cards -->
+      <div class="flex flex-col gap-8 lg:gap-13 flex-1 min-w-0">
+
+        <!-- Heading -->
+        <h2 class="font-normal text-[clamp(2.1875rem,3.6vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          Where You Can <em class="font-serif-display">Find Us</em>
+        </h2>
+
+        <!-- Location cards -->
+        <div class="flex flex-col lg:flex-row gap-0 lg:gap-12">
+
+          <!-- Corporate office -->
+          <div class="flex flex-col gap-8 flex-1 min-w-0 border-t border-black/10 py-8">
+            <div class="flex flex-col gap-4">
+              <p class="text-[1.25rem] font-medium text-black leading-normal tracking-[-0.02em]">Corporate office</p>
+              <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-normal tracking-[-0.02em] max-w-67.5">
+                Located at 78 Serenity Lane, Harmony Village, Coimbatore, Tamil Nadu, 641001
+              </p>
+            </div>
+            <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:text-[#6e6e6e] transition-colors">
+              Get Direction
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Development centre -->
+          <div class="flex flex-col gap-8 flex-1 min-w-0 border-t border-black/10 py-8">
+            <div class="flex flex-col gap-4">
+              <p class="text-[1.25rem] font-medium text-black leading-normal tracking-[-0.02em]">Development centre</p>
+              <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-normal tracking-[-0.02em] max-w-67.5">
+                Located at Door No: 45 Zenith Avenue, Community of Alapad, Thrissur, Kerala, 680641
+              </p>
+            </div>
+            <a href="#" class="inline-flex items-center gap-1.5 text-base font-medium text-black tracking-[-0.015em] hover:text-[#6e6e6e] transition-colors">
+              Get Direction
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="become-dealer-section bg-white py-[3.75rem] lg:py-[8.125rem]">
+  <div class="container">
+    <div class="flex flex-col lg:flex-row lg:items-start gap-12 lg:gap-[clamp(3rem,9vw,8.125rem)]">
+
+      <!-- Left: heading + description + numbered benefits -->
+      <div class="flex flex-col gap-5 lg:gap-6 lg:w-[43%] lg:shrink-0">
+
+        <!-- Heading -->
+        <h2 class="font-normal text-[clamp(2.1875rem,3.6vw,2.875rem)] leading-[1.3] tracking-[-0.02em] text-black">
+          Become a <em class="font-serif-display">Dealer</em>
+        </h2>
+
+        <!-- Description + benefits (gap-52px desktop) -->
+        <div class="flex flex-col gap-8 lg:gap-13">
+
+          <p class="text-base lg:text-[1.125rem] text-[#6e6e6e] leading-[1.5] tracking-[-0.02em]">
+            Join our growing network of authorized dealers and expand your business with Veenus premium PVC interior solutions.
+          </p>
+
+          <!-- Numbered benefits list -->
+          <div class="flex flex-col gap-5 lg:gap-[2.625rem]">
+
+            <!-- Benefit 1 -->
+            <div class="flex items-center gap-4 lg:gap-6">
+              <div class="flex items-center justify-center shrink-0 w-10 h-10 lg:w-13 lg:h-13 rounded-full border border-[#dcdcdc]">
+                <span class="font-light text-base lg:text-[1.375rem] leading-[1.2] tracking-[-0.02em] text-black">1</span>
+              </div>
+              <div class="flex flex-col gap-1 lg:gap-2 flex-1 min-w-0">
+                <p class="text-base lg:text-[1.25rem] font-medium text-black leading-[1.4] tracking-[-0.02em]">Quality Products</p>
+                <p class="text-sm lg:text-[1.125rem] text-[#6e6e6e] leading-normal">Premium PVC panels and interior solutions</p>
+              </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="flex items-center gap-4 lg:gap-6">
+              <div class="flex items-center justify-center shrink-0 w-10 h-10 lg:w-13 lg:h-13 rounded-full border border-[#dcdcdc]">
+                <span class="font-light text-base lg:text-[1.375rem] leading-[1.2] tracking-[-0.02em] text-black">2</span>
+              </div>
+              <div class="flex flex-col gap-1 lg:gap-2 flex-1 min-w-0">
+                <p class="text-base lg:text-[1.25rem] font-medium text-black leading-[1.4] tracking-[-0.02em]">Support &amp; Training</p>
+                <p class="text-sm lg:text-[1.125rem] text-[#6e6e6e] leading-normal">Comprehensive dealer support and product training</p>
+              </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="flex items-center gap-4 lg:gap-6">
+              <div class="flex items-center justify-center shrink-0 w-10 h-10 lg:w-13 lg:h-13 rounded-full border border-[#dcdcdc]">
+                <span class="font-light text-base lg:text-[1.375rem] leading-[1.2] tracking-[-0.02em] text-black">3</span>
+              </div>
+              <div class="flex flex-col gap-1 lg:gap-2 flex-1 min-w-0">
+                <p class="text-base lg:text-[1.25rem] font-medium text-black leading-[1.4] tracking-[-0.02em]">Competitive Margins</p>
+                <p class="text-sm lg:text-[1.125rem] text-[#6e6e6e] leading-normal">Attractive pricing and profitable margins</p>
+              </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="flex items-center gap-4 lg:gap-6">
+              <div class="flex items-center justify-center shrink-0 w-10 h-10 lg:w-13 lg:h-13 rounded-full border border-[#dcdcdc]">
+                <span class="font-light text-base lg:text-[1.375rem] leading-[1.2] tracking-[-0.02em] text-black">4</span>
+              </div>
+              <div class="flex flex-col gap-1 lg:gap-2 flex-1 min-w-0">
+                <p class="text-base lg:text-[1.25rem] font-medium text-black leading-[1.4] tracking-[-0.02em]">Marketing Support</p>
+                <p class="text-sm lg:text-[1.125rem] text-[#6e6e6e] leading-normal">Co-marketing and promotional materials</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dealer Enquiry form (to be added) -->
+
+    </div>
+  </div>
+</section>
 
   </main>
 
@@ -208,7 +407,7 @@
 
       </div>
 
-      <a href="/" class="site-footer__brand" aria-label="Veenus home">
+      <a href="index.html" class="site-footer__brand" aria-label="Veenus home">
         <img src="src/images/logo.png" width="185" height="47" alt="Veenus" loading="lazy">
       </a>
 

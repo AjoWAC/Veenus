@@ -74,7 +74,9 @@
       "mcp__plugin_playwright_playwright__browser_evaluate",
       "Bash(node -e \"const{execSync}=require\\('child_process'\\);try{execSync\\('node build.js',{timeout:20000,encoding:'utf8'}\\);console.log\\('done'\\)}catch\\(e\\){console.log\\(e.stdout\\)}\")",
       "mcp__plugin_playwright_playwright__browser_resize",
-      "Bash(npx -y http-server c:/Ajo/Veenus/HTML -p 8774 -c-1)"
+      "Bash(npx -y http-server c:/Ajo/Veenus/HTML -p 8774 -c-1)",
+      "Bash(python3 -c ':*)",
+      "Bash(python -c ':*)"
     ]
   }
 }

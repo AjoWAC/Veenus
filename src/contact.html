@@ -6,6 +6,7 @@
   <meta name="description" content="Contact Us — Veenus PVC interior solutions." />
   <title>Contact Us — Veenus</title>
   <link href="src/css/header.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/about-banner.css" /> 
   <link rel="stylesheet" href="src/css/main.css" />
 </head>
 <body class="bg-white text-neutral-900 antialiased page-solid-header">
@@ -13,21 +14,36 @@
   <div data-include="Header.html"></div>
 
   <main>
+ <section class="about-banner" aria-label="About Veenus hero">
+  <picture class="about-banner__bg">
+    <!-- Desktop: product-banner-desk.jpg | 1920×600px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <source media="(min-width: 1024px)" srcset="src/images/product-banner-desk.jpg" width="1920" height="600">
+    <!-- Mobile:  390×640px | full-bleed hero, CSS-fixed height via .about-banner -->
+    <img src="src/images/product-banner-mob.jpg" alt="" width="390" height="640" loading="eager" fetchpriority="high">
+  </picture>
 
-    <!-- Breadcrumb -->
-    <section class="contact-breadcrumb py-5">
-      <div class="container">
-        <nav aria-label="Breadcrumb">
-          <ol class="flex items-center gap-3 text-sm font-normal leading-[1.4] whitespace-nowrap">
-            <li class="flex items-center gap-3 text-[#6d6d6d]">
-              <a href="index.html" class="hover:text-neutral-900 transition-colors">Home</a>
-              <span aria-hidden="true">/</span>
-            </li>
-            <li class="text-black" aria-current="page">Contact Us</li>
-          </ol>
-        </nav>
-      </div>
-    </section>
+  <div class="about-banner__overlay" aria-hidden="true"></div>
+
+  <div class="about-banner__inner">
+    <h1 class="about-banner__title">
+     Connect  <em>With Us</em>
+    </h1>
+    <p class="about-banner__text">
+   Architects, contractors, dealers, and homeowners our team is ready to help you transform spaces with premium PVC interior solutions.</p>
+    <!-- <a href="#" class="btn btn--border-square btn--border-square--ghost about-banner__cta">
+      Explore Products
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a> -->
+  </div>
+</section>
+
+    <div data-include="contact/ContactInfo.html"></div>
+
+    <div data-include="contact/FindUs.html"></div>
+
+    <div data-include="contact/BecomeDealer.html"></div>
 
   </main>
 
